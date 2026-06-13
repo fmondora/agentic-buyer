@@ -38,6 +38,57 @@
 
 ## Note per categoria
 
+### TV 55 pollici fascia premium fino a 5000€, focus cinema + audio integrato (aggiornato giugno 2026)
+
+#### Disponibilita modelli — attenzione critica
+- **Sony BRAVIA 9** — NON esiste in 55". Disponibile solo in 65", 75", 85". Eliminare dalla lista se il requisito e 55".
+- **Philips OLED+959** — NON esiste in 55". Solo 65". Il modello 55" con B&W e il **55OLED909** (OLED+909).
+- **Panasonic MZ2000 55"** — ancora disponibile a ~1.760-2.200€ (modello 2023, in sconto). Il successore diretto e il **Z95A** (2024, ~3.300€ 55") con Fire TV OS invece di Google TV.
+- **Sony A95L 55"** — disponibile ~2.600€ street price (listino 3.299€). Ultimo QD-OLED Sony della serie A (non sostituito da BRAVIA 9 in 55").
+
+#### Prezzi street price indicativi (giugno 2026)
+- Samsung S95D 55": ~1.700-1.800€
+- Samsung S95F 55": ~1.300-1.700€
+- LG G4 55": ~1.300-1.500€ (2024, ancora disponibile)
+- LG G5 55": ~989-1.200€ (2025, forte sconto recente)
+- Sony A95L 55": ~2.600€
+- Philips OLED+909 55": ~1.800-2.000€ (listino 2.199€)
+- Panasonic MZ2000 55": ~1.760-2.200€
+- Panasonic Z95A 55": ~3.300€
+- Loewe bild i 55": ~2.999€
+
+#### Classifica audio integrato (migliore per chi NON vuole soundbar)
+1. **Panasonic MZ2000 / Z95A** — 360 Soundscape Pro by Technics, 150W, 5.1.2ch con side/up-firing, beamforming. Il migliore assoluto in questa fascia. Everyeye.it: 9.5/10. "Elimina la necessita di una soundbar." Vero Dolby Atmos psicoacustico.
+2. **Philips OLED+909** — B&W 3.1, 81W, titanium dome tweeter, Nautilus tube, 4 passive radiator. T3: 5/5, "Sound so impressive you'll never need a separate soundbar." AVForums: "large stereo soundstage with excellent vocal intelligibility."
+3. **Sony A95L** — Acoustic Surface Audio+, 2 attuatori sul pannello + 2 woofer, 2.2ch. Suono proveniente dallo schermo stesso. "Best onboard audio ever heard from a TV." Buono per forgoing soundbar.
+4. **Samsung S95D / S95F** — 4.2.2ch, 70W (S95D). S95D: "spectacular" HomeTheaterInsights ma WhatHiFi: "Audio lacks power and impact". S95F: "punchy and accurate, Atmos effects a little lacking." Solido ma non eccezionale.
+5. **LG G5** — 4.2ch, 60W. WhatHiFi: audio "merely adequate", dialogue "lifeless", bass scarso. "You'll still want to consider a soundbar."
+6. **LG G4** — 4.2ch, 60W. AVForums utenti: "speakers are poor." Necessita soundbar.
+7. **Loewe bild i 55"** — 2x20W. Trusted Reviews: "clean, potent sound" ma 20W in totale. La Klang Bar i opzionale (+299£) necessaria per prestazioni serie.
+
+#### Qualita immagine / colori / HDR
+- **Sony A95L**: QD-OLED, DCI-P3 eccellente, HDR10/Dolby Vision, Filmmaker Mode, Cognitive Processor XR. Tom's Guide: "best picture of the year 2023". Neri perfetti OLED.
+- **Samsung S95D/S95F**: QD-OLED gen3/gen4, anti-glare rivoluzionario (S95D), luminosita molto alta. WhatHiFi S95D: 5/5 "phenomenal brightness, contrast, colour." NO Dolby Vision (solo HDR10+).
+- **LG G5**: OLED Primary RGB Tandem (nuova tecnologia 2025), luminosita record per OLED. AVForums: "highly recommended." Dolby Vision IQ, HDR10+.
+- **LG G4**: OLED evo MLA, eccellente. Dolby Vision IQ, HDR10+. 144Hz.
+- **Panasonic MZ2000**: OLED MLA custom, ~1.400 nit, DCI-P3 ~100%, DeltaE <2 out-of-box. Migliore calibrazione factory tra tutti. Dolby Vision IQ + HDR10+ Adaptive.
+- **Philips OLED+909**: OLED MLA, WhatHiFi 4/5 "bright and detailed but similar to step-down model." Dolby Vision, HDR10+, Ambilight 4 lati.
+- **Loewe bild i 55"**: OLED standard (no MLA), 736 nit, buoni colori ma meno luminoso dei competitor.
+
+#### HDR e Dolby Vision — quadro completo
+- Dolby Vision: Sony A95L SI | LG G4/G5 SI | Panasonic MZ2000/Z95A SI | Philips OLED+909 SI | Loewe bild i SI
+- Dolby Vision: Samsung S95D/S95F NO (solo HDR10+) — critico per chi usa Apple TV
+
+#### Fonti piu utili per questa categoria
+- **T3.com** — recensioni dettagliate con voto audio esplicito, accessibile via WebFetch (Philips 909: 5/5; Panasonic MZ2000: 5/5)
+- **Everyeye.it** — test italiani con misurazioni (Panasonic MZ2000: 9.5/10)
+- **WhatHiFi.com** — audio-centrica, snippet utili (Samsung S95D: 5/5 immagine ma audio "lacks power")
+- **Pocket-lint.com** — recensioni accessibili con voto finale e specifiche audio
+- **AVForums** — 403 su WebFetch diretto per le review; usare snippet da WebSearch
+- **Hdblog.it** — 429 rate limit a volte; ritentare. Buone recensioni italiane
+
+
+
 ### TV 55 pollici fascia 300-600 euro (aggiornato giugno 2026)
 
 - **Modelli principali da analizzare**: Hisense 55U7NQ (Mini-LED ~499€), TCL 55C655 (QLED ~404€), Xiaomi TV A Pro 55 2025 (QLED ~379€), Samsung UE55DU7172 (LED ~449€), LG 55UT73006LA (LED ~399€), Hisense 55E7NQ/55E77NQ (QLED ~349-379€)

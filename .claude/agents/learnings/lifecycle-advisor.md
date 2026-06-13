@@ -185,3 +185,78 @@
 - Mini-LED (Neo QLED / U8 / C805): luminosità di picco superiore (1000-2000 nit), ottimo per ambienti luminosi, ma blooming residuo ai bordi delle zone
 - Per uso misto (film + gaming + TV generalista): OLED vince su qualità immagine e longevità del pannello se usato correttamente
 - Per salotti molto luminosi o uso >8h/die: Mini-LED più sicuro
+
+### TV 55 pollici fascia 1000-5000€ OLED/QD-OLED premium (analisi giugno 2026)
+
+**Modelli principali nella fascia target:**
+| Brand | Modello | Anno | Tecnologia | Prezzo (IT, giugno 2026) | OS |
+|-------|---------|------|------------|--------------------------|-----|
+| Samsung | QE55S95D | 2024 | QD-OLED | ~1.299€ (listino 1.999€) | Tizen |
+| Samsung | QE55S95F | 2025 | QD-OLED | ~1.085-1.354€ | Tizen |
+| LG | OLED55G45LW / G46LS | 2024 | WOLED evo MLA | ~1.297€ | webOS |
+| LG | OLED55G54LW / G56LS | 2025 | WOLED evo MLA+ (4-layer) | ~989-1.499€ | webOS |
+| Sony | XR-55A95L | 2023 | QD-OLED | ~2.599€ | Google TV |
+| Sony | XR-55A95M (BRAVIA 9) | 2024 | QD-OLED | ~2.500-3.000€ stimato | Google TV |
+| Philips | 55OLED+909 | 2024 | WOLED | ~2.945€ (idealo) | Google TV |
+| Philips | 55OLED+910 | 2025 | WOLED | ~2.290€ | Titan OS |
+| Panasonic | TX-55MZ2000 | 2023 | WOLED MLA | ~1.760-2.895€ | MyHomeScreen 8 |
+| Loewe | bild i.55 DR+ | 2024 | WOLED | ~2.100-2.500€ stimato | os7 (proprietario) |
+
+**Nota modelli disponibilità:**
+- Il "BRAVIA 9" non esiste come modello autonomo in Italia nel 55": Sony usa la sigla XR-55A95M o XR-55A95L. Il BRAVIA 9 è il nome commerciale della gamma 2024 (LCD Mini-LED, non OLED) — per OLED QD la serie rimane A95x
+- Panasonic MZ2000 è il 2023; dal 2024 Panasonic è passata a Fire TV OS (serie Z95A/Z93A); l'MZ2000 usa MyHomeScreen 8 e non riceverà aggiornamenti OS significativi
+- Loewe bild i: OS proprietario "os7" — dipendente dal vendor per aggiornamenti, rete distributiva limitata in Italia
+
+**Supporto software garantito (fascia premium OLED):**
+- Samsung S95D (2024) / S95F (2025): **7 anni Tizen** — confermato dalla politica Samsung per modelli 2024+; S95D garantito fino a 2031, S95F fino a 2032. Aggiornamento a Tizen OS 9 confermato giugno 2026
+- LG G4 (2024): webOS Re:New — **5 anni / 4 aggiornamenti OS** — riceverà webOS 25/26/27/28, supporto fino a 2029
+- LG G5 (2025): webOS Re:New — **5 anni / 4 aggiornamenti OS** — supporto fino a 2030
+- Sony A95L (2023) / A95M (2024): Google TV — **non dichiarato ufficialmente** — Sony non ha una politica pubblica di anni garantiti; prassi storica: 4-6 anni di patch, OS major non garantiti; rischio medio-alto di obsolescenza software anticipata
+- Philips OLED+909 (2024): Google TV — stessa situazione Sony; Philips in transizione verso Titan OS, i modelli 2024 Google TV non hanno garanzia esplicita
+- Philips OLED+910 (2025): **Titan OS — 10 anni dichiarati** (da TP Vision) ma è il primo anno della piattaforma, verifica track record impossibile
+- Panasonic MZ2000 (2023): MyHomeScreen 8 — OS abbandonato da Panasonic nel 2024; **nessun aggiornamento OS futuro garantito**. Solo patch di sicurezza sporadiche. Scelta a rischio sul lungo termine
+- Loewe bild i: os7 proprietario — **totalmente dipendente da Loewe**; l'azienda ha avuto problemi di insolvenza in passato (2018-2019, rilevata da SKYTEC); roadmap aggiornamenti non pubblica. Rischio molto elevato di abbandono software
+
+**Burn-in OLED — dati reali 2026 (test Rtings 50.000+ ore):**
+- Cinema/home theater (uso tipico): **rischio concreto vicino a zero** — test Rtings su LG C2/C3/C4: zero casi confermati di burn-in da uso normale in 3 anni di tracking
+- Scenari ad alto rischio: canali news 20h/die → burn-in visibile dopo ~4.000h (6 mesi); display digitale commerciale; gaming con HUD statico 8+h/die per mesi
+- **QD-OLED vs WOLED — parity 2025-2026**: Samsung afferma che i pixel blu QD-OLED aging più rapidamente, ma test indipendenti non confermano differenza pratica per uso domestico. WOLED ha track record più lungo (dal 2013), QD-OLED dal 2022 quindi dati 4 anni disponibili. Entrambi sicuri per uso misto
+- Differenza principale QD-OLED/WOLED: QD-OLED (S95D/F, A95L) più luminoso in picco (2000-2500 nit), migliore per ambienti luminosi. WOLED (LG G4/G5, Philips) più uniforme, meno stress per il pannello a luminosità moderate
+- Mitigazione integrata 2025: pixel shift (default on), Automatic Brightness Limiter, Panel Compensation Mode (si attiva in standby). Nessuna azione speciale richiesta per uso cinema
+
+**Riparabilità OLED premium:**
+- Pannello OLED 55" danneggiato: sostituzione costa tipicamente 800-1.400€ (quasi sempre non conveniente rispetto al valore TV usato)
+- Samsung S95D/F: assistenza tramite centri Samsung autorizzati; ricambi garantiti 7 anni per legge EU; pannello QD-OLED prodotto da Samsung Display, filiera interna
+- LG G4/G5: assistenza LG autorizzata; pannello WOLED prodotto da LG Display, filiera interna; rete assistenza capillare in Italia
+- Sony A95L: pannello QD-OLED Samsung Display; assistenza Sony autorizzata; costi manodopera elevati (brand premium); rete assistenza presente in Italia
+- Philips OLED+909/910: pannello WOLED LG Display; assistenza TP Vision/Philips; rete assistenza meno capillare rispetto a Samsung/LG
+- Panasonic MZ2000: pannello WOLED MLA LG Display; assistenza Panasonic in Italia (support-it.panasonic.eu); centri autorizzati presenti
+- Loewe bild i: pannello WOLED; assistenza solo tramite rivenditori autorizzati Loewe (rete molto limitata in Italia ~20 punti vendita); **ricambi a rischio a lungo termine**
+- Indice riparabilità francese/EU: per TV OLED premium non pubblicato individualmente; Samsung tipicamente 7.5-8.1/10 per i modelli QLED/OLED, altri brand non verificabili
+
+**Valore usato stimato (OLED premium 55", dopo 2-3 anni):**
+- LG OLED G-series: deprezza bene il primo anno (~25-35%), poi stabilizza. G3 55" (acquistato 2023 ~2.000€) → valore 2026 stimato: 700-1.000€
+- LG G4 55" (acquistato 2024 ~1.800-2.200€) → valore 2027 stimato: 650-1.000€
+- Samsung S95D 55" (acquistato 2024 ~2.000€, ora ~1.299€ nuovo) → valore usato attuale: ~700-1.000€; deprezza più rapidamente quando il nuovo scende di prezzo
+- Samsung S95F 55" (acquistato 2025 ~1.400€) → valore 2028 stimato: 500-750€
+- Sony A95L 55" (acquistato 2023 ~3.300€, ora ~2.599€) → valore usato stimato: 1.200-1.700€ (tiene bene perché partiva alto)
+- Philips OLED+909 55" (~2.900€ nuovo) → valore usato 2-3 anni: 900-1.300€ (domanda usato Philips OLED moderata)
+- Panasonic MZ2000 55" (~2.895€ nuovo) → valore usato attuale (2026, 3 anni): 700-1.100€
+- Loewe bild i 55" → mercato usato molto ristretto in Italia; valore difficile da stimare; liquidità bassa
+
+**Trade-in (giugno 2026):**
+- Samsung Trade Up: ritiro qualsiasi TV RAEE + sconto sul nuovo (sconto dipende dal modello scelto; per S95F/S95D: stimato 200-500€ flat)
+- LG Trade Up: sconto a carrello fino a **3.000€** (promozione lancio gamma 2026 valida fino a 10/06/2026, poi ridiventa sconto standard ~300-1.000€ sui G-series); ritiro 1-per-1 qualsiasi marca
+- Sony: nessun programma trade-in strutturato in Italia; ritiro RAEE solo tramite rivenditori
+- Philips: nessun programma trade-in in Italia
+- Panasonic: nessun programma trade-in in Italia
+- Loewe: nessun programma trade-in in Italia
+
+**Fonti confermate per questa categoria:**
+- idealo.it: prezzi attuali verificati per S95F (da €1.085), LG G5 (da €989), Sony A95L (€2.599), Philips OLED909 (€2.945)
+- afdigitale.it: prezzi italiani Philips OLED+910 confermati (55": €2.290), LG trade-up dettagli promozione 2026
+- cinemaconfig.com/blog/oled-burn-in-2026-real-data: dati burn-in affidabili, basati su test Rtings 50.000h
+- whathifi.com: politica 7 anni Samsung TV
+- avmagazine.it: webOS Re:New LG confermato 5 anni
+- lgnewsroom.it: LG trade-up 2026 fino a 3.000€ conferma promozione
+- flatpanelshd.com: transizione Panasonic a Fire TV OS, abbandono MyHomeScreen

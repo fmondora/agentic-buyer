@@ -86,6 +86,62 @@ Per TV 55 pollici:
 - Samsung e LG restano riferimento mid-range; prezzi alti ma garanzia e assistenza eccellenti
 - TCL C7L/C8L (2026) sono le migliori QLED Mini LED nel budget 700-900€ con B&O audio
 
+**Fascia PREMIUM 55" OLED/QLED (ricerca giugno 2026, budget 1000-5000€):**
+
+- Samsung S95F 55" (QE55S95FATXZT, QD-OLED 2025): ~€1.180-1.249 trovaprezzi/mediaworld — PREZZO OTTIMO rispetto al listino €2.499
+  - Kelkoo giugno 2026 conferma prezzi in range €1.180-1.384
+  - MediaWorld: €1.249,49 spedizione gratuita
+  - Link trovaprezzi: https://www.trovaprezzi.it/televisori-lcd-plasma/prezzi-scheda-prodotto/samsung_s95f_55_qe55s95fatxzt-v
+  - Link MediaWorld: https://www.mediaworld.it/it/product/_samsung-qe55s95fatxzt-55-oled-4k-435438.html
+- Samsung S95D 55" (QE55S95DAT, QD-OLED 2024): €1.483 idealo / €1.788 MediaWorld (venditore terzo) — superato dal S95F più economico
+  - Samsung.com: ESAURITO (non in vendita diretta)
+  - Link idealo: https://www.idealo.it/confronta-prezzi/204173602/samsung-qe55s95dat.html
+  - Link MediaWorld (venditore terzo): https://www.mediaworld.it/it/product/_samsung-gq55s95dat-tv-oled-piatto-55-oled-4k-144508458.html
+- Samsung QN90F 55" (QE55QN90FAT, Neo QLED Mini LED 2025): ~€990-1.130 trovaprezzi/idealo
+  - Samsung.com: ESAURITO. Promo soundbar B400F in regalo (3-22/6/2026)
+  - Link trovaprezzi: https://www.trovaprezzi.it/televisori-lcd-plasma/prezzi-scheda-prodotto/samsung_qn90f_55_qe55qn90fatxzt-v
+  - Link idealo: https://www.idealo.it/confronta-prezzi/206822535/samsung-qe-qn90fat.html
+- Samsung QN95F 55": NON COMMERCIALIZZATO IN ITALIA — top Samsung 4K è QN90F
+- LG OLED G5 55" (OLED55G54LW / OLED55G55LW 2025): €988-1.199 idealo/occhioaiprezzi
+  - MediaWorld: €1.214,28 spedizione gratuita (venditore TECSTORE24)
+  - occhioaiprezzi 13/6/2026 ore 15:58: €1.199,00 (1 offerta)
+  - Link idealo: https://www.idealo.it/confronta-prezzi/206211153/lg-oled-g5-2025.html
+  - Link occhioaiprezzi: https://occhioaiprezzi.com/confronto-prezzi/lg-oled-evo-ai-g5-tv-55-pollici-oled55g55lw-2025/
+  - Link MediaWorld: https://www.mediaworld.it/it/product/_lg-oled-evo-g5-oled55g54lw-55-oled-4k-431783.html
+- LG OLED G4 55" (OLED55G45LW 2024): non disponibile nuovo; G4S (OLED55G46LS) €1.199 MediaWorld
+  - Link idealo G45LW: https://www.idealo.it/confronta-prezzi/204137509/lg-oled-g45lw.html
+- LG OLED C5 55" (OLED55C56LB / OLED55C54LA 2025): €999-1.107 idealo
+  - occhioaiprezzi 13/6/2026 ore 15:46: €999,00 (1 offerta)
+  - Link occhioaiprezzi: https://occhioaiprezzi.com/confronto-prezzi/lg-oled-evo-ai-c5-tv-55-pollici-oled55c56lb-2025/
+  - Link idealo: https://www.idealo.it/confronta-prezzi/206250974/lg-oled-c5elb.html
+- LG OLED C4 55" (OLED55C44LA 2024): ~€1.099-1.232 idealo — sostituito dal C5 più conveniente
+- Sony BRAVIA 8 II 55" (K55XR8M2 / K55XR8M25BP, QD-OLED 2025): €1.438-1.849 idealo/mediaworld
+  - MediaWorld: €1.849 spedizione gratuita (sconto da €2.499)
+  - Sony Store: €2.049 (prezzo originale €2.099)
+  - Link idealo: https://www.idealo.it/confronta-prezzi/206562469/sony-bravia-8-ii.html
+  - Link MediaWorld: https://www.mediaworld.it/it/product/_sony-55-bravia-8m2-xr8m2-432348.html
+- Sony BRAVIA 9 55": NON ESISTE — la serie 9 parte da 65"
+- Sony A95L 55" (XR-55A95L, QD-OLED 2023): €2.599 idealo — ancora in vendita ma vecchio e caro
+  - Link idealo: https://www.idealo.it/confronta-prezzi/203246894/sony-xr-55a95l.html
+- Philips 55OLED910 55" (OLED+ 2025, B&W audio, Ambilight 4 lati): €2.004-2.123 idealo/pccomponentes
+  - Audio: Bowers & Wilkins 3.1 81W con Nautilus tube — miglior audio integrato della categoria
+  - Link idealo: https://www.idealo.it/confronta-prezzi/206587625/philips-oled910.html
+- Philips OLED909 55" (OLED+ 2024, B&W audio, Ambilight 4 lati): €2.945 idealo — modello 2024, caro
+  - Link idealo: https://www.idealo.it/confronta-prezzi/204332551/philips-oled909.html
+- Panasonic TX-55MZ2000E (OLED 2023, Soundscape Pro 360°): €2.744 idealo / non disponibile trovaprezzi
+  - Modello 2023, fuori produzione — non consigliato a questi prezzi
+- Panasonic TX-55MZ1500E: ~€1.647 idealo — ancora disponibile
+
+**Note PREMIUM operative (giugno 2026):**
+- Samsung S95F 55" è il BEST VALUE della fascia OLED premium: listino €2.499, acquistabile a ~€1.200
+- LG OLED G5 55" sfida il Sony BRAVIA 8 II a prezzo inferiore (~€400 meno) con qualità immagine simile
+- LG OLED C5 55" è il MIGLIOR PREZZO per un OLED premium entry con pannello W-OLED di qualità
+- Philips 55OLED910 ha il MIGLIOR AUDIO INTEGRATO (B&W 81W Nautilus) ma costa ~€2.100
+- Samsung QN90F 55" (Neo QLED) è il MIGLIOR PREZZO per chi vuole Mini LED con anti-riflesso (~€990-1.130)
+- Sony BRAVIA 8 II audio: Acoustic Surface Audio+ (vibra il pannello) — tecnologia unica Sony
+- Samsung Samsung.com spesso ESAURITO diretto — comprare da rivenditori terzi su MediaWorld/idealo
+- occhioaiprezzi.com confermato affidabile per prezzi aggiornati in real-time (verificato 13/6/2026)
+
 **Note operative:**
 - Amazon.it e MediaWorld.it sono le fonti principali per TV con spedizione gratuita
 - I prezzi TV oscillano molto: offerte flash da -30/-40% frequenti (monitorare hwupgrade.it e tomshw.it)

@@ -126,3 +126,64 @@
 - Hisense E7KQ Pro 55": ~400-450€
 - Hisense U7NQ 55": ~808€ (fuori budget)
 - Hisense U8KQ 55": ~886€ (fuori budget)
+
+---
+
+### TV 55" OLED/QD-OLED/Mini-LED premium (1.000-5.000€) — audio integrato e qualità immagine — aggiornamento giugno 2026
+
+**Modelli verificati nella fascia premium:**
+
+| Modello | Prezzo IT (giugno 2026) | Pannello | Nit picco (10%) | Audio | Classe EU |
+|---------|------------------------|----------|-----------------|-------|-----------|
+| Samsung QE55S95D (2024) | ~1.483€ | QD-OLED 3a gen | ~1.600 nit (Std) / ~1.900 nit (Dynamic) | 70W 4.2.2 ch Dolby Atmos | G (114 kWh/anno, 82W typ) |
+| Samsung QE55S95F (2025) | ~1.150€ | QD-OLED 4a gen | ~2.000 nit (stimati +30% su S95D) | 70W 4.2.2 ch Dolby Atmos | N/D |
+| LG OLED55G4 (2024) | ~1.297€ | WOLED MLA 2a gen | ~1.500-1.650 nit (Std) | 60W 4.2 ch Dolby Atmos | F |
+| LG OLED55G5 (2025) | ~989€ | RGB Tandem OLED | ~2.350-2.500 nit | 60W 4.2 ch Dolby Atmos | E (EPREL 2213065) |
+| Sony XR-55A95L (2023/24) | ~2.599€ | QD-OLED | ~1.373 nit (Std) | 60W 2.2 ch (Acoustic Surface+) Dolby Atmos | F/G (77 kWh/1000h SDR) |
+| Philips 55OLED909 (2024) | ~1.590€ (esaurito) / N/D | WOLED MLA 2a gen | ~3.000 nit (dichiarati) | 81W 3.1 ch B&W, no upfiring | G (84 kWh/1000h SDR) |
+| Panasonic TX-55MZ2000E (2023) | ~2.744€ | WOLED MLA 1a gen | ~1.698-1.877 nit (Dynamic) | 160W 5.1.2 ch Technics | G (81 kWh/1000h SDR, 140 HDR) |
+| Loewe bild i.55 DR+ | ~2.999€ | WOLED (WRGB) | ~736 nit | 40W 2.0 ch (integrato), +80W Klang Bar opz. | N/D |
+
+**Note importanti scoperte in questa ricerca:**
+
+**Sony BRAVIA 9 non esiste in 55"** — esiste solo in 65", 75", 85". Chi cerca Sony top OLED in 55" deve guardare A95L (QD-OLED, 2023) o BRAVIA 8 (WOLED, 2024).
+
+**Philips OLED+959 non esiste in 55"** — solo in 65". Il top Philips 55" è l'OLED909 (2024), sostituito dall'OLED910 nel 2025.
+
+**Samsung S95F vs S95D:** l'S95F (2025) è più economico (~1.150€ vs ~1.483€) con +30% nit e 4x HDMI 2.1 165Hz su tutte le porte. Scegliere sempre S95F se disponibile.
+
+**Audio integrato — ranking reale 55":**
+1. **Panasonic MZ2000** — 160W 5.1.2 Technics (40W×2 + 15W×4 + 20W sub + 2 upfiring Atmos). Unico con subwoofer fisico dedicato + upfiring veri. Audio integrato migliore assoluto.
+2. **Philips OLED909** — 81W 3.1 Bowers & Wilkins (6×8.5W + 30W sub). Front-firing, NO upfiring. B&W tuning e subwoofer fisico ma no Atmos spaziale reale.
+3. **Samsung S95D/S95F** — 70W 4.2.2 ch. Include upfiring (2 canali). Dolby Atmos spaziale reale.
+4. **Sony A95L** — 60W 2.2 ch Acoustic Surface Audio+. Il pannello stesso vibra (no altoparlanti visibili). Molto naturale per dialogo e musica, meno spaziale senza Atmos upfiring.
+5. **LG G4/G5** — 60W 4.2 ch. Include 4 canali ma senza upfiring fisici. Virtual 11.1.2 via AI.
+6. **Loewe bild i.55** — 40W 2.0 ch integrati, base molto limitata. Si espande con Klang Bar i (80W opzionale).
+
+**LG G5 vs G4:** G5 ha RGB Tandem (non MLA), drasticamente più luminoso (~2.350 nit vs ~1.650 nit), classe E invece di F, e costa meno (~989€ vs ~1.297€). G5 vince chiaramente su G4 nel 2026.
+
+**Dolby Vision QD-OLED Samsung:** il S95D e S95F supportano HDR10+ (non Dolby Vision). Chi vuole Dolby Vision in QD-OLED deve scegliere Sony A95L.
+
+**Loewe bild i.55 — avvisi:** refresh rate massimo dichiarato 60Hz (no 120Hz!), HDMI 2.1 a soli 18Gbps (non full bandwidth, niente 4K@120Hz). Non adatto per gaming. OS è VIDAA (Hisense). Premium di brand, non di specifiche.
+
+**Classe energetica OLED premium 55":** quasi tutti in classe F o G con sistema EU 2021. Solo LG G5 in classe E. Il Panasonic MZ2000 è G malgrado sia 2023 — sistema audio massiccio impatta il consumo.
+
+**Fonti usate per questa fascia:**
+- samsung.com/uk: classe G, 114 kWh/anno, 82W typ, audio 70W 4.2.2 — affidabile
+- lg.com/it: classe F (G4) / classe E (G5), EPREL 2213065 — affidabile
+- ldlc.com: Philips 55OLED909 classe G, 84 kWh/1000h SDR, 81W B&W — ottimo
+- trustedreviews.com: Loewe bild i.55 736 nit, 40W 2.0, 4x HDMI 18Gbps, €2.999 — affidabile
+- snippet/review vari: Panasonic MZ2000 160W 5.1.2 Technics, Sony A95L 60W 2.2 Acoustic Surface, LG G5 2350 nit RGB Tandem — affidabili
+- idealo.it: prezzi IT aggiornati giugno 2026 — affidabile
+
+**Fonti problematiche per questa fascia:**
+- displayspecifications.com: HTTP 403 su WebFetch diretto — solo snippet da WebSearch
+- EPREL PDF: binario illeggibile via WebFetch — usare WebSearch snippet per dati energetici
+- panasonic.com/it/specs: HTTP 403 — dati da snippet e rtings/review
+- loewe.tv/it: HTTP 403 — dati da trustedreviews WebFetch
+
+**Pattern di ricerca efficaci per fascia premium:**
+- `"[modello] energy class EU kWh SDR HDR eprel"` — ottiene dati da snippet EPREL
+- `"[modello] [HDMI] audio watts configuration speakers channels"` — ottiene audio e connettività
+- `site:ldlc.com [modello]` — classe EU, kWh/1000h, audio W
+- `site:trustedreviews.com [modello] review` — spec complete inclusa classe energetica

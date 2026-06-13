@@ -14,6 +14,12 @@
 - **Expert Reviews UK** — buon mix misurazioni + giudizio pratico per TV mid-range europei.
 - **Reviewed.com** — misurazioni peak brightness standardizzate (10%, 25%), affidabili per nit reali.
 - **displayspecifications.com** — spec tecniche pannello (tipo, zone, refresh rate) quando i siti di recensioni non coprono il modello esatto.
+- **AVForums.com** — recensioni UK dettagliate con misurazioni, ottimo per modelli premium OLED (MZ2000, G4, S95D). Snippet ricchi di dati nit e calibrazione.
+- **FlatpanelsHD.com** — ricco di dati misurati per OLED premium; copre bene anche modelli europei recenti (S95F 2025, LG G5, Panasonic Z95A/Z95B).
+- **T3.com** — giudizi qualitativi audio e immagine, utile per comparazioni veloci.
+- **TechRadar.com** — buona copertura modelli premium, dati brightness in più modalità.
+- **Pocket-lint.com** — buone recensioni audio (Panasonic MZ2000), giudizi pratici uso quotidiano.
+- **trovaprezzi.it** — prezzi correnti mercato italiano, affidabile per street price OLED premium.
 
 ## Fonti problematiche
 
@@ -37,6 +43,65 @@
 - Cercare sia il modello europeo (es. QE55Q80D) che USA (QN55Q80D) per più risultati
 
 ## Note per categoria
+
+### TV OLED/QD-OLED/Mini-LED premium 55" budget 3000-5000€ (aggiornamento giugno 2026)
+
+**Modelli valutati:**
+
+| Modello | Anno | Pannello | Nit HDR 10% misurati | Audio integrato | Prezzo IT indicativo |
+|---|---|---|---|---|---|
+| Samsung S95D | 2024 | QD-OLED Gen3 (glare-free) | ~1868 nit (Standard), ~1688 nit (Filmmaker) | 4.2.2 ch 60W — audio mediocre, bassi assenti | ~1800-2200€ (55") |
+| Samsung S95F | 2025 | QD-OLED Gen4 (glare-free 2.0) | ~2000-2388 nit (10% HDR) | 4.2.2 ch 70W — leggero miglioramento ma sempre debole | ~1363-2100€ (55") |
+| LG OLED G4 | 2024 | WOLED MLA (Meta 2.0) | ~1488 nit (Filmmaker Mode) | 4.2 ch 60W — accettabile, mai ottimo, soundbar necessaria | ~1400-1800€ (55") |
+| LG OLED G5 | 2025 | RGB Tandem OLED (4-stack) | ~2200-2350 nit (calibrated), ~2500 nit (vivid) | 4.2 ch 60W — downfiring, giudizi discordanti (da ok a "appalling") | ~1187-1400€ (55") |
+| Sony A95L | 2023 | QD-OLED Samsung Display | ~1215-1373 nit (10% HDR calibrated) | Acoustic Surface Audio+ 2 attuatori + 2 woofer — TRA I MIGLIORI TV per audio nativo | ~2500-3500€ (55") |
+| Sony BRAVIA 9 | 2024 | Mini-LED Full Array | ~2816 nit (10% HDR), ~1871 nit (Movie mode) | Acoustic Multi-Audio+ 70W — buono ma back-firing, controverso | ~3000-4500€ (55") |
+| Philips OLED+909 | 2024 | WOLED MLA (Meta 2.0) | ~1087 nit (10%), ~2008 nit (1%) | B&W 3.1 ch 81W — MIGLIORE TV per audio nativo, nega soundbar | ~2500-2945€ (55") |
+| Panasonic MZ2000 | 2023 | WOLED MLA (Master OLED Ultimate) | ~1426 nit (Filmmaker, AVF), ~1700 nit (Dynamic) | Technics 360 Soundscape Pro 150W 5.1.2 — MIGLIORE TV per audio nativo (testa a testa con B&W) | ~2500-3000€ (55") |
+| Panasonic Z95A/Z95B | 2024/2025 | WOLED MLA / RGB Tandem | ~1700 nit MLA (Z95A), ~2107 nit Tandem (Z95B) | Technics 360 Soundscape Pro 5.1.2 — eccellente, pari a soundbar mid-range | ~2800-4000€ (55") |
+| Loewe bild i | 2021-2024 | WOLED standard | Non misurato — performance standard WOLED ~800-1000 nit | 20W integrato — INSUFFICIENTE senza Klang Bar i | ~2999£ UK / non standard IT |
+
+**Differenze pannello chiave (WOLED vs QD-OLED) — confermate da test:**
+- QD-OLED (Samsung S95D/F): angoli di visione simili a WOLED su OLED; DCI-P3 color volume superiore su highlight; picco brightness più alto su finestre piccole; glare-free screen S95D/F rivoluzionario per stanze illuminate
+- WOLED MLA (LG G4, Philips 909, Panasonic MZ2000): brightness full-screen più uniforme, vantaggio per sport/contenuti SDR; colori leggermente meno saturi nei picchi HDR; angoli di visione eccellenti
+- RGB Tandem (LG G5, Panasonic Z95B): evoluzione WOLED con doppio layer — brightness record ~2200-2500 nit calibrated; supera QD-OLED su brightness ma DCI-P3 color volume ancora inferiore
+- Mini-LED (Sony BRAVIA 9): brightness assoluta record (2816 nit 10%); blooming controllato grazie a XR Backlight Master Drive; contrasto nativo infinito impossibile (LCD backlit); per stanze molto luminose è il re
+
+**Audio integrato — ranking reale (senza soundbar):**
+1. Panasonic MZ2000/Z95A/Z95B — Technics 360 Soundscape Pro 150W 5.1.2: il più completo, larghezza + altezza + bassi reali, sostituisce soundbar mid-range
+2. Philips OLED+909/910 — B&W 3.1 81W: suono musicale, chiarezza vocale eccellente, bassi sorprendenti per un TV; alcuni reviewer preferiscono soundbar premium ma non è obbligo
+3. Sony A95L — Acoustic Surface Audio+: il pannello suona, dialoghi cristallini e incollati all'immagine, soundstage ampio e alto; difficile battere per cinema senza soundbar
+4. Sony BRAVIA 9 — Acoustic Multi-Audio+ 70W: buono per dimensioni, back-firing controverso, dialoghi chiari ma bassi poco estesi
+5. Samsung S95F/D — 4.2.2 ch 60-70W: accettabile, dialoghi ok, bassi insufficienti, spazialità limitata; soundbar caldamente consigliata
+6. LG G5/G4 — 4.2 ch 60W: il punto debole della linea, downfiring limita staging; soundbar necessaria per chi vuole audio da cinema
+7. Loewe bild i — 20W stereo: insufficiente, richiede Klang Bar i (soundbar proprietaria)
+
+**Pattern critici per questa categoria:**
+- Samsung S95D/F: leader assoluto per stanze illuminate (glare-free screen), QD-OLED brightness, gaming (165Hz VRR). Audio è il punto debole. NO SOUNDBAR = esperienza audio mediocre.
+- LG G5: pannello Tandem rivoluzionario per brightness, ma audio ancora il tallone d'Achille. Ha eliminato DTS (solo Dolby).
+- Sony A95L: QD-OLED con processore XR — la combinazione Cognitive XR + Acoustic Surface è unica per cinema. Modello 2023 ma ancora riferimento.
+- Sony BRAVIA 9: Mini-LED con brightness record — per stanze luminose è il migliore non-OLED. Audio controverso.
+- Philips OLED+909: Ambilight + B&W audio = esperienza cinematografica senza soundbar. Nit leggermente inferiori ai top (1087 nit 10%).
+- Panasonic MZ2000/Z95A/Z95B: CINEMA puro — Dolby Vision IQ, calibrazione Calman, HDR Filmmaker Mode accuratissimo + audio Technics senza rivali. Scelta ideale per chi NON vuole soundbar.
+- Loewe bild i: nicchia premium design, audio 20W insufficiente, prezzo altissimo per performance non top. Non consigliabile nel contesto.
+
+**Filmmaker Mode — qualità implementazione (ranking):**
+1. Panasonic (MZ2000/Z95) — il gold standard, anche Calman AutoCal
+2. Sony (A95L/BRAVIA 9) — Cognitive XR + Netflix Calibrated Mode + Calman
+3. Philips OLED+909 — buona implementazione, ISF certified
+4. LG G4/G5 — buono, ora Dolby Vision + Filmmaker Mode combinati (novità G4)
+5. Samsung S95D/F — presente ma meno raffinato; tone mapping aggressivo in certi contenuti
+
+**Giudder 24p:**
+- Samsung S95D/F: storica debolezza Samsung, necessita regolazione manuale de-judder
+- LG G4/G5: gestione 24p eccellente
+- Sony A95L/BRAVIA 9: eccellente via Motionflow Cinematic
+- Panasonic MZ2000/Z95: eccellente, tra i migliori in assoluto
+- Philips OLED+909: buona gestione
+
+**Angoli di visione:**
+- OLED (tutti i tipi): quasi identici tra WOLED e QD-OLED — entrambi eccellenti, degradano solo oltre 60-70° (non rilevante uso normale)
+- Mini-LED Sony BRAVIA 9: buono per LCD ma inferiore a qualsiasi OLED; degrado visibile oltre 40°
 
 ### TV QLED/Mini-LED 55" sotto 1000€ (aggiornamento giugno 2026)
 
