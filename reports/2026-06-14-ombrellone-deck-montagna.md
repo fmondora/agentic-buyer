@@ -21,16 +21,14 @@ Palo alluminio 60/84mm (il piu robusto nel budget), 400 pezzi in stock. Brand ge
 
 | Prodotto                         | Prezzo (12%) | Spec+Rob. (25%) | Critica (18%) | Recensioni (15%) | Ciclo vita (13%) | Sostenib. (10%) | Brand (7%) | **Totale /100** |
 | -------------------------------- | :----------: | :-------------: | :-----------: | :--------------: | :--------------: | :-------------: | :--------: | :-------------: |
-| **Scolaro Napoli diametro 3.5m** |      5       |        7        |       7       |        7*        |       6.5        |        4        |     9      |    **65.2**     |
-| **PiscineOnline diametro 3.5m**  |      7       |        6        |       5       |        5*        |        4         |        3        |     3      |    **51.3**     |
-| **Danieli 3x3 Braccio**          |      6       |        7        |       6       |        6*        |       5.5        |        4        |     6      |    **58.4**     |
-| **Doppler Active 370**           |      6       |        5        |       7       |        6*        |        5         |       6.5       |     7      |    **58.9**     |
-| **Scolaro Palladio 3.5x3.5**     |      3       |        9        |       7       |        7*        |       7.5        |        4        |     9      |    **66.8**     |
-| **FIM Rodi 350x350**             |      3       |        8        |      7.5      |        7*        |        7         |        3        |     9      |    **64.5**     |
+| **Scolaro Napoli diametro 3.5m** |      5       |        7        |       7       |        6        |       6.5        |        4        |     9      |    **64.1**     |
+| **PiscineOnline diametro 3.5m**  |      7       |        6        |       5       |        3        |        4         |        3        |     3      |    **47.3**     |
+| **Danieli 3x3 Braccio**          |      6       |        7        |       6       |        6        |       5.5        |        4        |     6      |    **58.3**     |
+| **Doppler Active 370**           |      6       |        5        |       7       |       6.5       |        5         |       6.5       |     7      |    **59.6**     |
+| **Scolaro Palladio 3.5x3.5**     |      3       |        9        |       7       |        7        |       7.5        |        4        |     9      |    **66.8**     |
+| **FIM Rodi 350x350**             |      3       |        8        |      7.5      |        6        |        7         |        3        |     9      |    **63.0**     |
 
 *Pesi Discovery personalizzati: Spec+Robustezza 25% | Critica tecnica 18% | Recensioni 15% | Ciclo vita 13% | Prezzo 12% | Sostenibilita 10% | Brand 7%*
-
-*\* Recensioni stimate — ReviewAnalyst non ha completato l'analisi in tempo*
 
 ---
 
@@ -74,13 +72,46 @@ Le opzioni reali sono tre:
 
 ### Recensioni
 
-*ReviewAnalyst non ha completato l'analisi. I punteggi recensioni nella tabella sono stime basate sui dati degli altri agenti.*
+**Nota strutturale**: i brand professionali italiani (Scolaro, FIM, Danieli) hanno **zero recensioni consumer online** — sono venduti B2B a hotel e ristoranti. Il Doppler Active 370 e l'unico con dati consumer reali. Per gli altri si usano proxy: longevita di mercato, presenza HORECA, specifiche strutturali.
 
-Dalle fonti indirette degli altri agenti:
-- **Scolaro**: brand con 50 anni di storia, presente in milioni di terrazze HORECA italiane — longevita di mercato come proxy di soddisfazione
-- **FIM**: stessa dinamica di Scolaro — presente ovunque nella ristorazione italiana, specialmente in Alto Adige/montagna
-- **Doppler**: recensioni miste su Amazon.de — apprezzato per rotazione fluida, criticato per telo poliestere che sbiadisce
-- **Prodotti generici** (tectake, IDMarket): segnalazioni di rotture precoci su snodi e ancoraggi entro 12 mesi
+**Doppler Active 370** — 4.6/5 (testbericht.de, snippet) — Unico con recensioni consumer
+- **Pro**: rotazione 360 gradi con pedale a piede (comoda), regolabilita 7 posizioni inclinazione, valvola antivento integrata
+- **Contro**: utente Amazon.de segnala caduta con vento perche "le piastre non rimanevano sul supporto" — richiede 140-200kg di zavorra; telo poliestere meno resistente UV dell'acrilico; meccanismo inclinazione che si inceppa (segnalato su modelli GS Active); pesante da montare da soli
+- **Temi ricorrenti**: "grande ombra", "stabilita" (preoccupazione), "valvola vento", "pesante da montare da soli"
+
+**Scolaro Napoli Braccio diametro 3.5m** — N/D consumer — Proxy B2B positivi
+- Attiva dal 1979, distribuzione 40+ paesi, uso HORECA documentato (hotel, ristoranti)
+- Palo 75x75mm e il piu sottile della gamma Scolaro — inferiore al Palladio (92x92mm)
+- Sistema "Easy Change" per sostituzione teli senza smontare
+- Scolaro dichiara idoneita per "vento moderato con solo zavorra" — non certificato per raffiche forti
+
+**Scolaro Palladio Braccio 3.5x3.5m** — N/D consumer — Proxy B2B molto positivi
+- "Prodotto da Scolaro da oltre 30 anni" — il modello piu longevo della gamma
+- Stecche in legno iroko: elastiche al vento (si piegano senza rompersi, a differenza dell'alluminio rigido)
+- Peso 75-80kg — struttura heavy-duty per installazioni permanenti
+- parasol-pro.co.uk: "Very resistant to the wind"
+
+**FIM Rodi 350x350** — N/D consumer — Proxy B2B solidi
+- Distribuzione in 40+ paesi, stecche sostituibili singolarmente senza smontare
+- Chiusura laterale al palo (l'ombrellone si chiude a lato, non ingombra gli arredi sotto)
+- Inclinazione dell'ombrellone aperto — geometria diversa dal braccio semplice
+- Fodero di protezione separato (+203 EUR) — accessorio non incluso
+
+**Danieli Ombrellificio 3x3** — N/D consumer (1 feedback hotel positivo)
+- Un hotel conferma soddisfazione su qualita e rapporto qualita/prezzo
+- Danieli offre ritiro, riparazione e riconsegna a domicilio — supporto post-vendita artigianale
+- **Palo 92x92mm** — stessa sezione del Scolaro Palladio, a meta prezzo (ma 3x3 invece di 3.5m)
+- Tela acrilica 350g/m2, 11 colori, camino antivento integrato
+
+**PiscineOnline braccio diametro 3.5m** — Nessun dato
+- Zero recensioni sulla pagina prodotto
+- "PiscineOnline" e il nome dello shop, non del produttore — origine struttura ignota (probabile import asiatico)
+- Nessuna trasparenza su produttore, qualita snodi, durata — **rischio elevato per uso intensivo ventoso**
+
+**Segnalazioni**:
+- **Red flag PiscineOnline**: produttore ignoto, zero recensioni, piastre non incluse. A 617 EUR il palo 60/84mm e plausibile ma senza garanzie
+- **Red flag Doppler in vento**: episodio caduta su Amazon.de. Richiede 140-200kg di zavorra — logisticamente impegnativo su deck montagna
+- **Nessun ombrellone a braccio 3.5m e certificato per uso con vento in corso**: il camino antivento e un limitatore di danno, non una garanzia. Chiudere sempre con vento.
 
 ### Specifiche tecniche
 
@@ -88,7 +119,7 @@ Dalle fonti indirette degli altri agenti:
 |---|---|---|---|---|---|---|
 | **Tipo** | Palo laterale, rotondo | Palo laterale, quadrato | Palo laterale, quadrato | Palo laterale | Palo laterale, rotondo | Palo laterale, quadrato |
 | **Dimensioni** | diametro 3.5m | 3.5x3.5m | 3.5x3.5m | ~3.7m | diametro 3.5m | 3x3m |
-| **Sezione palo** | Non dichiarata (~76mm stimato) | 92x92mm | 76x76mm | N/D | 60/84mm | N/D |
+| **Sezione palo** | 75x75mm | 92x92mm | 76x76mm | N/D | 60/84mm | 92x92mm |
 | **Telo** | Acrilico Dralon 350 g/m2 | Acrilico Dralon 350 g/m2 | Acrilico tinto in massa | Poliestere LSF 50+ | N/D | Acrilico 300 g/m2 |
 | **Trattamento** | Teflon (garanzia 5 anni) | Teflon (garanzia 5 anni) | Stecca anti-vento | UV 80+ (Standard 801) | N/D | N/D |
 | **Rotazione 360** | Si | Si | Si | Si (cinghia dentata) | Si | Si |
@@ -180,7 +211,7 @@ Dalle fonti indirette degli altri agenti:
 
 ### 1. Scolaro Napoli Braccio diametro 3.5m — 1.060 EUR (-40%) — COMPRA PRESTO
 
-**Totale pesato: 65.2/100**
+**Totale pesato: 64.1/100**
 
 Il miglior compromesso. Made in Italy, acrilico Dralon 350g con garanzia 5 anni, stecche intercambiabili, camino antivento. Lo sconto del 40% e reale e potrebbe non durare. Serve alzare il budget a ~1.200 EUR (ombrellone + zavorra) ma il salto di qualita rispetto ai generici e enorme.
 
@@ -195,25 +226,25 @@ Il migliore per specifiche pure: palo 92x92mm, 40kg, costruzione massiccia. Ma a
 
 ### 3. FIM Rodi 350x350 — 1.691 EUR — ASPETTA EVENTO
 
-**Totale pesato: 64.5/100**
+**Totale pesato: 63.0/100**
 
 Il preferito dal TechnicalCritic per uso montagna: stecca anti-vento, palo 76mm, inclinazione ad ombrellone aperto. Presente su Amazon (ASIN B07DQKXTN2) — controllare Prime Day 23-26 giugno.
 
 ### 4. Doppler Active 370 — 569 EUR (da Austria) — ASPETTA EVENTO
 
-**Totale pesato: 58.9/100**
+**Totale pesato: 59.6/100**
 
 L'unico brand europeo quasi nel budget se comprato dall'Austria (569 EUR vs 799 EUR in Italia). Rotazione a cinghia dentata (la migliore), chiusura rapida. Punto debole: telo poliestere che sbiadisce in 3-4 anni al sole alpino.
 
 ### 5. Danieli Ombrellificio 3x3 — 716 EUR — COMPRA PRESTO
 
-**Totale pesato: 58.4/100**
+**Totale pesato: 58.3/100**
 
-Produttore italiano vero (ombrellificio), acrilico 300g, sistema retrattile. Solo 3x3m (non 3.5m+). **Solo 7 pezzi disponibili** — se interessa, comprare subito.
+Produttore italiano vero (ombrellificio), acrilico 350g, **palo 92x92mm** (stessa sezione del Palladio a meta prezzo!), camino antivento, assistenza con ritiro/riparazione a domicilio. Solo 3x3m (non 3.5m+). **Solo 7 pezzi disponibili** — se interessa, comprare subito.
 
 ### 6. PiscineOnline braccio diametro 3.5m — 617 EUR — ASPETTA CALO
 
-**Totale pesato: 51.3/100**
+**Totale pesato: 47.3/100**
 
 Il piu robusto nel budget (palo 60/84mm), 400 pezzi in stock. Brand generico. A settembre atteso a ~450 EUR. Scelta pragmatica se il budget e fisso a 500-700 EUR.
 
@@ -295,6 +326,16 @@ Il piu robusto nel budget (palo 60/84mm), 400 pezzi in stock. Brand generico. A 
 - [Umbrosa spare parts](https://www.umbrosashop.com/en/spare-parts)
 - [Caravita FAQ ricambi](https://caravita.eu/faqs/)
 - [Ricambi FIM — Greenterest](https://greenterest.it/ricambi-ombrelloni-professionali-fim-guida-acquisto/)
+
+### ReviewAnalyst
+- [Doppler Active 370 — amazon.de](https://www.amazon.de/Doppler-Pendelschirm-Active-370-Natur/dp/B08Z7JW6NG)
+- [Doppler Active 370 — testbericht.de (4.6/5)](https://www.testbericht.de/produkte/doppler-sonnenschirm-doppler-active-kurbel-380cm-anthrazit)
+- [Doppler Active 370 — geizhals.de prezzi AT](https://geizhals.de/doppler-active-370cm-v99575.html)
+- [Scolaro Napoli Braccio — scheda ufficiale](https://www.scolaro-parasol.it/modello/napoli-braccio/)
+- [Scolaro Palladio Braccio — parasol-pro.co.uk](https://www.parasol-pro.co.uk/catalog/all-our-parasols/Cantilever_Parasol_Palladio_Braccio.html)
+- [Danieli Ombrellificio — ombrellonidaesterno.it](https://www.ombrellonidaesterno.it/prodotti/ombrellone-braccio-laterale-in-alluminio-malibu/)
+- [FIM Rodi — greenterest.it](https://greenterest.it/ombrellone-rodi-fim/)
+- [Ombrelloni a braccio e resistenza al vento — greenline.vi.it](https://www.greenline.vi.it/ombrelloni-a-braccio-laterale-e-resistenza-al-vento/)
 
 ### BrandRater
 - [Scolaro Parasol — azienda](https://www.scolaro-parasol.it/it/content/4-azienda)
