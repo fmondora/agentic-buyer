@@ -184,6 +184,31 @@ def cmd_idealo_intl(args: list[str]):
     print(result_json(prices))
 
 
+def cmd_trovaprezzi_history(args: list[str]):
+    """Mostra lo storico prezzi trovaprezzi per un prodotto."""
+    if not args:
+        print("Uso: scrape.py trovaprezzi-history <slug|url> [current_price]",
+              file=sys.stderr)
+        sys.exit(1)
+    target = args[0]
+    current_price = float(args[1]) if len(args) > 1 else None
+    slug = trovaprezzi._extract_slug(target) if "/" in target else target
+    if not slug:
+        print(f"Slug non trovato in: {target}", file=sys.stderr)
+        sys.exit(1)
+    history = trovaprezzi.fetch_price_history(slug, current_price=current_price)
+    if history:
+        # Compatta: mostra solo statistiche + ultimi 7 punti
+        compact = {
+            "slug": history["slug"],
+            "statistics": history["statistics"],
+            "last_7_days": history["data"][-7:] if history["data"] else [],
+        }
+        print(result_json([compact]))
+    else:
+        print(result_json([{"slug": slug, "error": "no_data"}]))
+
+
 def cmd_compare(args: list[str]):
     """Scrapa più URL in parallelo e confronta prezzi."""
     if not args:
@@ -212,6 +237,7 @@ COMMANDS = {
     "compare": cmd_compare,
     "idealo-history": cmd_idealo_history,
     "idealo-intl": cmd_idealo_intl,
+    "trovaprezzi-history": cmd_trovaprezzi_history,
 }
 
 if __name__ == "__main__":
