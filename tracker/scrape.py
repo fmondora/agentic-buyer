@@ -31,6 +31,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from tracker.scrapers import amazon, idealo, trovaprezzi, unieuro, mediaworld
+from tracker.scrapers import camelcamelcamel
 from tracker.scrapers.base import result_json
 
 SCRAPERS = {
@@ -209,6 +210,21 @@ def cmd_trovaprezzi_history(args: list[str]):
         print(result_json([{"slug": slug, "error": "no_data"}]))
 
 
+def cmd_camel(args: list[str]):
+    """Storico prezzi CamelCamelCamel per un ASIN Amazon."""
+    if not args:
+        print("Uso: scrape.py camel <asin> [locale]", file=sys.stderr)
+        sys.exit(1)
+    asin = args[0]
+    # Se e un URL, estrai l'ASIN
+    if "/" in asin:
+        from tracker.scrapers.amazon import extract_asin
+        asin = extract_asin(asin) or asin
+    locale = args[1] if len(args) > 1 else "it"
+    result = camelcamelcamel.scrape_product(asin, locale)
+    print(result_json([result]))
+
+
 def cmd_compare(args: list[str]):
     """Scrapa più URL in parallelo e confronta prezzi."""
     if not args:
@@ -238,6 +254,7 @@ COMMANDS = {
     "idealo-history": cmd_idealo_history,
     "idealo-intl": cmd_idealo_intl,
     "trovaprezzi-history": cmd_trovaprezzi_history,
+    "camel": cmd_camel,
 }
 
 if __name__ == "__main__":

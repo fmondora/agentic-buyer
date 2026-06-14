@@ -1,15 +1,15 @@
 ---
 name: buy-report
-description: Sintetizza i risultati dei 6 agenti e genera il report finale di acquisto
+description: Sintetizza i risultati degli 8 agenti e genera il report finale di acquisto
 ---
 
 # Skill: Generazione Report Acquisto
 
 ## Quando usare
-Questa skill viene invocata dall'orchestratore `/buy` dopo che tutti e 6 gli agenti hanno completato il loro lavoro. Ricevi i risultati grezzi dei 6 agenti e produci un report finale strutturato.
+Questa skill viene invocata dall'orchestratore `/buy` dopo che tutti gli 8 agenti hanno completato il loro lavoro. Ricevi i risultati grezzi degli 8 agenti e produci un report finale strutturato.
 
 ## Input atteso
-Ricevi i finding di 7 agenti:
+Ricevi i finding di 8 agenti:
 1. **PriceHunter** — prezzi e disponibilita
 2. **ReviewAnalyst** — recensioni e sentiment
 3. **SpecComparer** — specifiche tecniche e dati energetici
@@ -17,6 +17,7 @@ Ricevi i finding di 7 agenti:
 5. **SustainabilityScout** — sostenibilita, emissioni, biodiversita
 6. **LifecycleAdvisor** — riparabilita, upgradabilita, fine vita, longevita
 7. **BrandRater** — reputazione brand, impatto territoriale, etica
+8. **StrategicBuyer** — timing acquisto, trend prezzi, stagionalita, ciclo prodotto
 
 ## Procedura di sintesi
 
@@ -38,15 +39,16 @@ Per ogni prodotto, calcola un punteggio /100 usando questi pesi:
 
 | Dimensione | Peso | Come calcolare |
 |---|---|---|
-| Prezzo | 20% | Il piu economico = 10, scala proporzionale al budget |
-| Recensioni | 15% | Media recensioni normalizzata a 10 |
-| Specifiche + Energia | 15% | Score tecnico dell'agente, bonus per classe energetica alta |
+| Prezzo | 18% | Il piu economico = 10, scala proporzionale al budget |
+| Recensioni | 13% | Media recensioni normalizzata a 10 |
+| Specifiche + Energia | 13% | Score tecnico dell'agente, bonus per classe energetica alta |
 | Criticita tecnica | 10% | Score del TechnicalCritic (qualita reale pannello, HDR, Filmmaker Mode) |
-| Sostenibilita | 10% | Score sostenibilita dell'agente |
-| Ciclo di vita | 10% | Score ciclo di vita dell'agente |
-| Brand | 20% | Score brand dell'agente (fascia A=10, B=7.5, C=5, D=2.5) |
+| Sostenibilita | 8% | Score sostenibilita dell'agente |
+| Ciclo di vita | 8% | Score ciclo di vita dell'agente |
+| Brand | 18% | Score brand dell'agente (fascia A=10, B=7.5, C=5, D=2.5) |
+| Timing | 12% | Score StrategicBuyer (COMPRA ORA=10, COMPRA PRESTO=8, ASPETTA EVENTO=5, ASPETTA CALO=3, RISCHIO=1) |
 
-**Formula**: `Totale = (Prezzo * 0.20 + Recensioni * 0.15 + Spec * 0.15 + Critica * 0.10 + Sostenibilita * 0.10 + CicloVita * 0.10 + Brand * 0.20) * 10`
+**Formula**: `Totale = (Prezzo * 0.18 + Recensioni * 0.13 + Spec * 0.13 + Critica * 0.10 + Sostenibilita * 0.08 + CicloVita * 0.08 + Brand * 0.18 + Timing * 0.12) * 10`
 
 ### Step 4: Genera il report
 Usa il template in `templates/report-template.md` come struttura. Compila ogni sezione con i dati raccolti.

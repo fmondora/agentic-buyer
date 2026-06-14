@@ -13,24 +13,25 @@
 
 ## Flusso /buy
 1. **Discovery** (foreground) — domande rapide con scelte inline per capire cosa vuole l'utente → produce spec arricchita + pesi personalizzati
-2. **7 agenti** (parallelo, background) — cercano con la spec arricchita e le istruzioni specifiche del Discovery
+2. **8 agenti** (parallelo, background) — cercano con la spec arricchita e le istruzioni specifiche del Discovery
 3. **Sintesi** — calcola punteggi con i pesi personalizzati, genera report
 
 ## Agenti
-8 agenti in `.claude/agents/`:
+9 agenti in `.claude/agents/`:
 - **discovery** — interattivo, domande con scelte inline, personalizza pesi (foreground)
-- price-hunter, review-analyst, spec-comparer, technical-critic, sustainability-scout, lifecycle-advisor, brand-rater (background, parallelo)
+- price-hunter, review-analyst, spec-comparer, technical-critic, sustainability-scout, lifecycle-advisor, brand-rater, **strategic-buyer** (background, parallelo)
 
 ## Pesi sintesi finale (default — personalizzabili dal Discovery)
 | Dimensione | Peso | Agente |
 |---|---|---|
-| Prezzo | 20% | PriceHunter |
-| Recensioni | 15% | ReviewAnalyst |
-| Specifiche + Energia | 15% | SpecComparer |
+| Prezzo | 18% | PriceHunter |
+| Recensioni | 13% | ReviewAnalyst |
+| Specifiche + Energia | 13% | SpecComparer |
 | Criticita tecnica | 10% | TechnicalCritic |
-| Sostenibilita | 10% | SustainabilityScout |
-| Ciclo di vita | 10% | LifecycleAdvisor |
-| Reputazione brand | 20% | BrandRater |
+| Sostenibilita | 8% | SustainabilityScout |
+| Ciclo di vita | 8% | LifecycleAdvisor |
+| Reputazione brand | 18% | BrandRater |
+| Timing acquisto | 12% | StrategicBuyer |
 
 I pesi vengono personalizzati dal Discovery in base alle risposte dell'utente (es: "cinema stanza buia" → Critica tecnica +5%, "brand importante" → Brand +5%).
 

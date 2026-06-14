@@ -35,9 +35,9 @@ Quando Discovery completa, avrai:
 - **Pesi personalizzati** per il calcolo del punteggio finale
 - **Istruzioni specifiche** per ogni agente
 
-## Step 3: Lancia i 7 agenti in parallelo
+## Step 3: Lancia gli 8 agenti in parallelo
 
-Lancia TUTTI e 7 gli agenti contemporaneamente usando il tool Agent con `run_in_background: true`. Ogni agente riceve la query arricchita dal Discovery + le istruzioni specifiche.
+Lancia TUTTI e 8 gli agenti contemporaneamente usando il tool Agent con `run_in_background: true`. Ogni agente riceve la query arricchita dal Discovery + le istruzioni specifiche.
 
 Il prompt per ogni agente deve includere:
 1. La query completa dell'utente + spec arricchita dal Discovery
@@ -68,10 +68,13 @@ Il prompt per ogni agente deve includere:
 **7. BrandRater** (agente: brand-rater)
 > Valuta i brand che producono: [prodotto]. Fascia fino a [budget]. Classifica ogni brand dalla fascia A alla D. Analizza affidabilita, servizio post-vendita, impatto territoriale, etica aziendale, produzione locale vs importazione. [istruzioni Discovery]
 
+**8. StrategicBuyer** (agente: strategic-buyer)
+> Analizza il timing di acquisto per: [prodotto]. Budget fino a [budget]. Usa idealo-history e idealo-intl per lo storico prezzi e confronto EU. Usa CamelCamelCamel via WebSearch per storico Amazon lungo. Valuta: trend prezzi, stagionalita (prossimi eventi sconto), ciclo prodotto (nuovo modello in arrivo?), strategia pricing del brand. Verdetto: COMPRA ORA / COMPRA PRESTO / ASPETTA EVENTO / ASPETTA CALO / RISCHIO. [istruzioni Discovery]
+
 ## Step 4: Aggiorna l'utente
 
 Dopo aver lanciato tutti gli agenti, comunica:
-- Conferma che tutti e 7 gli agenti sono partiti
+- Conferma che tutti e 8 gli agenti sono partiti
 - Riepiloga la spec arricchita dal Discovery
 - Mostra i pesi personalizzati
 - Indica che i risultati arriveranno progressivamente
@@ -80,7 +83,7 @@ Man mano che ogni agente completa, segnala brevemente all'utente quale agente ha
 
 ## Step 5: Raccogli e sintetizza
 
-Quando tutti e 7 gli agenti hanno completato:
+Quando tutti e 8 gli agenti hanno completato:
 
 1. **Leggi tutti i risultati** degli agenti
 2. **Genera il report** seguendo le istruzioni della skill buy-report:
