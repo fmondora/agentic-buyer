@@ -35,6 +35,53 @@ Per TV 55 pollici:
 
 ## Note per categoria
 
+### Ombrelloni da deck/giardino palo laterale 3.5m (aggiornato giugno 2026)
+
+**Realtà del mercato**: il requisito "3.5m+ palo laterale, rotante 360°, inclinabile, base zavorrabile" divide il mercato in tre fasce nette:
+
+**Fascia consumer (80-260€) — qualità bassa, montagna sconsigliata:**
+- tectake 3.5x3.5 braccio 360° (ASIN B0GX1P8C7R): €85.79 amazon.it — palo sottile, base a croce in acciaio inclusa. Solo per uso leggero.
+- tectake 3.5x3.5 braccio 360° con LED (ASIN B0GWQX3221/B0GWQLMTGC): €99.79 amazon.it
+- IDMarket AJACCIO Ø350 360°: €119.99 idmarket.it — 24kg, base lastre acqua incluse, 4 pannelli separati
+- Briconess Premium Ø350 360° inclinabile: €258.90 briconess.com — palo 50x67mm alluminio, 23kg, base non inclusa
+- BAKAJI 3x3 360° (ASIN B07QCSV27W): €199 amazon.it — è 3x3 non 3.5x3.5, valutare
+
+**Fascia media (600-900€) — qualità accettabile per uso intensivo:**
+- PiscineOnline.it braccio 350cm alluminio 60/84mm: €617.50 — palo robusto 60/84mm, 27kg, 360°+inclinabile, base NON inclusa (4 lastre 25kg cad.)
+- Danieli Ombrellificio 3x3 braccio alluminio: €716 IVA incl. (danielihoreca.it) — solo preventivo per 3x3, non 3.5m. Retrattile, 360°+inclinabile, acrilico 300g/mq
+
+**Fascia professionale (1.400€+) — qualità garantita per montagna:**
+- Scolaro Palladio Braccio 3.5x3.5 (ombrapro.it): €1.650-1.750 + base €60-210 — alluminio 40kg, acrilico 5y garanzia
+- Scolaro Leonardo Braccio 3.5x3.5 (designperte.it): ~€1.500+
+- Ombrellificio Veneto "K" 3.5x3.5: €2.805 (designperte.it) — alto di gamma, gas spring, anodizzato
+- Torino Braccio 350cm (beautifulgardenline.com): €1.140-1.242 — alluminio+iroko, base inclusa, 2y+5y garanzia
+
+**Brand elencati dall'utente che NON esistono nel budget 500-700€:**
+- Scolaro Mistral/Tosca: modelli non trovati nei cataloghi 2026 (probabilmente fuori produzione o nomi errati)
+- Caravita Parasol: brand premium tedesco, prezzi a 9.500€+, non venduto in Italia retail
+- Suns Penelope/Monaco: brand olandese, non trovato su canali IT (solo sito produttore)
+- Fim Flexy: struttura modulare professionale da €3.800+
+- Umbrosa Paraflex: misure max 270-300cm, non 350cm
+- Doppler Protect/Active 370: €799 dopplershop.it (solo CH/AT), non disponibile su amazon.it/eBay.it
+
+**Basi zavorrabile (separate) per braccio laterale:**
+- Outsunny 4 pezzi 100x100cm 80kg acqua/120kg sabbia (ASIN B0CV5LJKPX): €72.95 amazon.it — in stock
+- VOUNOT plastica 52L acqua/100kg sabbia (ASIN B08J29HFXY): €64 amazon.it — in stock
+
+**Fonti affidabili per questa categoria:**
+- piscineonline.it (WebFetch funziona, prezzi esatti, stock numerico indicato)
+- idmarket.it (WebFetch funziona, prezzo esatto, scheda completa)
+- briconess.com (WebFetch funziona)
+- danielihoreca.it (WebFetch funziona, ma prezzi solo per ordini B2B: IVA esclusa)
+- dopplershop.it (JS-heavy, WebFetch restituisce solo JS; una pagina prodotto diretta funziona)
+- ombrapro.it (WebFetch funziona, prezzi esatti)
+
+**Fonti problematiche per questa categoria:**
+- manomano.it: 403 sistematico
+- trovaprezzi.it: 403 su WebFetch; usare WebSearch site:
+- idealo.it: 503 su WebFetch; usare WebSearch site:
+- levanteshop.it/ombrelloni: lista parziale, prezzi per modelli grandi non mostrati
+
 ### TV 55 pollici (aggiornato giugno 2026)
 
 **Fasce di prezzo tipiche:**

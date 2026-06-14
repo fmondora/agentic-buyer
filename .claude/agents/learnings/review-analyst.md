@@ -36,7 +36,31 @@
 - Per fascia 700-1000€: aggiungere "everyeye" o "avforums" alla query per trovare recensioni più approfondite
 - Per verificare disponibilità taglio 55": specificare sempre "55 pollici [modello] prezzo italia euro" — alcuni modelli premium (es. TCL C855) esistono solo da 65" in su
 
+## Lezioni operative
+
+- **Budget chiamate**: max 20 WebSearch + 8 WebFetch. Se un prodotto non ha recensioni dopo 3 query, segnare "Recensioni insufficienti" e andare avanti. Mai riformulare la stessa query piu di 2 volte.
+- **Prodotti di nicchia (outdoor, HORECA, professionali)**: le fonti tech (RTings, WhatHiFi, Tom's Hardware) NON hanno nulla. Usare: Amazon multi-EU, YouTube, forum di settore, Trustpilot brand, Reddit r/BuyItForLife.
+- **Brand professionali italiani** (es. Scolaro, FIM, Danieli): quasi zero recensioni online. Proxy utili: longevita di mercato (anni di attivita), presenza HORECA (bar/ristoranti), feedback su subito.it (usato).
+- **Ombrelloni/giardino**: fonti utili sono Amazon.it/de recensioni (via WebSearch, non WebFetch), ManoMano.it, Leroy Merlin recensioni, YouTube "test ombrellone vento".
+
 ## Note per categoria
+
+### Ombrelloni da esterno (aggiornato giugno 2026)
+- Brand professionali (Scolaro, FIM, Caravita, Umbrosa) hanno quasi zero recensioni consumer online — sono venduti B2B
+- Le recensioni utili sono su Amazon per i modelli consumer/mid-range (Doppler, tectake, IDMarket)
+- YouTube ha video test vento per ombrelloni generici ma raramente per brand specifici
+- Il proxy migliore per qualita e la presenza nelle terrazze HORECA (alberghi, ristoranti)
+- **testbericht.de**: 403 Forbidden su WebFetch — inutilizzabile; snippets da WebSearch utili invece
+- **galaxus.de/at**: timeout 60s su WebFetch — inutilizzabile
+- **Doppler Active 370**: voto 4.6/5 su testbericht.de (snippet), venditore austriaco ~569€ AT vs ~799€ IT (differenza reale +40%). Criticita note: telo poliestere piu sottile dell'acrilico, meccanismo inclinazione che si inceppa su GS Active, base richiede 140-200kg per stare ferma con vento
+- **Scolaro Napoli Braccio**: palo 75x75mm alluminio+acciaio, tela acrilica 350g/m2, sistema "Easy Change" per teli, inclinazione 20°, 360°. Uso professionale confermato (bar/hotel). Zero recensioni consumer trovate
+- **Scolaro Palladio Braccio**: palo 92x92mm alluminio finitura legno, stecche in legno vero (iroko), peso 75-80kg. Piu robusto del Napoli. Zero recensioni consumer trovate
+- **FIM Rodi**: stecche sostituibili singolarmente senza smontare (vantaggio HORECA), viteria inox, alluminio. Prezzo da ~1.690€. Zero recensioni consumer trovate
+- **PiscineOnline**: zero recensioni sulla pagina prodotto — prodotto troppo recente o vendita bassa
+- **greenterest.it**: rivenditore FIM con guida ricambi utile per capire componenti fragili; accesso OK
+- **ombrellonidaesterno.it (Danieli)**: buon accesso, info qualitative su materiali (iroko 92x92mm), riparazione a domicilio
+- Pattern di ricerca per ombrelloni pro: "[brand] ombrellone HORECA terrazze qualita" + "[brand] parasol review wind resistance professional" — entrambi restituiscono info istituzionali, non recensioni utenti
+- Per Doppler usare amazon.de + testbericht.de snippets via WebSearch (no WebFetch diretto)
 
 ### TV 55 pollici fascia premium fino a 5000€, focus cinema + audio integrato (aggiornato giugno 2026)
 

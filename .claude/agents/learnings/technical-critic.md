@@ -44,6 +44,57 @@
 
 ## Note per categoria
 
+### Ombrelloni da esterno palo laterale/cantilever 3.5m+ (aggiornamento giugno 2026)
+
+**Brand valutati:** Scolaro (IT), Caravita (DE), Suns/SUNS (NL), Fim (IT), Umbrosa (BE), Doppler (AT)
+
+**Fonti utili per questa categoria:**
+- **fim-umbrellas.com** — sito ufficiale FIM con schede tecniche (parzialmente accessibile via WebFetch)
+- **greenterest.it** — rivenditore italiano con schede prodotto FIM Capri e Rodi, prezzi
+- **parasol-pro.it / parasol-pro.co.uk** — rivenditore EU con prezzi e confronti tra brand (Scolaro, Umbrosa, ecc.)
+- **caravita.eu** — sito ufficiale Caravita, schede tecniche modelli Amalfi
+- **dopplerschirme.com** — sito ufficiale Doppler con prezzi (Expert 350 = €1.599)
+- **hello-suns.com** — sito ufficiale SUNS garden furniture NL, modelli Palmoli e Novara
+- **ombrapro.it** — rivenditore IT basi e zavorre Scolaro (piastra cemento 60kg = €140)
+- **umbrosashop.com** — shop ufficiale Umbrosa, specifiche Spectra
+
+**Fonti problematiche per questa categoria:**
+- Non esistono siti equivalenti a RTings.com per ombrelloni — nessun test indipendente standardizzato
+- Forum italiani: non trovati thread specifici su problemi snodi cantilever
+- EN 581 non citato da nessun produttore analizzato (standard più pertinente sarebbe EN 13561 per tende da sole)
+- Pyracantha.co.uk — sito JS, WebFetch restituisce solo JS/metadata, nessun contenuto review
+
+**Identità brand — chiarimenti critici:**
+- **Suns** = SUNS garden furniture (Olanda, hello-suns.com). Modelli: Palmoli (3x3/3x4, palo centrale), Novara (4x3, palo centrale con LED). NESSUN modello cantilever/a sbalzo nel range 500-700€. Modelli top >€1.500
+- **Doppler** = brand austriaco, sito dopplerschirme.com. Modello Expert 350cm cantilever = €1.599. Non nel range 500-700€
+- **Umbrosa** = brand belga. Spectra max 3x3m (NON 3.5m disponibile). Prezzo molto elevato (>€1.500)
+- **Caravita** = brand tedesco premium. Amalfi disponibile in 350x350. Base standard 33-43kg (INSUFFICIENTE per montagna)
+- **Scolaro** = brand italiano, fondata 40+ anni fa. Galileo e Capri disponibili in 350x350. Prezzi da €1.433-€2.100+
+- **Fim** = brand italiano. Capri e Rodi con palo 76x76mm alluminio. Prezzi da €1.434 (Capri 350x350)
+
+**Dati tecnici struttura — valori critici per uso montagna:**
+- Palo professionale minimo: 76x76mm alluminio (FIM, Scolaro) vs 50-60mm entry-level
+- Base zavorrabile professionale: minimo 60kg per 3.5m; consigliata 80-100kg+ per vento raffica
+- Caravita Amalfi mast: 60x100mm, 4mm spessore parete — trave rettangolare, geometria insolita
+- Umbrosa Spectra: profilo basso "sheer" per ridurre resistenza vento — design specifico anti-vento
+- Doppler Expert 350: sistema cinghia dentata (tooth belt drive) per rotazione — innovativo
+- Beaufort dichiarato dai brand: Umbrosa 4-7 (Bft); altri non dichiarano valori specifici
+- NESSUN brand analizzato cita certificazione EN 581 (che riguarda sedute da esterno, non ombrelloni)
+
+**Budget 500-700€ per 3.5m palo laterale — realtà del mercato:**
+- NESSUNO dei 6 brand richiesti (Scolaro, Caravita, Suns, Fim, Umbrosa, Doppler) è disponibile in 3.5m a palo laterale entro 500-700€
+- Tutti questi brand sono fascia premium/professionale: prezzi reali 1.400-2.500€+
+- A 500-700€ entrano brand mid-range: Ombrellificio Veneto, BIA store, alcune linee Leroy Merlin
+- Il range 500-700€ copre ombrelloni 3x3m entry-level di questi brand o varianti semplificate
+
+**Problemi strutturali specifici cantilever da vento (consensus fonti):**
+- Punto critico 1: snodo inclinazione — nelle versioni economiche è in plastica rinforzata, si degrada con UV+cicli apertura
+- Punto critico 2: giunto rotazione base — usura meccanica dopo 2-3 stagioni se non ingrassato
+- Punto critico 3: braccio orizzontale — dimensionamento della sezione rispetto al telo (momento flettente aumenta con 3.5m)
+- Vento e inclinazione: inclinare il telo al vento crea "parachute effect" — il telo inclinato è la configurazione più pericolosa in caso di raffica
+- Base 60kg è il minimo raccomandato per 3.5m; per vento Beaufort 5+ serve 80-100kg con ancoraggio
+- La struttura a palo centrale resiste meglio al vento rispetto al braccio laterale (geometria baricentrica)
+
 ### TV OLED/QD-OLED/Mini-LED premium 55" budget 3000-5000€ (aggiornamento giugno 2026)
 
 **Modelli valutati:**

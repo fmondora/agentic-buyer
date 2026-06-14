@@ -2,6 +2,17 @@
 
 ## Fonti affidabili
 
+### Ombrelloni da esterno / Garden parasols
+- **dopplerschirme.com/en/wecare/** — pagina sostenibilità doppler; JS-heavy, meglio via WebSearch
+- **memo.de** (retailer tedesco) — schede prodotto dettagliate con dati materiali riciclati e BSCI; accessibile via WebFetch
+- **caravita.eu/nature/** — pagina ProNature Caravita; accessibile e informativa
+- **warema-group.com/en/responsibility/** — pagina corporate WAREMA/Caravita; SBTi, GRI, targets Scope 1/2/3 confermati
+- **dickson-constant.com/en/news/** — comunicati Sunbrella/Dickson su PFAS-free, OEKO-TEX, Recycle My Dickson; accessibile
+- **sergeferrari.com/en/products/batyline/** — Batyline Eden Life dati riciclato, PFAS-free
+- **scolaro-parasol.it/gb/content/4-company** — company page Scolaro; accessibile, nessun dato ESG
+- **schirmmacher.eu/scolaro-parasols** — distributor tedesco Scolaro, buona fonte materiali
+- **globalparasols.com** — aggregatore internazionale ombrelloni; utile per panoramica brand
+
 ### TV / Elettronica di consumo
 - **Samsung Sustainability Report PDF** (samsung.com/global/sustainability/media/pdf/) — dati emissioni Scope 1/2/3 precisi, aggiornati annualmente
 - **LG Newsroom / lgnewsroom.com** — comunicati ufficiali su certificazioni eco e dati emissioni
@@ -29,6 +40,13 @@
 - **CDP disclosures** (cdp.net) — rating ufficiali A-D, ma difficile accesso diretto senza account
 - **tracenable.com/company/[brand]** — dati climate targets e Scope coverage per azienda
 
+### Ombrelloni — Fonti problematiche
+- **umbrosa.be/en/sustainability** — URL 404; pagina sostenibilità non esiste; usare homepage o contact
+- **suns.com** — reindirizza a NBA Suns, non è il brand ombrelloni; il brand corretto è **sunslifestyle.com**
+- **fim-srl.it** — ECONNREFUSED; usare fim-umbrellas.com/en
+- **caravita.at** — certificato SSL scaduto; usare caravita.eu
+- **scolaro-parasol.it/it/content/5-colori-e-materiali** — pagina materiali solo link a PDF da scaricare, nessun dato ESG visibile
+
 ## Fonti problematiche
 - **CDP.net** — richiede login per i report dettagliati, dati rating disponibili solo via comunicati terzi
 - **EPEAT.net** — database certificazioni verificabile ma query diretta non sempre restituisce risultati consumer TV (meglio per B2B/displays professionali)
@@ -39,7 +57,65 @@
 - **news.samsung.com** — spesso timeout su WebFetch; meglio leggere via WebSearch + SammyGuru/SamMobile
 - **DitchCarbon.com fetch diretto** — restituisce 403; usare solo via risultati di ricerca
 
+## Note per categoria
+
+### Ombrelloni da esterno palo laterale/sbalzo 3.5m+ fascia 500-700€ (giugno 2026)
+
+#### Brand e origine produzione
+- **Scolaro** — Casale di Scodosia (PD), Veneto. 100% Made in Italy, produzione interna da 50 anni. Nessun dato ESG pubblico.
+- **FIM** — San Pietro Mosezzo (NO), Piemonte. Made in Italy, distribuzione 40 paesi. Tessuti acrilici + PVC microforato. Nessun dato ESG pubblico.
+- **Caravita** — Brand tedesco (Gaimersheim, Ingolstadt); produzione in Slovacchia (Trencin). Dal 2017 parte del gruppo WAREMA (Germania). WAREMA ha SBTi validato 1.5°C (Scope 1+2 -42% vs 2021; Scope 3 -25%), GRI report annuale.
+- **Suns (Suns Lifestyle)** — Brand premium, base nei Paesi Bassi. Tessuto proprietario SunProof 100% riciclabile. Nessun dato ESG aziendale trovato pubblicamente.
+- **Umbrosa** — Belgio (produzione 100% in-house Belgium). Tessuto Solution Dyed Acrylic 100%, ricambi sempre disponibili. Nessuna certificazione ambientale terza verificabile trovata.
+- **Doppler** — Austria (Wels). Produzione Austria/Europa. Green Edition: tessuto 100% rPET (risparmio ~50% energia e CO2 vs PET vergine), packaging senza plastica (sacca in tessuto riutilizzabile). Certificazioni: OEKO-TEX Standard 100 su molti prodotti, REACH compliance, FSC, amfori BSCI. Nessun target net-zero aziendale trovato.
+
+#### Tessuti: impatto ambientale (dato chiave per questa categoria)
+- **Acrilico solution-dyed** (Sunbrella/Dickson, Scolaro, Umbrosa, FIM): il tessuto più diffuso per ombrelloni di qualità. Dal 2025 Sunbrella ha completato la transizione PFAS-free su tutta la gamma. OEKO-TEX Standard 100 + GREENGUARD Gold. Programma "Recycle My Dickson" (2023, roll-out 2025): riciclo 100% scarti acrilici, nuovi tessuti con fino al 50% riciclato.
+- **rPET polyester** (Doppler Green Edition): 100% plastica riciclata (bottiglie PET), risparmio ~50% CO2 vs vergine. Meno pregiato dell'acrilico per durata colore, ma impatto immediato più misurabile.
+- **PVC microforato** (FIM): impermeabilità superiore, ma PVC contiene cloro organico, non biodegradabile, difficile da riciclare — la scelta meno sostenibile tra i tessuti.
+- **SunProof** (Suns): tessuto proprietario 100% riciclabile — dettagli tecnici non pubblici.
+- **Batyline Eden Life** (Serge Ferrari, usato da brand premium): 100% rPET core + 50% acrilico riciclato, PFAS-free, ISO 9001. Alternativa premium riciclata.
+- **ProNature** (Caravita, opzione speciale): tessuto acrilico con fotocatalisi anti-NOx; claim "4 mq eliminano emissioni NOx di un'auto per 20.000 km" — interessante ma non certificato OEKO-TEX nei risultati trovati.
+
+#### Alluminio: considerazione chiave
+- Alluminio riciclato: -95% CO2 e -95% energia vs alluminio primario. Proprietà meccaniche identiche.
+- **Nessun brand** nella fascia 500-700€ dichiara esplicitamente l'uso di alluminio riciclato per le strutture.
+- Umbrosa: alluminio anodizzato (durabilità superiore, nessun chip, minore manutenzione). Anodizzazione più sostenibile della verniciatura a polvere perché layer integrato nel metallo.
+- Doppler Green Edition: alluminio verniciato a polvere (non dichiarato come riciclato).
+- La longevità della struttura (>10 anni) ha un impatto positivo maggiore della % di riciclato, perché ammortizza l'impatto produzione su più anni.
+
+#### Greenwashing alert per categoria ombrelloni
+- **FIM**: tessuto PVC microforato è controindicato da un punto di vista ambientale. L'acrilico è standard di mercato migliore.
+- **Scolaro e FIM**: zero trasparenza ESG — nessuna politica pubblicata, nessuna certificazione. "Made in Italy" non è sinonimo di sostenibilità.
+- **Umbrosa**: usa "sustainable" in comunicazione ma zero certificazioni terze verificabili. "Produzione Belgio" è un dato positivo ma non equivale a certificazione.
+- **Suns Lifestyle**: "100% recyclable fabric" — claim non certificato da terzi (nessun OEKO-TEX o GRS trovato).
+- **Doppler Green Edition**: il modello più trasparente in questa fascia — dati rPET verificabili, OEKO-TEX, BSCI. Ma riguarda solo la linea Green Edition, non tutta la gamma.
+- **Caravita ProNature**: claim fotocatalisi anti-NOx non certificato (no OEKO-TEX, no certificazione terza trovata); disponibile come opzione tessuto non come standard.
+
+#### Produzione EU vs Asia: impatto CO2 trasporto
+- Trasporto marittimo Cina→Italia ≈ 20.000 km, HFO fuel ad alto tenore di zolfo.
+- Per un ombrellone (~5-8 kg), CO2 trasporto marittimo da Asia stimato ~3-5 kg CO2e (via container aggregato).
+- Risparmio produzione EU (meno trasporto) rilevante ma secondario rispetto all'impatto della struttura alluminio (produzione primaria ~8-10 kg CO2e/kg alluminio).
+- **Peso reale**: longevità prodotto >> origine produzione per la maggior parte dell'impatto ciclo vita.
+
+#### Ranking sostenibilità ombrelloni palo laterale 3.5m+ fascia 500-700€
+1. **Doppler Green Edition** — rPET verificato, OEKO-TEX, no plastica packaging, produzione Austria/Europa
+2. **Caravita** — WAREMA SBTi validato, ProNature opzione interesante; produzione Slovacchia (EU)
+3. **Umbrosa** — produzione Belgio, alluminio anodizzato durevole, ricambi garantiti; zero certificazioni terze
+4. **Scolaro** — Made in Italy, acrilico di qualità, ricambi disponibili; zero trasparenza ESG
+5. **Suns** — tessuto riciclabile dichiarato, nessuna certificazione terza; origine produzione non chiara
+6. **FIM** — Made in Italy ma tessuto PVC disponibile; zero dati ESG pubblici
+
 ## Pattern di ricerca efficaci
+
+### Per ombrelloni / outdoor furniture
+- `"[brand] parasol sustainability recycled aluminum PFAS certification [anno]"` — risultati scarsi per brand di nicchia; meglio fetching diretto sito brand
+- `"[brand] Sonnenschirme Nachhaltigkeit OEKO-TEX Recycling Zertifikat"` — efficace per brand tedeschi/austriaci (Doppler)
+- `"[brand] ombrelloni sostenibilità tessuto PVC acrilico Sunbrella"` — utile per identificare tessuto usato
+- `"WAREMA Group sustainability ESG SBTi"` — per Caravita (brand controllato da WAREMA); warema-group.com/en/responsibility funziona
+- `"Sunbrella PFAS free 2025 outdoor fabric certification"` — ottimo per dati tessuto Dickson/Sunbrella
+- `"Batyline Eden Life recycled PFAS free Serge Ferrari [anno]"` — per tessuto premium alternativo
+- `"Doppler Green Edition recycled PET parasol OEKO-TEX Austria"` — funziona bene via WebSearch + memo.de
 
 ### Per certificazioni prodotto TV
 - `"[brand] TV sustainability EPEAT Energy Star EU Ecolabel [anno]"` — funziona per Samsung, LG, Sony

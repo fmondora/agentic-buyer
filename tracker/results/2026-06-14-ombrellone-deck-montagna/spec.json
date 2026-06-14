@@ -1,0 +1,24 @@
+{
+  "query": "Ombrellone per deck in montagna",
+  "budget": 500,
+  "budget_flexible": true,
+  "weights": {
+    "spec_robustezza": 0.25,
+    "critica_tecnica": 0.18,
+    "recensioni": 0.15,
+    "ciclo_vita": 0.13,
+    "prezzo": 0.12,
+    "sostenibilita": 0.10,
+    "brand": 0.07
+  },
+  "discovery_instructions": {
+    "tipo": "Palo laterale/decentrato o a sbalzo",
+    "dimensione": "3.5m+ diametro",
+    "rotazione": "360 gradi",
+    "inclinazione": true,
+    "base": "Zavorrabile, no foratura pavimento legno",
+    "uso": "Deck montagna, pranzi/relax famiglia",
+    "priorita": ["Resistenza vento/robustezza", "Qualita telo UV/impermeabilita", "Estetica", "Prezzo"]
+  },
+  "date": "2026-06-14"
+}

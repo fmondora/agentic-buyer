@@ -48,6 +48,60 @@
 
 ## Note per categoria
 
+### Ombrelloni da esterno palo laterale/sbalzo (analisi giugno 2026)
+
+**GAP CRITICO DI BUDGET**: I brand nominati nel discovery (Scolaro, Caravita, FIM, Umbrosa, Doppler) sono tutti prodotti professionali/semi-professionali con prezzi reali 1.000-2.500€+. Il budget 500-700€ non copre nessuno di questi brand per dimensioni 3.5m+. Il Scolaro Napoli Braccio Ø3.5 costa ~1.060€ IVA inclusa (già scontato del 40%). Informare sempre l'utente di questo gap.
+
+**Modelli e prezzi accertati (giugno 2026):**
+| Brand | Modello | Dimensione | Prezzo (IVA inclusa) | Note |
+|-------|---------|------------|---------------------|------|
+| Scolaro | Napoli Braccio | Ø3.5m | ~1.060€ (scontato da ~1.766€) | Entry-level Scolaro |
+| Scolaro | Palladio Braccio | 3.5x3.5m | ~1.650€ (scontato da ~2.750€) | Struttura alluminio+legno Iroko |
+| Scolaro | Leonardo Braccio | 3.5x3.5m | ~1.796€ (scontato da ~2.513€) | Professionale, 70kg |
+| FIM | Capri | 3.5x3.5m | ~1.433€ | Made in Italy |
+| Umbrosa | Paraflex | Ø2.7-3m | fuori produzione su alcuni canali | Alluminio, garanzia 15 anni profili |
+
+**Garanzie accertate:**
+- Scolaro: 2 anni struttura, 1 anno meccanismo, 5 anni telo (Teflon/Dralon 350gr/m²)
+- Umbrosa: 15 anni profili alluminio, 5 anni nervature + acciaio inox, 5 anni telo contro scolorimento, 3 anni plastica, 2 anni basi
+- FIM: non dichiarata pubblicamente sul sito prodotto (contattare rivenditore)
+- Caravita: PDF garanzia disponibile su richiesta; ricambi per "quasi ogni componente" confermati
+- Doppler: 3 anni garanzia dichiarata
+
+**Ricambi e riparabilità:**
+- Scolaro: stecche intercambiabili senza smontare la struttura (sistema brevettato); teli sostitutivi disponibili su citsshop.it, levanteshop.it, greenterest.it
+- FIM: teli sostitutivi disponibili su greenterest.it (es. telo 3x4m disponibile), ricambi da rivenditori autorizzati
+- Caravita: sostituzione telo in 6 passi (svitare pomello, aprire a metà, allentare viti bracci, rimuovere telo) — fai-da-te possibile
+- Glatz: ricambi tramite rete rivenditori, telo sostitutivo disponibile "se il modello è ancora in gamma"; no deposito ricambi centrale
+- Umbrosa: ricambi dettagliati nei manuali di installazione, zip di ricambio spedibili direttamente
+
+**Prezzi teli sostitutivi (range accertato):**
+- Telo FIM 3x4m: ~80-120€ (greenterest.it)
+- Telo generico 4x3m palo laterale: ~49.90€ (grupposanmarco.eu)
+- Telo Scolaro Napoli/Leonardo (telo originale): prezzo non trovato online, tramite rivenditore autorizzato
+
+**Uso montagna — considerazioni specifiche:**
+- Ombrelloni palo laterale NON adatti a posizioni molto esposte al vento (raccomandazione comune tra produttori)
+- Per uso montagna: preferire strutture con profilo palo >70x70mm, stecche in alluminio 18x30mm+
+- Scolaro Leonardo: palo 92x92mm — il più robusto della gamma entry-semi-pro
+- Indispensabile base cementata o contrappesi adeguati (2-6 unità per ø3.5m)
+- Chiudere sempre l'ombrellone in caso di vento, pioggia forte, grandine
+
+**Indice riparabilità francese:** Non applicabile a ombrelloni (categoria non coperta da indice obbligatorio).
+**iFixit:** Non copre ombrelloni (categoria non presente).
+
+**Fonti affidabili per ombrelloni:**
+- greenterest.it — rivenditore FIM autorizzato, ha teli di ricambio e guida acquisto ricambi
+- caffegrazie.it — rivenditore Scolaro, prezzi aggiornati e scontati
+- designperte.it — prezzi Scolaro aggiornati con dettagli tecnici
+- umbrosashop.com — garanzia Umbrosa dettagliata, ricambi
+- caravita.eu — FAQ ricambi e istruzioni sostituzione telo
+
+**Fonti problematiche per ombrelloni:**
+- dopplershop.it — pagina JS-heavy, WebFetch non restituisce contenuto prodotti
+- bsvillage.com Umbrosa Paraflex — articolo fuori produzione
+- caravita.eu/warranty/ — PDF esterno non accessibile, informazioni garanzia non nel HTML
+
 ### TV 55 pollici fascia 300-600€ (analisi giugno 2026)
 
 **Modelli principali nella fascia target:**

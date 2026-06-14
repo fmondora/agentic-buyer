@@ -187,3 +187,53 @@
 - `"[modello] [HDMI] audio watts configuration speakers channels"` — ottiene audio e connettività
 - `site:ldlc.com [modello]` — classe EU, kWh/1000h, audio W
 - `site:trustedreviews.com [modello] review` — spec complete inclusa classe energetica
+
+---
+
+### Ombrelloni da esterno a braccio laterale/sbalzo — aggiornamento giugno 2026
+
+**Modelli verificati (braccio laterale, 3.5m+, uso residenziale/semi-professionale):**
+
+| Modello | Prezzo (IT 2026) | Palo alluminio | Telo | Rotazione | Inclinazione | Peso |
+|---------|-----------------|----------------|------|-----------|--------------|------|
+| Scolaro Leonardo Braccio 3.5x3.5 | ~1.650-1.796€ | 92x92 mm sostegno | Acrilico Dralon 350 g/m² impermeabilizzato | 360° | 20° | 70 kg |
+| Scolaro Palladio Braccio 3.5x3.5 | ~1.744€ | 92x92 mm sostegno | Acrilico Dralon 350 g/m² impermeabilizzato Teflon | 360° | 20° | 80 kg |
+| Scolaro Torino Braccio Ø 3.5 | ~1.290€ | 75x75 mm sostegno | Acrilico Dralon 350 g/m² impermeabilizzato Teflon | 360° | 20° | 50 kg |
+| Doppler Active 370 | ~799€ | Alluminio massiccio (mm N/D) | Poliestere LSF 50+ (g/m² N/D) | 360° | Sì (leva) | N/D |
+| Doppler Protect 400 | ~1.899€ | Alluminio (mm N/D) | Intrecciato 2 colori UV80+ | 360° | N/D | N/D |
+| Umbrosa Paraflex Mono 2.7m | ~1.604€ | Alluminio anodizzato 2.2m | Acrilico 260 g/m² (Solidum/Sunbrella) | Braccio flessibile | Sì (pulsante) | 5.1 kg braccio |
+| Umbrosa Paraflex 3.0m (wallflex) | ~1.415€ | Alluminio anodizzato | Acrilico 260 g/m² idrorepellente | Braccio orientabile | Sì | N/D |
+| Fim Flexy (standard) | 3.500-7.500€ | Alluminio sez. ellittica | Acrilico 290 g/m² / Airfim (UPF 80) | N/A (sistema modulare) | Sì | N/D |
+
+**Note critiche per categoria:**
+
+- **Scolaro**: i modelli di serie sono principalmente acciaio + alluminio, non alluminio puro. Sostegno verticale 92x92 mm = sezione quadrata, non circolare. Equivalente a ø ~50mm. Buona robustezza.
+- **Doppler Active 370**: unico modello sotto 500€ con LSF 50+, 370cm di copertura, 360°. Il palo non è 50mm (non dichiarato), probabilmente minore. Scelta budget-friendly ma non professionale.
+- **Umbrosa Paraflex**: telo Sunbrella disponibile (massima qualità), design compatto, braccio flessibile molto preciso. Ma il diametro max è 3.0m (wallflex) o 2.7m (mono) — sotto i 3.5m richiesti. Prezzo superiore al budget.
+- **Fim Flexy**: sistema modulare, non un ombrellone tradizionale. Prezzi da 3.500€+. Non adatto a budget 500-700€.
+- **Caravita Amalfi**: palo 92x92 mm sez. quadra, rotazione 360° opzionale con pedale, telo acrilico. Prezzi non trovati online (distribuzione indiretta, richiede preventivo).
+- **UPF**: nessun produttore nella fascia semi-pro dichiara esplicitamente UPF 50+. Il Doppler lo chiama LSF 50+. Umbrosa certifica ISO 105 B02/B04. Scolaro dice solo "impermeabilizzato" senza certificazione UPF numerica.
+
+**Budget 500-700€ per braccio laterale 3.5m:**
+- Praticamente impossibile con brand semiprofessionali italiani/europei. Scolaro/Caravita iniziano da ~1.200€.
+- Doppler Active 370 a ~800€ è il più accessibile tra i prodotti verificabili, ma non raggiunge i 3.5m (è 3.7m rettangolare non rotondo).
+- Budget 500-700€ copre ombrelloni di fascia consumer (es. Leroy Merlin, generici cinesi) non i brand richiesti.
+
+**Fonti affidabili per ombrelloni:**
+- designperte.it — spec dettagliate prodotti Scolaro, prezzi scontati, affidabile
+- caffegrazie.it — prezzi e spec Scolaro, affidabile
+- bsvillage.com — spec Umbrosa Paraflex con prezzi IT, molto buono
+- umbrosashop.com — schede tecniche ufficiali Umbrosa, affidabile
+- dopplershop.it — JS-heavy, non leggibile via WebFetch (restituisce solo JS analytics)
+- dopplerschirme.com — pagine prodotto leggibili parzialmente, spec incomplete
+
+**Fonti problematiche per ombrelloni:**
+- dopplershop.it — restituisce solo JS, non spec. Usare WebSearch snippet.
+- mk2shop.com — HTTP 403 su WebFetch
+- edilportale.com — pagina produttore senza spec, solo descrizione marketing
+
+**Pattern di ricerca efficaci:**
+- `"[marca] [modello] braccio laterale specifiche palo alluminio mm peso telo"` — funziona per Scolaro
+- `"[brand] cantilever umbrella specifications aluminum pole fabric UPF weight"` — per brand internazionali (Doppler, Umbrosa)
+- `site:designperte.it [modello]` — ottimo per specifiche Scolaro complete
+- `site:bsvillage.com [marca]` — ottimo per Umbrosa con prezzi IT

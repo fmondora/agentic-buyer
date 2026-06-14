@@ -1,0 +1,43 @@
+{
+  "weights": {
+    "spec_robustezza": 0.25,
+    "critica_tecnica": 0.18,
+    "recensioni": 0.15,
+    "ciclo_vita": 0.13,
+    "prezzo": 0.12,
+    "sostenibilita": 0.10,
+    "brand": 0.07
+  },
+  "products": [
+    {
+      "name": "Scolaro Palladio Braccio 3.5x3.5m",
+      "scores": {"prezzo": 3, "spec_robustezza": 9, "critica_tecnica": 7, "recensioni": 7, "ciclo_vita": 7.5, "sostenibilita": 4, "brand": 9},
+      "total": 66.8
+    },
+    {
+      "name": "Scolaro Napoli Braccio diam. 3.5m",
+      "scores": {"prezzo": 5, "spec_robustezza": 7, "critica_tecnica": 7, "recensioni": 7, "ciclo_vita": 6.5, "sostenibilita": 4, "brand": 9},
+      "total": 65.2
+    },
+    {
+      "name": "FIM Rodi 350x350",
+      "scores": {"prezzo": 3, "spec_robustezza": 8, "critica_tecnica": 7.5, "recensioni": 7, "ciclo_vita": 7, "sostenibilita": 3, "brand": 9},
+      "total": 64.5
+    },
+    {
+      "name": "Doppler Active 370",
+      "scores": {"prezzo": 6, "spec_robustezza": 5, "critica_tecnica": 7, "recensioni": 6, "ciclo_vita": 5, "sostenibilita": 6.5, "brand": 7},
+      "total": 58.9
+    },
+    {
+      "name": "Danieli Ombrellificio 3x3 Braccio",
+      "scores": {"prezzo": 6, "spec_robustezza": 7, "critica_tecnica": 6, "recensioni": 6, "ciclo_vita": 5.5, "sostenibilita": 4, "brand": 6},
+      "total": 58.4
+    },
+    {
+      "name": "PiscineOnline Braccio diam. 3.5m",
+      "scores": {"prezzo": 7, "spec_robustezza": 6, "critica_tecnica": 5, "recensioni": 5, "ciclo_vita": 4, "sostenibilita": 3, "brand": 3},
+      "total": 51.3
+    }
+  ]
+}

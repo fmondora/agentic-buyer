@@ -126,3 +126,44 @@ TCL e Hisense colpiti da class action negli USA per aver commercializzato TV com
 - `"[brand] TV assistenza garanzia Italia 2025 problemi centri"` — per post-vendita IT
 - `"Loewe TV rivenditori Italia 2026"` — poco su Google IT, meglio loewe.tv/it/store-locator
 - `"Panasonic TV uscita mercato Europa"` + avforums.com — community UK/EU più informata su dismissione
+
+### Ombrelloni palo laterale/sbalzo fascia 500-700€ — analisi 2026-06
+
+**Brand specializzati confermati:**
+
+- **Scolaro Parasol** (Italia, Casale di Scodosia PD): ~50 anni di storia, produzione 100% italiana, 7.000 mq stabilimento, 35 dipendenti, fatturato ~9,7M€ (2024). Ricambi garantiti nel tempo. Nessuna controversia rilevata. Fascia A.
+- **FIM** (Italia, San Pietro Mosezzo NO): oltre 100 anni di storia, produzione 100% italiana, 20-49 dipendenti, fatturato 2,5-5M€. Tre linee: Giardino, Contract, Promotion. Ricambi disponibili a distanza di anni. Nessuna controversia. Fascia A-.
+- **Caravita** (Germania, Ingolstadt — ora parte del gruppo WAREMA dal 2017): "Made in Germany", garanzia 5 anni, produzione artigianale personalizzata. Mercati principali: DE, FR, AT, ES. Distributori in Italia poco presenti — rivendere su richiesta. Fascia B+.
+- **Umbrosa** (Belgio, Roeselare): 40 dipendenti, produzione 100% Belgio, esporta in 95 paesi. Ricambi per singolo componente disponibili. Garanzia "lifelong enjoyment" ma termini non espliciti. Distribuzione Italia via rivenditori specializzati non capillare. Fascia B+.
+- **Solero Parasols** (Olanda, fondato 2004): produzione non dichiarata esplicitamente (probabilmente Asia/OEM), FD Gazellen Award, ricambi a stock anche anni dopo. Garanzia 2 anni telaio, 4 anni telo solidità colore. Fascia B.
+- **Doppler** (Austria, Braunau am Inn, 1946, 4a generazione): produzione in Austria, Rep Ceca, Slovacchia e Asia (360 dipendenti). Garanzia 5 anni + riparazione a vita. BSCI certified su fornitori. Shop IT dedicato (dopplershop.it). Fascia B.
+- **Ikea** (Svezia, produzione Asia): ombrelloni entry-level, garanzia 2 anni legale, no ricambi specifici per ombrellone, qualità costruttiva base. Fascia C.
+- **Leroy Merlin** (Francia, marchi privati Naterial e altri): 28/100 su Altroconsumo per gestione reclami, 1.140 reclami totali, dinieghi garanzia frequenti. Fascia D per assistenza, C per prodotti.
+
+**Dati finanziari Scolaro** (fonte: reportaziende.it):
+- 2024: fatturato €9.773.906 (-6,9%), utile €813.719 (-27,6%), dipendenti 35 (+20,7%)
+- ATECO 32.99.20 — fabbricazione ombrelloni
+
+**Safety Gate / RAPEX:** nessun alert specifico trovato per ombrelloni palo laterale nei brand analizzati nel periodo 2023-2025. La categoria "outdoor furniture" non è tra le categorie ad alta frequenza di alert (cosmetici 36%, giocattoli 15%, elettronica 10%).
+
+**Fonti affidabili per categoria ombrelloni:**
+- reportaziende.it — dati finanziari aziende italiane (fatturato, dipendenti, ATECO)
+- scolaro-parasol.it/it/content/4-azienda — pagina ufficiale azienda con info produzione
+- fim-umbrellas.com/en/about-us — pagina istituzionale FIM
+- umbrosa.be/en/umbrosa — pagina "about" Umbrosa con dettagli produzione BE
+- parasols.eu — sito ufficiale Solero, info garanzia e ricambi
+- caravita.eu/about-caravita — pagina ufficiale, acquisizione WAREMA
+- dopplershop.it — shop IT con info garanzia e assistenza
+- altroconsumo.it/reclamare/aziende/leroy-merlin — recensioni assistenza LM (28/100, molto basso)
+- parasol-pro.it/i_nostri_produttori_di_ombrelloni.html — panoramica multi-brand utile per confronto
+
+**Fonti problematiche per categoria ombrelloni:**
+- Trustpilot: nessun risultato specifico per brand ombrelloni (non sono su Trustpilot come brand diretti)
+- Safety Gate: non accessibile via WebFetch (solo JS), usare WebSearch con query site:ec.europa.eu/safety-gate
+- Caravita: i rivenditori italiani non sono facilmente trovabili via ricerca; il brand è più forte su DE, FR, AT
+
+**Pattern di ricerca efficaci (ombrelloni):**
+- `"[brand] ombrelloni [città sede] fatturato dipendenti"` + reportaziende.it — per dati finanziari IT
+- `"[brand] parasol about" site:[brand-domain]` — per info produzione diretta
+- `"[brand] parasols warranty spare parts" [anno]` — per condizioni post-vendita
+- `"site:altroconsumo.it reclamare aziende [brand]"` — per lamentele italiani su assistenza
