@@ -52,6 +52,19 @@ I pesi vengono personalizzati dal Discovery in base alle risposte dell'utente (e
 - I learnings accumulano: fonti affidabili, fonti problematiche, pattern di ricerca, note per categoria
 - Non usare Playwright — solo WebSearch (API di ricerca) e WebFetch (HTTP GET)
 
+## Report — Contenuto e struttura
+- Il report MD deve contenere TUTTO il reasoning degli agenti, non solo il verdetto
+- Obiettivo: il report e autosufficiente per riprendere il contesto in futuro
+- Includere: analisi dettagliate di ogni agente, cross-reference, trade-off, fonti con link
+- Il report e il "cervello" della ricerca — deve essere ricco, non riassuntivo
+
+## Acquisti completati (success cases)
+- Quando l'utente conferma un acquisto, segnare nel report: `## Status: ACQUISTATO [data]`
+- Aggiungere il prodotto scelto e il prezzo pagato
+- Dopo 2-4 settimane, chiedere feedback sull'acquisto (soddisfazione, sorprese, problemi)
+- Salvare il feedback nel report come `## Feedback post-acquisto [data]`
+- I success case alimentano i learnings degli agenti (es: "utente soddisfatto di X per motivo Y")
+
 ## Gestione errori
 - Agente senza risultati: segnala gap, procede con dati disponibili
 - WebSearch rate limited: retry con delay, fallback WebFetch su URL noti
