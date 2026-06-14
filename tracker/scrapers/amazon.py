@@ -1,5 +1,6 @@
-"""Scraper per Amazon EU — estrae prezzi da pagine prodotto e ricerca."""
+"""Scraper per Amazon EU — usa API twister + HTML fallback."""
 
+import json
 import re
 import urllib.parse
 from .base import fetch, extract_jsonld, parse_price_eu, find_prices_in_text
@@ -28,11 +29,67 @@ def product_url(asin: str, domain: str = "www.amazon.it") -> str:
     return f"https://{domain}/dp/{asin}"
 
 
+def _fetch_twister_price(asin: str, domain: str = "www.amazon.it") -> dict | None:
+    """Chiama l'API twister per ottenere prezzo e disponibilita via JSON.
+
+    L'API twisterDimensionSlotsDefault ritorna JSON strutturato con:
+    - twisterSlotJson.price (float, gia in EUR)
+    - twisterSlotJson.isAvailable (bool)
+    """
+    url = (
+        f"https://{domain}/gp/product/ajax/twisterDimensionSlotsDefault"
+        f"?isDimensionSlotsAjax=1&asinList={asin}&asin={asin}"
+        f"&deviceType=web&showFancyPrice=false"
+    )
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+                       "AppleWebKit/537.36 (KHTML, like Gecko) "
+                       "Chrome/126.0.0.0 Safari/537.36",
+        "Accept": "text/html,application/xhtml+xml,*/*",
+        "Accept-Language": "it-IT,it;q=0.9,en;q=0.8",
+        "Accept-Encoding": "identity",
+        "Referer": f"https://{domain}/dp/{asin}",
+    }
+    raw = fetch(url, headers=headers, timeout=10)
+    if not raw:
+        return None
+
+    # Il formato e "streaming JSON" separato da "&&&"
+    for chunk in raw.split("&&&"):
+        chunk = chunk.strip()
+        if not chunk:
+            continue
+        try:
+            data = json.loads(chunk)
+        except json.JSONDecodeError:
+            continue
+        if not isinstance(data, dict):
+            continue
+        if data.get("ASIN") != asin:
+            continue
+        value = data.get("Value", {})
+        content = value.get("content", {})
+        if isinstance(content, str):
+            try:
+                content = json.loads(content)
+            except json.JSONDecodeError:
+                continue
+        slot = content.get("twisterSlotJson", {})
+        if slot.get("price"):
+            return {
+                "price": float(slot["price"]),
+                "available": slot.get("isAvailable", False),
+            }
+    return None
+
+
 def scrape_product(url: str) -> dict:
-    """Scrapa una singola pagina prodotto Amazon."""
-    html = fetch(url)
-    if not html:
-        return {"url": url, "price": None, "error": "fetch_failed"}
+    """Scrapa una singola pagina prodotto Amazon (API twister + HTML fallback)."""
+    asin = extract_asin(url)
+    domain = "www.amazon.it"
+    m = re.search(r'https?://([^/]+)', url)
+    if m:
+        domain = m.group(1)
 
     result = {
         "url": url,
@@ -41,63 +98,63 @@ def scrape_product(url: str) -> dict:
         "title": None,
         "availability": None,
         "seller": None,
-        "asin": extract_asin(url),
+        "asin": asin,
     }
 
-    # Titolo
-    m = re.search(r'id="productTitle"[^>]*>\s*(.*?)\s*<', html, re.DOTALL)
-    if m:
-        result["title"] = m.group(1).strip()
+    # 1) API twister — fonte primaria, JSON strutturato
+    if asin:
+        twister = _fetch_twister_price(asin, domain)
+        if twister:
+            result["price"] = twister["price"]
+            result["availability"] = "in_stock" if twister["available"] else "unavailable"
 
-    # JSON-LD
-    for ld in extract_jsonld(html):
-        if isinstance(ld, dict):
-            offers = ld.get("offers", ld.get("Offers", {}))
-            if isinstance(offers, dict):
-                low = offers.get("lowPrice") or offers.get("price")
-                if low:
-                    result["price"] = parse_price_eu(str(low))
-                    break
-            elif isinstance(offers, list):
-                prices = []
-                for o in offers:
-                    p = o.get("price") or o.get("lowPrice")
-                    if p:
-                        parsed = parse_price_eu(str(p))
-                        if parsed:
-                            prices.append(parsed)
-                if prices:
-                    result["price"] = min(prices)
-                    break
+    # 2) HTML — per titolo, venditore, e prezzo fallback
+    html = fetch(url)
+    if html:
+        # Titolo
+        tm = re.search(r'id="productTitle"[^>]*>\s*(.*?)\s*<', html, re.DOTALL)
+        if tm:
+            result["title"] = tm.group(1).strip()
 
-    # Fallback: prezzo dal buybox
-    if result["price"] is None:
-        # Pattern "priceblock" / "a]priceToPay"
-        for pattern in [
-            r'class="a-price-whole">(\d[\d.,]*)</span>',
-            r'id="priceblock_ourprice"[^>]*>\s*(?:€|EUR)?\s*([\d.,]+)',
-            r'id="priceblock_dealprice"[^>]*>\s*(?:€|EUR)?\s*([\d.,]+)',
-            r'class="a-offscreen">\s*(?:€|EUR)?\s*([\d.,]+)',
-            r'"price"\s*:\s*"?([\d.,]+)"?\s*,\s*"priceCurrency"',
-        ]:
-            m = re.search(pattern, html)
-            if m:
-                result["price"] = parse_price_eu(m.group(1))
-                if result["price"]:
-                    break
+        # Prezzo fallback da JSON-LD
+        if result["price"] is None:
+            for ld in extract_jsonld(html):
+                if isinstance(ld, dict):
+                    offers = ld.get("offers", ld.get("Offers", {}))
+                    if isinstance(offers, dict):
+                        low = offers.get("lowPrice") or offers.get("price")
+                        if low:
+                            result["price"] = parse_price_eu(str(low))
+                            break
 
-    # Disponibilità
-    if re.search(r'id="availability"[^>]*>.*?(?:Disponibilit|In stock|Auf Lager|En stock)', html, re.DOTALL | re.IGNORECASE):
-        result["availability"] = "in_stock"
-    elif re.search(r'(?:Non disponibile|Currently unavailable|Nicht verfügbar)', html, re.IGNORECASE):
-        result["availability"] = "unavailable"
+        # Prezzo fallback da HTML buybox
+        if result["price"] is None:
+            for pattern in [
+                r'class="a-price-whole">(\d[\d.,]*)</span>',
+                r'id="priceblock_ourprice"[^>]*>\s*(?:€|EUR)?\s*([\d.,]+)',
+                r'id="priceblock_dealprice"[^>]*>\s*(?:€|EUR)?\s*([\d.,]+)',
+                r'class="a-offscreen">\s*(?:€|EUR)?\s*([\d.,]+)',
+                r'"price"\s*:\s*"?([\d.,]+)"?\s*,\s*"priceCurrency"',
+            ]:
+                pm = re.search(pattern, html)
+                if pm:
+                    result["price"] = parse_price_eu(pm.group(1))
+                    if result["price"]:
+                        break
 
-    # Venditore
-    m = re.search(r'id="sellerProfileTriggerId"[^>]*>(.*?)<', html)
-    if m:
-        result["seller"] = m.group(1).strip()
-    elif re.search(r'(?:Venduto e spedito da|Ships from and sold by)\s*Amazon', html, re.IGNORECASE):
-        result["seller"] = "Amazon"
+        # Disponibilita fallback
+        if result["availability"] is None:
+            if re.search(r'id="availability"[^>]*>.*?(?:Disponibilit|In stock|Auf Lager|En stock)', html, re.DOTALL | re.IGNORECASE):
+                result["availability"] = "in_stock"
+            elif re.search(r'(?:Non disponibile|Currently unavailable|Nicht verfügbar)', html, re.IGNORECASE):
+                result["availability"] = "unavailable"
+
+        # Venditore
+        sm = re.search(r'id="sellerProfileTriggerId"[^>]*>(.*?)<', html)
+        if sm:
+            result["seller"] = sm.group(1).strip()
+        elif re.search(r'(?:Venduto e spedito da|Ships from and sold by)\s*Amazon', html, re.IGNORECASE):
+            result["seller"] = "Amazon"
 
     return result
 

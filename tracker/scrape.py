@@ -150,6 +150,40 @@ def cmd_search(args: list[str]):
     print(result_json(results))
 
 
+def cmd_idealo_history(args: list[str]):
+    """Mostra lo storico prezzi idealo per un prodotto."""
+    if not args:
+        print("Uso: scrape.py idealo-history <product_id|url> [period]",
+              file=sys.stderr)
+        sys.exit(1)
+    target = args[0]
+    period = args[1] if len(args) > 1 else "3M"
+    # Se e un URL, estrai l'ID
+    pid = idealo.extract_product_id(target) if "/" in target else target
+    if not pid:
+        print(f"ID prodotto non trovato in: {target}", file=sys.stderr)
+        sys.exit(1)
+    history = idealo.fetch_price_history(pid, period=period)
+    if history:
+        print(result_json([history]))
+    else:
+        print(result_json([{"product_id": pid, "error": "no_data"}]))
+
+
+def cmd_idealo_intl(args: list[str]):
+    """Mostra i prezzi internazionali idealo."""
+    if not args:
+        print("Uso: scrape.py idealo-intl <product_id|url>", file=sys.stderr)
+        sys.exit(1)
+    target = args[0]
+    pid = idealo.extract_product_id(target) if "/" in target else target
+    if not pid:
+        print(f"ID prodotto non trovato in: {target}", file=sys.stderr)
+        sys.exit(1)
+    prices = idealo.fetch_international_prices(pid)
+    print(result_json(prices))
+
+
 def cmd_compare(args: list[str]):
     """Scrapa più URL in parallelo e confronta prezzi."""
     if not args:
@@ -176,6 +210,8 @@ COMMANDS = {
     "mediaworld": cmd_mediaworld,
     "search": cmd_search,
     "compare": cmd_compare,
+    "idealo-history": cmd_idealo_history,
+    "idealo-intl": cmd_idealo_intl,
 }
 
 if __name__ == "__main__":
