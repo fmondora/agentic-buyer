@@ -30,8 +30,16 @@ from pathlib import Path
 # Aggiungi parent al path per import relativi
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from tracker.scrapers import amazon, idealo, trovaprezzi
+from tracker.scrapers import amazon, idealo, trovaprezzi, unieuro, mediaworld
 from tracker.scrapers.base import result_json
+
+SCRAPERS = {
+    "amazon": amazon,
+    "idealo": idealo,
+    "trovaprezzi": trovaprezzi,
+    "unieuro": unieuro,
+    "mediaworld": mediaworld,
+}
 
 
 def detect_site(url: str) -> str:
@@ -41,6 +49,10 @@ def detect_site(url: str) -> str:
         return "idealo"
     if "trovaprezzi" in url:
         return "trovaprezzi"
+    if "unieuro" in url:
+        return "unieuro"
+    if "mediaworld" in url:
+        return "mediaworld"
     return "unknown"
 
 
@@ -51,16 +63,11 @@ def cmd_product(args: list[str]):
         sys.exit(1)
     url = args[0]
     site = detect_site(url)
-    if site == "amazon":
-        result = amazon.scrape_product(url)
-    elif site == "idealo":
-        result = idealo.scrape_product(url)
-    elif site == "trovaprezzi":
-        result = trovaprezzi.scrape_product(url)
-    else:
+    scraper = SCRAPERS.get(site)
+    if not scraper:
         print(f"Sito non riconosciuto: {url}", file=sys.stderr)
         sys.exit(1)
-    print(result_json([result]))
+    print(result_json([scraper.scrape_product(url)]))
 
 
 def cmd_amazon(args: list[str]):
@@ -106,6 +113,24 @@ def cmd_trovaprezzi(args: list[str]):
     print(result_json([result]))
 
 
+def cmd_unieuro(args: list[str]):
+    """Scrapa un prodotto unieuro.it."""
+    if not args:
+        print("Uso: scrape.py unieuro <url>", file=sys.stderr)
+        sys.exit(1)
+    result = unieuro.scrape_product(args[0])
+    print(result_json([result]))
+
+
+def cmd_mediaworld(args: list[str]):
+    """Scrapa un prodotto mediaworld.it."""
+    if not args:
+        print("Uso: scrape.py mediaworld <url>", file=sys.stderr)
+        sys.exit(1)
+    result = mediaworld.scrape_product(args[0])
+    print(result_json([result]))
+
+
 def cmd_search(args: list[str]):
     """Cerca un prodotto su uno o più siti."""
     if not args:
@@ -133,12 +158,9 @@ def cmd_compare(args: list[str]):
     results = []
     for url in args:
         site = detect_site(url)
-        if site == "amazon":
-            results.append(amazon.scrape_product(url))
-        elif site == "idealo":
-            results.append(idealo.scrape_product(url))
-        elif site == "trovaprezzi":
-            results.append(trovaprezzi.scrape_product(url))
+        scraper = SCRAPERS.get(site)
+        if scraper:
+            results.append(scraper.scrape_product(url))
         else:
             results.append({"url": url, "error": "sito_non_supportato"})
     print(result_json(results))
@@ -150,6 +172,8 @@ COMMANDS = {
     "amazon-eu": cmd_amazon_eu,
     "idealo": cmd_idealo,
     "trovaprezzi": cmd_trovaprezzi,
+    "unieuro": cmd_unieuro,
+    "mediaworld": cmd_mediaworld,
     "search": cmd_search,
     "compare": cmd_compare,
 }

@@ -38,6 +38,10 @@ python3.12 tracker/scrape.py amazon-eu <asin> it,de,fr,es
 python3.12 tracker/scrape.py idealo <url>
 python3.12 tracker/scrape.py trovaprezzi <url>
 
+# Unieuro / MediaWorld: prodotto (titolo + ritiro negozio, prezzi via JS non sempre disponibili)
+python3.12 tracker/scrape.py unieuro <url>
+python3.12 tracker/scrape.py mediaworld <url>
+
 # Cerca prodotto su uno o tutti i siti
 python3.12 tracker/scrape.py search "<query>" [amazon|idealo|trovaprezzi|all]
 
@@ -51,7 +55,8 @@ Output: JSON su stdout con `price`, `title`, `url`, `site`, `offers[]`, `availab
 1. Usa `scrape.py search` per trovare URL prodotto
 2. Usa `scrape.py product` o `scrape.py compare` per estrarre prezzi
 3. Usa `scrape.py amazon-eu` per confrontare prezzi cross-border
-4. Fallback a WebSearch + WebFetch solo se gli scraper falliscono
+4. Per Unieuro/MediaWorld: usa gli scraper per titolo e ritiro negozio, ma prendi i prezzi da trovaprezzi/idealo (i siti sono JS-heavy)
+5. Fallback a WebSearch + WebFetch solo se gli scraper falliscono
 
 ## Playbook per sito
 
