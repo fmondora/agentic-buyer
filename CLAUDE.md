@@ -34,11 +34,17 @@
 
 I pesi vengono personalizzati dal Discovery in base alle risposte dell'utente (es: "cinema stanza buia" → Critica tecnica +5%, "brand importante" → Brand +5%).
 
-## Playbook per sito
-- In `.claude/agents/tools/` ci sono playbook riutilizzabili per navigare siti specifici
-- Playbook disponibili: `amazon-eu.md`, `trovaprezzi.md`, `idealo.md`, `ebay.md`, `global-search.md`
+## Playbook per sito e database pubblici
+- In `.claude/agents/tools/` ci sono playbook riutilizzabili per navigare siti e database specifici
+- **Siti e-commerce**: `amazon-eu.md`, `trovaprezzi.md`, `idealo.md`, `ebay.md`, `global-search.md`
+- **Database pubblici EU**:
+  - `eprel.md` — EU Energy Label: classe energetica, consumo kWh (usato da SpecComparer, SustainabilityScout)
+  - `safety-gate.md` — Safety Gate/RAPEX: richiami prodotto EU, alert sicurezza (usato da BrandRater)
+  - `reparabilite-fr.md` — Indice de reparabilite/durabilite francese: score 0-10 obbligatorio (usato da LifecycleAdvisor)
+- **Riparazione e teardown**:
+  - `ifixit.md` — iFixit: teardown, score riparabilita, guide riparazione passo-passo (usato da LifecycleAdvisor)
 - Gli agenti leggono i playbook rilevanti prima di cercare su un sito
-- Per aggiungere un nuovo sito: creare un nuovo .md in `tools/`
+- Per aggiungere un nuovo sito/database: creare un nuovo .md in `tools/`
 
 ## Scope ricerca
 - **Priorita 1**: Italia e EU (nessun dazio, spedizione veloce)
@@ -61,9 +67,16 @@ I pesi vengono personalizzati dal Discovery in base alle risposte dell'utente (e
 ## Acquisti completati (success cases)
 - Quando l'utente conferma un acquisto, segnare nel report: `## Status: ACQUISTATO [data]`
 - Aggiungere il prodotto scelto e il prezzo pagato
+- **Aggiungere il prodotto a `tracker/purchased.json`** con brand, modello, prezzo, data, categoria
 - Dopo 2-4 settimane, chiedere feedback sull'acquisto (soddisfazione, sorprese, problemi)
 - Salvare il feedback nel report come `## Feedback post-acquisto [data]`
 - I success case alimentano i learnings degli agenti (es: "utente soddisfatto di X per motivo Y")
+
+## Monitoraggio post-acquisto
+- `/track safety` — controlla Safety Gate/RAPEX per tutti i prodotti acquistati
+- `/track safety <id>` — controlla solo un prodotto specifico
+- Il registro acquisti e in `tracker/purchased.json`
+- Safety Gate va controllato periodicamente (consigliato: mensile) per richiami/alert su prodotti posseduti
 
 ## Gestione errori
 - Agente senza risultati: segnala gap, procede con dati disponibili

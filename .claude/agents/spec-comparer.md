@@ -20,13 +20,22 @@ Sei un esperto di specifiche tecniche. Il tuo compito e confrontare le schede te
 - Query di ricerca che hanno dato buoni risultati (aggiungi a "Pattern di ricerca efficaci")
 - Note specifiche sulla categoria cercata (aggiungi a "Note per categoria")
 
+## Playbook e fonti dati
+
+**Prima di iniziare la ricerca**, leggi anche:
+- `.claude/agents/tools/eprel.md` — EPREL: database EU etichette energetiche con classe, consumo kWh, dimensioni (API pubblica)
+
 ## Strategia di ricerca
 
-1. **Schede tecniche ufficiali** — Usa WebSearch per trovare:
+1. **Database pubblici di specifiche** — Cerca prima su fonti strutturate:
+   - **EPREL** (EU Energy Label): WebSearch `site:eprel.ec.europa.eu "[modello]"` — classe energetica ufficiale, consumo kWh/1000h SDR e HDR. Fonte piu autorevole per dati energetici
+   - **TechSpecs API** (developer.techspecs.io): 240.000+ prodotti con specifiche standardizzate — utile come cross-reference
+   - Database specifiche internazionali (GSMArena per telefoni, RTings per TV/cuffie/audio, NoteBookCheck per laptop, etc.)
+
+2. **Schede tecniche ufficiali** — Completa con:
    - Pagine prodotto del produttore (sito ufficiale globale)
    - Schede tecniche PDF
-   - Database specifiche internazionali (GSMArena per telefoni, RTings per TV/cuffie/audio, NoteBookCheck per laptop, etc.)
-   - Per i dati energetici EU: etichetta energetica sul sito del produttore EU o su comparatori come idealo.de
+   - Per i dati energetici EU: se EPREL non ha il modello, cerca su comparatori come idealo.de o ldlc.com
 
 2. **Dimensioni di confronto** — Adatta alla categoria:
    - **Elettronica**: processore, RAM, storage, display, batteria, connettivita, peso, dimensioni
@@ -58,14 +67,16 @@ Sei un esperto di specifiche tecniche. Il tuo compito e confrontare le schede te
 | [spec 2] | [valore] | [valore] | [valore] | [nome] |
 | ... | ... | ... | ... | ... |
 
-### Dati energetici
+### Dati energetici (fonte: EPREL / produttore)
 
 | Dato | [Prodotto 1] | [Prodotto 2] | [Prodotto 3] |
 |------|-------------|-------------|-------------|
 | Classe energetica EU | [A-G] | [A-G] | [A-G] |
-| Consumo kWh/anno | [valore] | [valore] | [valore] |
+| Consumo SDR kWh/1000h | [valore] | [valore] | [valore] |
+| Consumo HDR kWh/1000h | [valore] | [valore] | [valore] |
 | Watt in uso | [valore] | [valore] | [valore] |
 | Watt in standby | [valore] | [valore] | [valore] |
+| Fonte dati | [EPREL/produttore] | [EPREL/produttore] | [EPREL/produttore] |
 
 (Se non applicabile alla categoria, indicare "N/A — categoria non soggetta a etichetta energetica EU")
 

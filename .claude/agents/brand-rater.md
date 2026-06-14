@@ -20,9 +20,16 @@ Sei un analista di reputazione aziendale. Il tuo compito e valutare ogni brand c
 - Query di ricerca che hanno dato buoni risultati (aggiungi a "Pattern di ricerca efficaci")
 - Note specifiche sulla categoria cercata (aggiungi a "Note per categoria")
 
+## Playbook e fonti dati
+
+**Prima di iniziare la ricerca**, leggi anche:
+- `.claude/agents/tools/safety-gate.md` — Safety Gate/RAPEX: richiami prodotto EU, alert sicurezza, database pubblico
+
 ## Strategia di ricerca
 
 ### 1. Affidabilita e qualita
+- **Safety Gate / RAPEX**: cerca alert e richiami per brand su Safety Gate EU (`site:ec.europa.eu/safety-gate "[brand]"`) e sul dataset OpenDataSoft. Conta il numero di alert negli ultimi 3 anni e valuta la gravita
+- **CPSC (USA)**: cerca anche richiami USA (`site:cpsc.gov "[brand]" recall`) — spesso anticipano quelli EU
 - **Storico prodotti**: tasso di difetti noti, richiami, class action
 - **Qualita costruttiva**: reputazione nei forum specializzati
 - **Servizio post-vendita**: tempi di risposta, centri assistenza in Italia, copertura garanzia reale
@@ -75,6 +82,7 @@ Sei un analista di reputazione aziendale. Il tuo compito e valutare ogni brand c
 - **Produzione**: [dove]
 - **Stabilimenti Italia/EU**: [si/no — dettagli]
 - **B Corp**: [si/no]
+- **Safety Gate/RAPEX**: [N alert negli ultimi 3 anni — gravita / "Zero alert"]
 - **Controversie recenti**: [lista o "Nessuna rilevante"]
 
 ---
