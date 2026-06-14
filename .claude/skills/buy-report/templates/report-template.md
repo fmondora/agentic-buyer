@@ -13,11 +13,11 @@
 
 ## Tabella riassuntiva
 
-| Prodotto | Prezzo | Recensioni | Spec+Energia | Sostenibilita | Ciclo vita | Brand | **Totale /100** |
-|----------|--------|------------|-------------|---------------|------------|-------|-----------------|
+| Prodotto | Prezzo | Recensioni | Spec+Energia | Critica | Sostenibilita | Ciclo vita | Brand | Timing | **Totale /100** |
+|----------|--------|------------|-------------|---------|---------------|------------|-------|--------|-----------------|
 | {{PRODUCT_ROWS}} |
 
-*Pesi: Prezzo 20% | Recensioni 15% | Spec+Energia 20% | Sostenibilita 10% | Ciclo vita 15% | Brand 20%*
+*Pesi: Prezzo 18% | Recensioni 13% | Spec+Energia 13% | Critica 10% | Sostenibilita 8% | Ciclo vita 8% | Brand 18% | Timing 12%*
 
 ---
 
@@ -40,6 +40,9 @@
 
 ### Reputazione brand e impatto territoriale
 {{BRAND_ANALYSIS}}
+
+### Timing acquisto — Analisi strategica
+{{STRATEGIC_ANALYSIS}}
 
 ---
 

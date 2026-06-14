@@ -13,13 +13,15 @@
 
 ## Flusso /buy
 1. **Discovery** (foreground) — domande rapide con scelte inline per capire cosa vuole l'utente → produce spec arricchita + pesi personalizzati
-2. **8 agenti** (parallelo, background) — cercano con la spec arricchita e le istruzioni specifiche del Discovery
-3. **Sintesi** — calcola punteggi con i pesi personalizzati, genera report
+2. **7 agenti** (parallelo, background) — cercano con la spec arricchita e le istruzioni specifiche del Discovery
+3. **StrategicBuyer** (sequenziale, foreground) — riceve i risultati dei 7 agenti, analizza timing acquisto sui prodotti trovati
+4. **Sintesi** — calcola punteggi con i pesi personalizzati, genera report
 
 ## Agenti
 9 agenti in `.claude/agents/`:
-- **discovery** — interattivo, domande con scelte inline, personalizza pesi (foreground)
-- price-hunter, review-analyst, spec-comparer, technical-critic, sustainability-scout, lifecycle-advisor, brand-rater, **strategic-buyer** (background, parallelo)
+- **discovery** — interattivo, domande con scelte inline, personalizza pesi (foreground, step 1)
+- price-hunter, review-analyst, spec-comparer, technical-critic, sustainability-scout, lifecycle-advisor, brand-rater (background, parallelo, step 2)
+- **strategic-buyer** — analisi timing, trend prezzi, stagionalita (foreground, sequenziale dopo step 2)
 
 ## Pesi sintesi finale (default — personalizzabili dal Discovery)
 | Dimensione | Peso | Agente |

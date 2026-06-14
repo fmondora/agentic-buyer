@@ -28,10 +28,14 @@ Come `/buy`. Analizza: `$ARGUMENTS`
 Come `/buy`, in foreground.
 
 ### Step 3: Lancia i 7 agenti
-Come `/buy`, in parallelo e background. Ma nel prompt di ogni agente aggiungi:
+Come `/buy`, in parallelo e background (7 agenti, senza StrategicBuyer). Nel prompt di ogni agente aggiungi:
 > **MODALITA INCOGNITO**: NON aggiornare i learnings. NON scrivere su nessun file. Solo ricerca e output testuale.
 
-### Step 4-5: Raccogli e sintetizza
+### Step 4: StrategicBuyer (sequenziale)
+Come `/buy`, lancia lo StrategicBuyer in foreground dopo che i 7 agenti hanno completato. Passagli i risultati dei 7 agenti. Aggiungi al prompt:
+> **MODALITA INCOGNITO**: NON aggiornare i learnings. NON scrivere su nessun file. Solo ricerca e output testuale.
+
+### Step 5: Raccogli e sintetizza
 Come `/buy`, ma il report viene presentato SOLO in conversazione, mai salvato su disco.
 
 ### Step 6: Presenta il verdetto
