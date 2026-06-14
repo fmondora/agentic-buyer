@@ -10,5 +10,18 @@
     "purchase_date": "2026-06-14",
     "report": "reports/2026-06-13-tv-55-premium.md",
     "notes": "QD-OLED Gen4, Glare-Free. Feedback da chiedere luglio 2026."
+  },
+  {
+    "id": "samsung-qn85f-55",
+    "name": "Samsung QE55QN85F Neo QLED 55\"",
+    "brand": "Samsung",
+    "model": "QE55QN85FAUXZT",
+    "category": "TV",
+    "price_paid": 599,
+    "currency": "EUR",
+    "purchase_date": "2026-06-14",
+    "amazon_asin": "B0F7LM3M8S",
+    "idealo_id": "207213189",
+    "notes": "Neo QLED 4K, Mini LED, NQ4 AI Gen2. Pagato sotto il minimo storico idealo (649€)."
   }
 ]
