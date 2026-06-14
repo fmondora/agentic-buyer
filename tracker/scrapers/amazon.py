@@ -101,14 +101,16 @@ def scrape_product(url: str) -> dict:
         "asin": asin,
     }
 
-    # 1) API twister — fonte primaria, JSON strutturato
+    # 1) API twister — fonte primaria per il prezzo (JSON strutturato)
     if asin:
         twister = _fetch_twister_price(asin, domain)
         if twister:
             result["price"] = twister["price"]
-            result["availability"] = "in_stock" if twister["available"] else "unavailable"
+            # Nota: twister isAvailable indica se la variante/dimensione e
+            # selezionabile, NON se il prodotto e in stock. La disponibilita
+            # reale viene determinata dall'HTML della pagina prodotto.
 
-    # 2) HTML — per titolo, venditore, e prezzo fallback
+    # 2) HTML — per titolo, venditore, disponibilita e prezzo fallback
     html = fetch(url)
     if html:
         # Titolo
@@ -142,12 +144,11 @@ def scrape_product(url: str) -> dict:
                     if result["price"]:
                         break
 
-        # Disponibilita fallback
-        if result["availability"] is None:
-            if re.search(r'id="availability"[^>]*>.*?(?:Disponibilit|In stock|Auf Lager|En stock)', html, re.DOTALL | re.IGNORECASE):
-                result["availability"] = "in_stock"
-            elif re.search(r'(?:Non disponibile|Currently unavailable|Nicht verfügbar)', html, re.IGNORECASE):
-                result["availability"] = "unavailable"
+        # Disponibilita — sempre da HTML (twister isAvailable non e affidabile)
+        if re.search(r'id="availability"[^>]*>.*?(?:Disponibilit|In stock|Auf Lager|En stock)', html, re.DOTALL | re.IGNORECASE):
+            result["availability"] = "in_stock"
+        elif re.search(r'(?:Non disponibile|Currently unavailable|Nicht verfügbar)', html, re.IGNORECASE):
+            result["availability"] = "unavailable"
 
         # Venditore
         sm = re.search(r'id="sellerProfileTriggerId"[^>]*>(.*?)<', html)
