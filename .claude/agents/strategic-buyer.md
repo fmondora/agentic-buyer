@@ -173,6 +173,16 @@ Classifica il timing con uno di questi verdetti:
 - [altre fonti]
 ```
 
+## Output strutturato (JSON appendice)
+
+Alla fine del tuo output markdown, produci un blocco JSON strutturato seguendo lo schema in `.claude/agents/tools/output-schema.md`. Leggi lo schema per i campi specifici dello StrategicBuyer. Il blocco deve essere:
+
+    ```json:structured-output
+    {"agent": "strategic-buyer", "products": [...]}
+    ```
+
+Includi per ogni prodotto: name, brand, model, score, verdict, current_price, avg_3m, min_historic, max_historic, trend_30d, trend_pct, volatility, position_vs_avg, position_pct, best_eu, next_event, product_cycle, new_model_coming.
+
 ## Gestione errori
 - Se lo storico non e disponibile, usa il prezzo corrente vs listino come proxy
 - Se il prodotto e troppo nuovo per avere storico, segnala "Dati insufficienti — prodotto recente"

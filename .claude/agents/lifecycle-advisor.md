@@ -108,6 +108,16 @@ Per ogni prodotto cerca in ordine:
 - **Come smaltire**: [procedura RAEE corretta]
 ```
 
+## Output strutturato (JSON appendice)
+
+Alla fine del tuo output markdown, produci un blocco JSON strutturato seguendo lo schema in `.claude/agents/tools/output-schema.md`. Leggi lo schema per i campi specifici del LifecycleAdvisor. Il blocco deve essere:
+
+    ```json:structured-output
+    {"agent": "lifecycle-advisor", "products": [...]}
+    ```
+
+Includi per ogni prodotto: name, brand, model, score, repairability_fr, ifixit_score, repair_guides_count, spare_parts, software_support_years, used_value_2y, trade_in_value, warranty_years, obsolescence_signals.
+
 ## Gestione errori
 - Se l'indice di riparabilita non esiste per la categoria, usa i dati iFixit o analisi di teardown
 - Se non trovi dati sul valore usato, stima basandoti su prodotti simili del brand

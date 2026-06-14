@@ -99,27 +99,90 @@ Prepara un riepilogo dei prodotti emersi dai 7 agenti — per ogni prodotto incl
 >
 > Per i top 3-5 prodotti della classifica, usa idealo-history e idealo-intl per lo storico prezzi e confronto EU. Usa CamelCamelCamel via WebSearch per storico Amazon lungo. Valuta: trend prezzi, stagionalita (prossimi eventi sconto), ciclo prodotto, strategia pricing del brand. Per ogni prodotto dai un verdetto: COMPRA ORA / COMPRA PRESTO / ASPETTA EVENTO / ASPETTA CALO / RISCHIO. [istruzioni Discovery]
 
-## Step 6: Raccogli e sintetizza
+## Step 6: Salva risultati strutturati
 
-Quando lo StrategicBuyer ha completato:
+Ogni agente produce un blocco `json:structured-output` alla fine del suo output. Estrai questi blocchi e salvali nella directory risultati.
 
-1. **Leggi tutti i risultati** degli agenti
+### Struttura directory
+```
+tracker/results/{YYYY-MM-DD}-{slug}/
+  spec.json          ← spec arricchita dal Discovery + pesi
+  agents/
+    price-hunter.json
+    review-analyst.json
+    spec-comparer.json
+    technical-critic.json
+    sustainability-scout.json
+    lifecycle-advisor.json
+    brand-rater.json
+    strategic-buyer.json
+  products.json       ← lista unificata prodotti (merge)
+  scores.json         ← punteggi calcolati con pesi
+```
+
+### Come estrarre il JSON
+Per ogni agente, cerca nel suo output il blocco:
+```
+```json:structured-output
+{...}
+```​
+```
+Parsa il JSON e salvalo in `agents/{agent-name}.json`.
+
+### Crea products.json
+Unifica i prodotti di tutti gli agenti:
+1. Raccogli tutti i prodotti da ogni `agents/*.json`
+2. Fai match per `model` o `name` (stesso prodotto citato da agenti diversi)
+3. Per ogni prodotto unificato, raccogli tutti gli score e i dati specifici degli agenti
+4. Salva come array di prodotti con tutti i dati aggregati
+
+### Crea scores.json
+Calcola i punteggi pesati per ogni prodotto:
+```json
+{
+  "weights": {"price": 0.18, "reviews": 0.13, ...},
+  "products": [
+    {"name": "...", "scores": {"price": 8, "reviews": 7, ...}, "total": 76.5}
+  ]
+}
+```
+
+### Crea spec.json
+Salva la spec arricchita dal Discovery:
+```json
+{
+  "query": "TV 55 pollici",
+  "budget": 1000,
+  "weights": {"price": 0.18, ...},
+  "discovery_instructions": {...},
+  "date": "2026-06-14"
+}
+```
+
+Se un agente non produce il blocco JSON (errore o formato vecchio), procedi con i dati testuali come prima — il JSON e un upgrade, non un requisito.
+
+## Step 7: Genera il report
+
+1. **Leggi tutti i risultati** degli agenti (JSON strutturato + markdown narrativo)
 2. **Genera il report** seguendo le istruzioni della skill buy-report:
    - Cross-reference tra i risultati dei diversi agenti
    - Calcola il punteggio pesato usando i **pesi personalizzati dal Discovery** (non quelli di default)
+   - Se hai `scores.json`, usalo come base per la tabella riassuntiva
    - Compila il template del report
    - Salva in `reports/YYYY-MM-DD-[slug].md`
 
-## Step 7: Presenta il verdetto
+## Step 8: Presenta il verdetto
 
 Presenta all'utente in italiano:
 1. **Verdetto rapido**: il prodotto consigliato e perche (2-3 righe)
 2. **Top 3**: i primi 3 prodotti con punteggio, prezzo e **verdetto timing** (COMPRA ORA / ASPETTA...)
 3. **Link al report completo**: percorso del file salvato
-4. **Domanda**: "Vuoi approfondire qualche aspetto o confrontare prodotti specifici?"
+4. **Link ai dati strutturati**: percorso della directory `tracker/results/`
+5. **Domanda**: "Vuoi approfondire qualche aspetto o confrontare prodotti specifici?"
 
 ## Note operative
 - Se un agente fallisce o non torna risultati, procedi con i dati disponibili e segnala il gap
+- Se un agente non produce JSON strutturato, procedi con il markdown — il JSON e best-effort
 - Se meno di 3 prodotti emergono dal pool di tutti gli agenti, segnala all'utente che la ricerca e stata limitata
 - Il report deve essere autosufficiente — leggibile anche senza contesto della conversazione
 - Tutti i prezzi in euro, tutti i testi in italiano

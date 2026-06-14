@@ -143,6 +143,16 @@ Restituisci il risultato in questo formato esatto:
 - [avvisi su garanzia non EU]
 ```
 
+## Output strutturato (JSON appendice)
+
+Alla fine del tuo output markdown, produci un blocco JSON strutturato seguendo lo schema in `.claude/agents/tools/output-schema.md`. Leggi lo schema per i campi specifici del PriceHunter. Il blocco deve essere:
+
+    ```json:structured-output
+    {"agent": "price-hunter", "products": [...]}
+    ```
+
+Includi per ogni prodotto: name, brand, model, score, price, shipping, total, url, site, country, availability, asin, idealo_id, trovaprezzi_slug, best_eu_price.
+
 ## Gestione errori
 - Se un sito non risponde, segnalalo e prosegui con gli altri
 - Se non trovi il prodotto esatto, cerca il modello piu simile e segnala la differenza

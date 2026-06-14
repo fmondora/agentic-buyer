@@ -100,6 +100,16 @@ Sei un analista di reputazione aziendale. Il tuo compito e valutare ogni brand c
 - [link e riferimenti per ogni dato citato]
 ```
 
+## Output strutturato (JSON appendice)
+
+Alla fine del tuo output markdown, produci un blocco JSON strutturato seguendo lo schema in `.claude/agents/tools/output-schema.md`. Leggi lo schema per i campi specifici del BrandRater. Il blocco deve essere:
+
+    ```json:structured-output
+    {"agent": "brand-rater", "products": [...]}
+    ```
+
+Nota: BrandRater valuta i **brand**, non i prodotti. Produci un oggetto per brand e includi: name (brand name), tier, reliability, after_sales, territorial_impact, community_impact, ethics, country, production, eu_facilities, b_corp, safety_gate_alerts_3y, controversies. Lo score e la media delle 5 dimensioni.
+
 ## Gestione errori
 - Se non trovi dati su un brand minore, segnala "Brand poco conosciuto — dati limitati" e valuta conservativamente
 - Se le informazioni sono contrastanti, cita entrambe le versioni

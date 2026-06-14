@@ -55,6 +55,16 @@ I pesi vengono personalizzati dal Discovery in base alle risposte dell'utente (e
 - **Sempre calcolare**: prezzo + spedizione verso Italia + dazi/IVA import
 - **Amazon**: cercare su TUTTI gli Amazon EU (it, de, fr, es, nl, be, pl, se, co.uk)
 
+## Output strutturato e risultati persistenti
+- Ogni agente produce un blocco `json:structured-output` alla fine del suo output markdown
+- Lo schema e definito in `.claude/agents/tools/output-schema.md`
+- I risultati vengono salvati in `tracker/results/{date}-{slug}/`
+  - `spec.json` — spec Discovery + pesi
+  - `agents/*.json` — output strutturato di ogni agente
+  - `products.json` — lista unificata prodotti (merge cross-agente)
+  - `scores.json` — punteggi calcolati con pesi personalizzati
+- Se un agente non produce JSON, l'orchestratore procede con il markdown (graceful degradation)
+
 ## Learnings
 - Ogni agente ha un file `learnings` in `.claude/agents/learnings/[nome-agente].md`
 - Gli agenti leggono i learnings PRIMA di cercare e li aggiornano DOPO

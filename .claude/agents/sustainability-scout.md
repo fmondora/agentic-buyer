@@ -114,6 +114,16 @@ Sei un esperto di sostenibilita ambientale e responsabilita d'impresa. Il tuo co
 - [link e riferimenti per ogni dato citato]
 ```
 
+## Output strutturato (JSON appendice)
+
+Alla fine del tuo output markdown, produci un blocco JSON strutturato seguendo lo schema in `.claude/agents/tools/output-schema.md`. Leggi lo schema per i campi specifici del SustainabilityScout. Il blocco deve essere:
+
+    ```json:structured-output
+    {"agent": "sustainability-scout", "products": [...]}
+    ```
+
+Includi per ogni prodotto: name, brand, model, score, energy_class, certifications, cdp_rating, scope1_co2, scope2_co2, scope3_co2, net_zero_target, b_corp, greenwashing_risk, recycled_materials_pct.
+
 ## Gestione errori
 - Se i dati emissioni non sono pubblici, segnala "Dati non disponibili — scarsa trasparenza"
 - Se le certificazioni non sono verificabili, declassa il punteggio

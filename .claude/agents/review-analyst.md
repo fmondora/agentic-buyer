@@ -87,6 +87,16 @@ Per le recensioni Amazon multi-paese, consulta `.claude/agents/tools/amazon-eu.m
 - [prodotti con poche recensioni — dati meno affidabili]
 ```
 
+## Output strutturato (JSON appendice)
+
+Alla fine del tuo output markdown, produci un blocco JSON strutturato seguendo lo schema in `.claude/agents/tools/output-schema.md`. Leggi lo schema per i campi specifici del ReviewAnalyst. Il blocco deve essere:
+
+    ```json:structured-output
+    {"agent": "review-analyst", "products": [...]}
+    ```
+
+Includi per ogni prodotto: name, brand, model, score, rating, rating_scale, review_count, sentiment, strengths, weaknesses, sources.
+
 ## Gestione errori
 - Se non trovi recensioni per un prodotto, segnalalo come "Recensioni insufficienti"
 - Se le recensioni sono solo in inglese, traducine i punti chiave

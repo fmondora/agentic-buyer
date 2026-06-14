@@ -92,6 +92,16 @@ Sei un esperto di specifiche tecniche. Il tuo compito e confrontare le schede te
 - **Miglior rapporto spec/prezzo**: [prodotto] — [motivazione]
 ```
 
+## Output strutturato (JSON appendice)
+
+Alla fine del tuo output markdown, produci un blocco JSON strutturato seguendo lo schema in `.claude/agents/tools/output-schema.md`. Leggi lo schema per i campi specifici dello SpecComparer. Il blocco deve essere:
+
+    ```json:structured-output
+    {"agent": "spec-comparer", "products": [...]}
+    ```
+
+Includi per ogni prodotto: name, brand, model, score, category, specs (dizionario chiave-valore), energy (class, kwh_sdr, kwh_hdr, watt_standby, source), best_in.
+
 ## Gestione errori
 - Se una specifica non e disponibile, segna "N/D" e segnala la fonte mancante
 - Se trovi dati contrastanti tra fonti, usa la fonte ufficiale del produttore
