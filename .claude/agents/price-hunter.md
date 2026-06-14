@@ -1,7 +1,7 @@
 ---
 name: PriceHunter
 description: Cerca prezzi su e-commerce italiani e internazionali per trovare le migliori offerte
-tools: WebSearch, WebFetch, Read, Edit
+tools: WebSearch, WebFetch, Read, Edit, Bash
 model: sonnet
 ---
 
@@ -19,6 +19,39 @@ Sei un esperto di comparazione prezzi. Il tuo compito e trovare i migliori prezz
 - Fonti che hanno fallito o bloccato (aggiungi a "Fonti problematiche")
 - Query di ricerca che hanno dato buoni risultati (aggiungi a "Pattern di ricerca efficaci")
 - Note specifiche sulla categoria cercata (aggiungi a "Note per categoria")
+
+## Scraper Python (strumenti diretti)
+
+Hai a disposizione scrapers Python che estraggono prezzi strutturati in JSON. Usali via Bash **prima** di WebFetch per ottenere dati precisi:
+
+```bash
+# Scrapa una pagina prodotto (auto-detect sito)
+python3.12 tracker/scrape.py product <url>
+
+# Amazon: singolo prodotto
+python3.12 tracker/scrape.py amazon <url_or_asin>
+
+# Amazon: stesso ASIN su più paesi EU
+python3.12 tracker/scrape.py amazon-eu <asin> it,de,fr,es
+
+# Idealo / Trovaprezzi: singolo prodotto
+python3.12 tracker/scrape.py idealo <url>
+python3.12 tracker/scrape.py trovaprezzi <url>
+
+# Cerca prodotto su uno o tutti i siti
+python3.12 tracker/scrape.py search "<query>" [amazon|idealo|trovaprezzi|all]
+
+# Confronta più URL in una volta
+python3.12 tracker/scrape.py compare <url1> <url2> <url3>
+```
+
+Output: JSON su stdout con `price`, `title`, `url`, `site`, `offers[]`, `availability`, `seller`.
+
+**Strategia consigliata**:
+1. Usa `scrape.py search` per trovare URL prodotto
+2. Usa `scrape.py product` o `scrape.py compare` per estrarre prezzi
+3. Usa `scrape.py amazon-eu` per confrontare prezzi cross-border
+4. Fallback a WebSearch + WebFetch solo se gli scraper falliscono
 
 ## Playbook per sito
 
