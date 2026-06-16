@@ -28,6 +28,47 @@
 - `"[brand] ACR smart TV Texas lawsuit 2025"` — per controversia privacy su tutti i major brand TV
 - `"[brand] QLED false advertising lawsuit"` — per controversie pubblicità ingannevole
 
+## Fonti affidabili (aggiornamento)
+
+- **reportaziende.it / fatturatoitalia.it / aziende.money.it** — dati finanziari aziende IT (fatturato, dipendenti, sede): utile per Biolam, Mazzucato Legnami e simili
+- **it.trustpilot.com/review/www.bricolegnostore.it** — recensioni Brico Legno Store legname online
+- **it.trustpilot.com/review/bricolegnopiu.it** — recensioni Brico Legno Piu (1.200+ rec, 5/5)
+- **it.trustpilot.com/review/tagliolegno.it** — recensioni TaglioLegno (4.4/5, taglio su misura)
+- **it.trustpilot.com/review/legnozone.com** — recensioni Legnozone (4.5/5, 672 rec)
+- **www.mazzucatolegnami.it** — sito e-commerce legname Mazzucato Padova (dal 1902): prezzi e listino tavole larice a vista
+- **putzer.com/it** — sito e-commerce Putzer Holzfachmarkt Vahrn (BZ), Sud Tirolo: prezzi larice grezzo online
+- **italiarecensioni.com / cylex-italia.it** — recensioni locali aziende IT (utile per Mazzucato)
+
+## Fonti affidabili (aggiornamento fitness tracker 2026-06)
+
+- **the5krunner.com** — blog specializzato fitness tracker/wearable: storico aggiornamenti, notizie migrazione Fitbit, Amazfit. Molto aggiornato.
+- **wareable.com** — recensioni e news wearable; informazioni iOS compatibility, limitazioni ecosistema
+- **androidauthority.com** — notizie Samsung Galaxy Fit iOS incompatibilità, stop supporto vecchi modelli
+- **9to5google.com** — notizie Google/Fitbit: migrazione account, feature removal 2026
+- **gadgetsandwearables.com** — dettagli tecnici migrazione Fitbit/Google 2026
+- **sammobile.com** — notizie Samsung wearable, aggiornamenti software
+- **media.business-humanrights.org** — scorecard KnowTheChain ICT: score lavoro forzato per brand tech (Xiaomi 5/100)
+- **ethical.org.au/companies/** — punteggi etici brand consumer electronics
+- **mozillafoundation.org/privacynotincluded** — valutazioni privacy su smartwatch/fitness tracker (Huawei Watch, Band)
+- **consumer.huawei.com/it/support/service-center/** — lista centri assistenza Huawei Italia (Roma, Catania)
+- **support.garmin.com/it-IT** — procedura invio prodotti in assistenza Garmin Italia
+- **europarl.europa.eu** — interrogazioni parlamentari EU sicurezza Huawei (2025, E-003287/2025)
+
+## Fonti problematiche (aggiornamento fitness tracker 2026-06)
+
+- Trustpilot pagine Amazfit EU/UK: confermato il pattern di non risposta da parte dell'azienda; WebFetch blocca (403), usare WebSearch con snippet titolo
+- Trustpilot Garmin: frammentato su più domini (garmin.com, garmin.be, forums.garmin.com) — voti bassi ma poco significativi numericamente
+- Ricerche "assistenza Xiaomi Italia" restituiscono prevalentemente pagine ufficiali mi.com — difficile trovare feedback indipendenti
+
+## Pattern di ricerca efficaci (fitness tracker)
+
+- `"[brand] fitness tracker iOS [anno] limitations compatibility"` — per trovare limitazioni ecosistema iOS
+- `"[brand] discontinued service shutdown cloud [anno]"` — per storico abbandoni software
+- `"Samsung Galaxy Fit iOS iPhone compatible"` — rivela incompatibilità Fit 3 con iOS (confermata da Apple Community, Samsung Community)
+- `"Fitbit Google account migration 2026 data loss features removed"` — per rischio cloud Google
+- `"KnowTheChain ICT benchmark 2025 [brand]"` + media.business-humanrights.org — per score lavoro forzato supply chain
+- `"[brand] centri assistenza Italia 2025"` — per coverage post-vendita IT
+
 ## Note per categoria
 
 ### TV 55 pollici fascia fino a 1000€ — analisi 2026-06
@@ -161,6 +202,146 @@ TCL e Hisense colpiti da class action negli USA per aver commercializzato TV com
 - Trustpilot: nessun risultato specifico per brand ombrelloni (non sono su Trustpilot come brand diretti)
 - Safety Gate: non accessibile via WebFetch (solo JS), usare WebSearch con query site:ec.europa.eu/safety-gate
 - Caravita: i rivenditori italiani non sono facilmente trovabili via ricerca; il brand è più forte su DE, FR, AT
+
+### Fitness tracker/wristband + ecosistema API — analisi 2026-06 (aggiornamento)
+
+**Ecosistema API — situazione per sviluppatori (giugno 2026):**
+- **WHOOP**: developer.whoop.com — API REST ufficiale, OAuth 2.0, documentata, accesso gratuito. Endpoint: recovery, sleep, strain, body measurement, workout, cycle. Richiede account con abbonamento attivo. Un developer ha fatto reverse engineering di WHOOP 5.0 in 24h (progetto Goose, open source) — segno che il protocollo è accessibile. Controversia: richiede subscription attiva per accedere ai propri dati via API.
+- **Garmin**: developer.garmin.com/gc-developer-program — API ufficiale (Activity API + Health API). Connect IQ SDK per app su device. Nota: da marzo 2026 Garmin ha cambiato SSO e aggiunto bot detection che blocca librerie Python note — complicato per script non ufficiali. Ma API ufficiale funziona.
+- **Fitbit/Google**: API Fitbit Web legacy → deprecata, shutdown settembre 2026. Sostituita da Google Health API (lanciata Google I/O maggio 2026). Tutti gli scope "Restricted" — richiede security review. OAuth token non trasferibili: ogni utente deve riconsentire. Piattaforma completamente nuova: nuovo auth, nuovo schema dati.
+- **Amazfit/Zepp**: developer.zepp.com + docs.zepp.com — SDK per mini app e watchface su Zepp OS. Repository GitHub zepp-health/rest-api ma documentazione limitata. NO API cloud pubblica per estrarre dati salute dall'account utente. Il dato storico non passa per server Zepp accessibili via API. Per estrarre dati bisogna costruire mini program sul device o usare metodi non ufficiali.
+
+**WHOOP — controversie specifiche:**
+- Upgrade policy 5.0 (maggio 2025): promessa "hardware gratis con abbonamento" violata → retromarcia forzata da backlash mediatico (Bloomberg, TechCrunch)
+- Class action privacy (agosto 2024, California): condivisione dati salute (HR, sleep, HRV, salute riproduttiva) con Segment senza consenso. Ancora attiva.
+- Studio accademico peer-reviewed 2025: WHOOP nel cluster ad alto rischio privacy tra 17 produttori wearable
+- Trustpilot whoop.com: ~4.800 recensioni, rating misto — problemi ricorrenti su customer service e spedizioni
+- Valutazione Sacra (equity research maggio 2026): $10.1B valuation Serie G, Cristiano Ronaldo/LeBron James come investor
+
+**Garmin Vivosmart 6:**
+- Non ancora disponibile ufficialmente al giugno 2026. Leak su sito indonesiano Garmin + filing regolatori. Lancio atteso estate/autunno 2026 (post-CES 2026 dove non fu annunciato ufficialmente). Feature attesa: GPS integrato (primo per la linea Vivosmart). Nessuna conferma prezzo/data.
+
+**Amazfit Helio Strap:**
+- Disponibile in EU inclusa Italia. Prezzo ~€87-100. Helio Ring disponibile a €299. Helio Ring 2 in arrivo H2 2026.
+
+**Pattern di ricerca efficaci (API/ecosistema developer):**
+- `"[brand] developer API documentation OAuth2 [anno]"` — per trovare portale ufficiale
+- `"[brand] API reverse engineering open source GitHub"` — per capire accessibilità non ufficiale
+- `"[brand] class action lawsuit privacy data sharing [anno]"` — per controversie privacy specifiche wearable
+- `"[brand] subscription controversy upgrade policy [anno]"` — per lock-in e trasparenza commerciale
+- `"Garmin Vivosmart 6 release date leak 2026"` — the5krunner.com e wareable.com per leak prodotti attesi
+
+**Fonti affidabili (aggiornamento):**
+- **developer.whoop.com** — documentazione ufficiale WHOOP API (OAuth2, endpoint, scope)
+- **developer.garmin.com** — portale sviluppatori Garmin (Connect IQ SDK, Activity API, Health API)
+- **docs.zepp.com / developer.zepp.com** — portale sviluppatori Zepp/Amazfit (Zepp OS, mini program)
+- **developers.google.com/health** — Google Health API (sostituto Fitbit Web API)
+- **milberg.com** + **topclassactions.com** — class action WHOOP privacy (condivisione dati Segment)
+- **the5krunner.com** — fonte affidabile per leak Garmin Vivosmart 6 e update ecosistema fitness tracker
+- **tryterra.co/blog** — guida tecnica Google Health API per sviluppatori
+
+### Brand cinesi wearable — analisi differenziata per tier (2026-06)
+
+**Tier 1 — Brand cinesi affermati (C):**
+- **Huawei**: hardware di qualita, assistenza EU presente (Roma, Catania), ma legge intelligence cinese = obbligo cooperazione dati; iOS ecosystem degradato (no app install, no NFC wallet, sync Apple Health problematica); EP interrogazione sicurezza 2025
+- **Xiaomi**: prodotto competitivo, prezzo basso, ma denuncia GDPR attiva noyb (gennaio 2025) specifica per Mi Fitness band (Grecia); KnowTheChain 5/100 (minimo categoria); Mi Fitness NON sincronizza Apple Health — blocco critico per iOS
+
+**Tier 2 — Brand emergenti (C+):**
+- **Honor**: spin-off Huawei (novembre 2020), legalmente indipendente, Google Play ripristinato — non soggetto a blocco Huawei. Assistenza garanzia problematica: accetta solo prodotti acquistati da store ufficiale (rifiuto retailer terzi confermato su Trustpilot). Nessuna controversia grave autonoma. Band 9 e prodotto entry, non adatto CrossFit serio.
+
+**Tier 3 — Brand OEM/DTC senza track record (D):**
+- **JCVital (Shenzhen Youhong / J-Style / Jointcorp)**: produttore OEM che ha lanciato marchio consumer DTC. Zero recensioni indipendenti verificabili. Tutti i risultati di ricerca sono materiale promozionale. Zero assistenza EU. Struttura multi-nome opaca (J-Style, Jointcorp, JCVital, Youhong Medical = stessa entita). Pattern classico white-label rinominato per DTC.
+- **Hume Health (FitTrack Inc.)**: HQ dichiarato USA/Canada, manifattura Cina. FitTrack (app developer) con BBB complaints aperti, customer service irraggiungibile, cancellazioni subscription bloccate. Deriva HR +5-8 bpm vs Garmin. Posizionamento longevity/metabolico — non CrossFit. Nessuna API developer documentata.
+
+**Fonti affidabili per brand cinesi wearable:**
+- **noyb.eu** — denunce GDPR formali (PDF scaricabili per ogni caso specifico)
+- **cybernews.com** — coverage denunce noyb su brand cinesi
+- **media.business-humanrights.org** — KnowTheChain benchmark ICT (supply chain etica)
+- **nature.com/articles/s41746-025-01757-1** — studio npj Digital Medicine 2025: risk score privacy per produttori wearable (Huawei e Xiaomi = alto rischio)
+- **fittrack.pissedconsumer.com** — complaints FitTrack/Hume Health
+- **ca.trustpilot.com/review/fittrack.com** — Trustpilot FitTrack
+- **jointcorp.com / alibaba.com** — conferma OEM nature di JCVital
+
+**Pattern di ricerca efficaci (brand cinesi wearable):**
+- `"[brand] noyb GDPR complaint fitness band EU [anno]"` — per denunce privacy specifiche
+- `"[brand] OEM white label manufacturer" site:alibaba.com OR site:jointcorp.com` — per verificare natura OEM
+- `"[brand] BBB complaint OR pissedconsumer [anno]"` — per complaint consumer USA (spesso anticipano problemi EU)
+- `"[brand] iOS Apple Health sync limitations"` — per verificare compatibilita pratica
+- `"[brand] EU warranty service center Italy [anno]"` — per coverage post-vendita reale
+
+### Fitness tracker / smart band fascia fino a 200€ — analisi 2026-06
+
+**Ecosistema iOS — situazione critica per 2 brand su 6:**
+- **Samsung Galaxy Fit 3 (2024) non funziona su iPhone** — confermato da Apple Community, Samsung Community, Android Authority. Il Galaxy Fit 2 supportava iOS, il Fit 3 lo ha abbandonato. Decisione documentata in articolo TechRadar "Samsung explains why it dropped iOS support".
+- **Samsung Health iOS**: versione 1.14.4 (dicembre 2020) non più aggiornata. L'app principale rimane Android-only per funzioni avanzate.
+- **Huawei Health iOS**: app disponibile ma limitata — no installazione app su watch, no risposta ai messaggi, no NFC wallet. Sincronizzazione con Apple Health problematica (segnalata su Apple Community). App aggiornata regolarmente (v16.1.2.305, marzo 2026).
+- **Garmin Connect iOS**: piena compatibilità con iOS 17.6+. Features EU Live Activities da maggio 2026 (iOS 26.5). Unico brand con integrazione iOS attivamente migliorata nel 2026.
+- **Fitbit/Google Health iOS**: app migrata a Google Health maggio 2026, funziona su iOS ma richiede account Google obbligatorio.
+- **Amazfit Zepp iOS**: compatibile da iOS 12.4+, aggiornamenti attivi (v10.4 maggio 2026).
+- **Xiaomi Mi Fitness iOS**: "Mi Fitness (Xiaomi Wear Lite)" su App Store. Nota: NON sincronizza con Apple Health (confermato da FAQ ufficiale Xiaomi). Limitazione critica per utenti iOS.
+
+**Storico abbandono software — rischi cloud:**
+- **Fitbit/Google**: storico di abbandono sistematico. Acquisita Pebble (2016) → spenta in 1 anno. Forumzone Fitbit, badges, sleep animals rimossi maggio 2026. Account Fitbit terminati maggio 2026 con migrazione obbligatoria a Google. Google ha già spento Google Fit API (deprecate 2024, fine servizio fine 2026). Rischio ALTO: Google può spegnere Fitbit Health Coach in futuro.
+- **Samsung**: ha terminato supporto Galaxy Fit / Fit e (modelli 2019) nel febbraio 2026. Ciclo di vita supporto software 3-5 anni per tracker entry-level.
+- **Amazfit**: nessuna chiusura servizi documentata. App aggiornata attivamente. Rischio contenuto ma Zepp Health è società quotata cinese (NYSE: ZEPP) con ricavi in calo.
+- **Garmin**: nessuna chiusura servizi documentata. Garmin Connect attivo da oltre 15 anni senza interruzioni. Modello freemium (base gratis, Garmin Connect+ a pagamento per coaching AI).
+- **Xiaomi**: nessuna chiusura servizi documentata per smart band. Attenzione: dati utente su server cinesi.
+- **Huawei**: nessuna chiusura servizi Health documentata. Rischio geopolitico: sanzioni USA, interdetto dal Play Store Android (2019). In EU i prodotti funzionano ma l'ecosistema è isolato da Google.
+
+**Assistenza post-vendita Italia:**
+- **Garmin**: solo servizio per posta (invio prodotto a centro riparazioni). Nessun centro fisico in Italia per walk-in. Garanzia 2 anni. Trustpilot problematico (1.6/5) — lamentele warranty denial.
+- **Huawei**: centri fisici a Roma e Catania. Ritiro a domicilio gratuito. Programma "Stagione dei Vantaggi 2025" (riparazioni senza costi manodopera). Supporto chat live lun-ven 9-18.
+- **Samsung**: rete centri autorizzati capillare in Italia. Procedure standard consumer electronics.
+- **Fitbit/Google**: assistenza quasi solo online/chat. "No access to live customer service person" — Trustpilot. Centri assistenza terzi in Italia (centri-assistenza.repair).
+- **Amazfit**: zero risposta su Trustpilot EU/UK. Supporto solo online, tempi >3 settimane segnalati. "Warranty not worth the paper it is written on" — recensioni EU.
+- **Xiaomi**: centri autorizzati per regione in Italia (mistoreitalia.com). Qualità variabile. Assistenza segnalata come "inesistente" in forum italiani.
+
+**Etica e supply chain:**
+- Xiaomi: KnowTheChain 2025 = 5/100 (media 20, massimo 61). Allegazione lavoro forzato Uiguri nella supply chain non risolta. Social Benchmark 2026 = 9.3/100. Peggiore della categoria su entrambi i benchmark.
+- Garmin: Supplier Code of Conduct pubblicato, Corporate Impact Report 2025, impegno esplicito su dignità lavoratori. Non B Corp ma governance ESG documentata.
+- Huawei: problemi geopolitici (sanzioni USA, contratto wiretap spagnolo contestato EP maggio 2025). Legge cinese obbligo accesso dati governativo.
+- Samsung, Amazfit, Fitbit/Google: nessun dato specifico controversie supply chain in questa ricerca.
+
+**Produzione:**
+- Garmin: >90% Taiwan (Xizhi, Jhongli, Tainan), sedi USA (Olathe, Kansas). Nuovo impianto Tailandia 2027.
+- Xiaomi: 100% Cina.
+- Amazfit/Zepp: 100% Cina.
+- Samsung: misto (Cina, Vietnam, India) per wearable.
+- Huawei: Cina.
+- Fitbit/Google: Cina (produzione) + USA (R&D).
+
+### Pannelli/tavole larice rivestimento parete — analisi 2026-06
+
+**Trustpilot rivenditori legname online Italia (giugno 2026):**
+- Leroy Merlin Italia (leroymerlin.it): 2,8/5 su ~25.000+ rec — "Nella media" — problemi su danni trasporto, resi ignorati, qualita variabile del legno
+- Bricoman/Tecnomat (bricoman.it): 1,9/5 su 3.284 rec — "Scarso" — servizio online pessimo, stock inaffidabile, assistenza irraggiungibile
+- ManoMano (manomano.it): 4,0/5 su ~29.800 rec — "Ottimo" — marketplace multi-venditore, supporto buono ma dipende dal singolo seller
+- Brico Legno Piu (bricolegnopiu.it): 5/5 su 1.200+ rec — eccellente, specializzato, imballo accurato, piccolo e-commerce dedicato
+- Brico Legno Store (bricolegnostore.it): positivo ma meno rec di Brico Legno Piu
+- TaglioLegno (tagliolegno.it): 4,4/5 — taglio su misura, tempi ~4 settimane, non stock pronto
+- Legnozone (legnozone.com): 4,5/5 su 672 rec — tavole piallate, imballo buono, tempi 2 settimane, foreste europee
+- Mazzucato Legnami (mazzucatolegnami.it): Padova, dal 1902, listino online con prezzi a vista (perline larice 20x150x2000 = 10,50€); rec miste: alcuni positivi su qualita/velocita, altri su comunicazione scarsa
+
+**Putzer Holzfachmarkt:** sede a Vahrn (Varna, BZ) — Sud Tirolo, Italia. Sito it/de. Larice grezzo 30mm a 13,80€, 40mm a 12,80€, 50mm a 28,70€. Consegna 3-4 giorni lavorativi. Produttore/rivenditore regionale con vicinanza ad aree di produzione larice (Alpi orientali).
+
+**Biolam Italia Srl:** Roma, fondata 2015, ATECO 41.2 (costruttore case in legno Xlam), fatturato 2,4M€ (2023). Non e-commerce standard: lavora su preventivo/progetto. Prodotti certificati FSC/PEFC. Non adatta per ordini spot >10 pezzi a privati.
+
+**Nordholz:** specializzato rivestimento parete larice qualita alta (perlina maschio-femmina, oliata), prezzi 74-128€/pz — sopra fascia 60€. Rivenditore premium, spedizione 26€.
+
+**Legname su Amazon IT:** pezzi >150cm gestiti da venditori terzi con corrieri standard (GLS, BRT). Rischio rottura/danno all'imballo per lunghezze >200cm su corrieri standard. GLS accetta colli fino a somma 3 dimensioni = 300cm, ma legname grezzo e fragile agli spigoli. Consigliare sempre spedizione su pallet per ordini >5 pezzi.
+
+**Pattern di ricerca efficaci (legname online):**
+- `"[rivenditore] larice rivestimento parete" site:it.trustpilot.com` — per voti Trustpilot specifici
+- `"[azienda]" site:reportaziende.it OR site:fatturatoitalia.it` — per dati societari IT
+- `"tavole larice [dimensione] prezzo" site:[fornitore].it` — per prezzi a vista senza registrazione
+- `"[rivenditore] legname spedizione pallet corriere" recensioni` — per esperienze su colli lunghi
+- Evitare WebFetch su Trustpilot — restituisce 403. Usare WebSearch con snippet del titolo (contiene voto)
+
+**Fonti problematiche (legname):**
+- eBay IT pagina inserzione (403 su WebFetch)
+- Trustpilot pagine dirette (403 su WebFetch) — estrarre voto dal titolo URL via WebSearch
+- Brico Legno Piu scheda prodotto: non mostra prezzi senza JS attivo
+- Biolam: sito non e-commerce, nessun prezzo pubblico
 
 **Pattern di ricerca efficaci (ombrelloni):**
 - `"[brand] ombrelloni [città sede] fatturato dipendenti"` + reportaziende.it — per dati finanziari IT

@@ -1,0 +1,84 @@
+{
+  "agent": "technical-critic",
+  "products": [
+    {
+      "name": "Huawei Band 11 Pro",
+      "brand": "Huawei",
+      "model": "Band 11 Pro",
+      "score": 5.5,
+      "hr_accuracy_rest": "±3 bpm (stima indiretta)",
+      "hr_accuracy_exercise": "gap 10-25 bpm in compound lift (stima categoria)",
+      "hrv_validation": "ZERO validazione RMSSD indipendente",
+      "gps_accuracy": "plausibile urbano, deviazioni segnalate, non dual-band",
+      "crossfit_suitability": "HR inutile durante set pesanti (Huawei stessa avverte)",
+      "ios_ecosystem": "chiuso, no HRV raw via API",
+      "verdict": "Band solida per salute quotidiana e corsa leggera. Per CrossFit, soffre limiti strutturali polso."
+    },
+    {
+      "name": "Xiaomi Smart Band 10 Pro",
+      "brand": "Xiaomi",
+      "model": "Band 10 Pro",
+      "score": 6.5,
+      "hr_accuracy_rest": "buona (4LED+2PD)",
+      "hr_accuracy_exercise": "139 vs 138 bpm Garmin in steady-state. Sketchy ad alta intensita",
+      "hrv_validation": "overnight only, no RMSSD indipendente",
+      "gps_accuracy": "5 sistemi GNSS, matched running watch in corsa",
+      "crossfit_suitability": "stessi limiti polso, ma miglior hardware sensore della fascia",
+      "ios_ecosystem": "Apple Health sync, piu aperto di Huawei",
+      "verdict": "Miglior sensore hardware sotto €100. HR corsa validata. HRV overnight limita recovery monitoring."
+    },
+    {
+      "name": "JCVital Pro V8 ECG",
+      "brand": "JCVital",
+      "model": "Pro V8 ECG",
+      "score": 2.5,
+      "hr_accuracy_rest": "sconosciuta (ZERO test)",
+      "hr_accuracy_exercise": "sconosciuta (ZERO test)",
+      "hrv_validation": "ZERO",
+      "gps_accuracy": "assente",
+      "crossfit_suitability": "non valutabile",
+      "ios_ecosystem": "sconosciuto",
+      "verdict": "ODM cinese senza alcuna validazione. $199 ingiustificato. Da evitare."
+    },
+    {
+      "name": "Hume Band 2.0",
+      "brand": "Hume Health",
+      "model": "Band 2.0",
+      "score": 5.0,
+      "hr_accuracy_rest": "5-8 bpm PIU ALTA vs Garmin/Oura (errore sistematico)",
+      "hr_accuracy_exercise": "squat pesanti: 165→110 bpm (lag 20-30s documentato)",
+      "hrv_validation": "trend coerente con Oura/WHOOP, valori assoluti diversi",
+      "gps_accuracy": "assente",
+      "crossfit_suitability": "HR CrossFit inaffidabile (compound lift). Recovery monitoring accettabile.",
+      "ios_ecosystem": "raw data export, Apple Health sync",
+      "verdict": "Meglio per recovery passivo che per CrossFit attivo. Raw data export unico vantaggio. DCRainmaker segnala dati mancanti."
+    },
+    {
+      "name": "Huawei Band 9",
+      "brand": "Huawei",
+      "model": "Band 9",
+      "score": 5.0,
+      "hr_accuracy_rest": "come Band 11 Pro (stesso sensore TruSeen 5.5)",
+      "hr_accuracy_exercise": "come Band 11 Pro (stessi limiti polso)",
+      "hrv_validation": "ZERO validazione RMSSD",
+      "gps_accuracy": "assente",
+      "crossfit_suitability": "stessi limiti Band 11 Pro, senza GPS",
+      "ios_ecosystem": "chiuso come Band 11 Pro",
+      "verdict": "Ottimo per monitoraggio passivo a €35. Per CrossFit manca GPS ed ecosistema chiuso."
+    },
+    {
+      "name": "Honor Band 9",
+      "brand": "Honor",
+      "model": "Band 9",
+      "score": 3.0,
+      "hr_accuracy_rest": "variabile",
+      "hr_accuracy_exercise": "+5-10 bpm (documentato TechAdvisor)",
+      "hrv_validation": "nessuna",
+      "gps_accuracy": "assente",
+      "crossfit_suitability": "HR inaffidabile, dati derivati inaffidabili, peggiore della shortlist",
+      "ios_ecosystem": "non documentato per developer",
+      "verdict": "Peggiore scelta per CrossFit. HR sistematicamente alta invalida tutti i metric derivati."
+    }
+  ],
+  "critical_note": "Per CrossFit HR real-time nessuno di questi e affidabile durante compound lift. Fascia toracica (Polar H10, €90) rimane l'unica soluzione validata."
+}

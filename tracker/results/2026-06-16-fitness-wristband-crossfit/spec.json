@@ -1,0 +1,39 @@
+{
+  "query": "wristband fitness tracker con monitoraggio sonno, HRV, VO2max, SpO2",
+  "budget": 200,
+  "budget_type": "soft",
+  "filters_hard": [
+    "export_dati_o_api_aperta",
+    "hrv_continuo_o_overnight",
+    "water_resistance_5atm",
+    "ios_compatible",
+    "battery_min_5_days"
+  ],
+  "filters_soft": [
+    "budget_200_EUR",
+    "export_csv_json_healthkit",
+    "vo2max_non_solo_fc",
+    "weight_under_35g",
+    "community_developer_sdk",
+    "usb_c_charging",
+    "skin_temperature_readiness"
+  ],
+  "weights": {
+    "price": 0.15,
+    "reviews": 0.18,
+    "specs": 0.20,
+    "technical_critic": 0.15,
+    "sustainability": 0.05,
+    "lifecycle": 0.10,
+    "brand": 0.13,
+    "timing": 0.04
+  },
+  "discovery_instructions": {
+    "use": "Monitoraggio salute continuo + CrossFit",
+    "sport": "CrossFit (HIIT, sollevamento, movimenti esplosivi)",
+    "philosophy": "24/7 equilibrio comodita/precisione",
+    "ecosystem": "iOS, API aperte per vibecoding/hacking dati",
+    "parameters": "HRV, sonno, VO2max, SpO2, HR continuo"
+  },
+  "date": "2026-06-16"
+}

@@ -237,3 +237,342 @@
 - `"[brand] cantilever umbrella specifications aluminum pole fabric UPF weight"` — per brand internazionali (Doppler, Umbrosa)
 - `site:designperte.it [modello]` — ottimo per specifiche Scolaro complete
 - `site:bsvillage.com [marca]` — ottimo per Umbrosa con prezzi IT
+
+---
+
+### Tavole/pannelli in larice per rivestimento parete interno — aggiornamento giugno 2026
+
+**Fonti affidabili:**
+- **trumerholz.com** — schede prodotto complete con prezzi/m², dimensioni (spessore, larghezza, lunghezza), finiture (spaccato/spazzolato/evaporato). Larice alpino da Alto Adige. Prezzi visibili senza login.
+- **pellet-legnami.it** — classi qualità AB e BC esplicite, prezzi per pezzo, umidità dichiarata (18%), dimensioni complete. Larice siberiano. Molto affidabile.
+- **bewoodshop.it** — confronto grezzo vs piallato stesso prodotto (€4 vs €7,15 per 100cm per tavola 25×100mm). Tolleranza +/-3mm su lunghezza e sezione. Nessuna info umidità/provenienza.
+- **gallolegnami.it** — densità larice secco 650 kg/m³, modulo elastico 14.000 N/mm². Dati strutturali affidabili.
+- **risponde.promolegno.com** — fonte autorevole per confronto alpino vs siberiano. Durabilità EN 350-2 classe 3-4 per entrambi. Siberiano: nodi piccoli, struttura omogenea, maggior stabilità dimensionale.
+- **pandawood.it** — umidità consigliata per interno 12-15%, densità 650 kg/m³.
+- **nordholz.it** — rivestimenti larice alpino Alto Adige, prezzi/m² (€191-248/m²), finiture premium (spaccato+spazzolato, evaporato). Nessun dato umidità/qualità.
+
+**Fonti problematiche:**
+- **xlab.design** — HTTP 404 su pagine prodotto dirette. Usare snippet WebSearch per dimensioni (tavole 150x17x25mm).
+- **bricolegnostore.it** — URL prodotti singoli restituiscono 404. Pagina categoria funziona.
+- **shop.ramoserholz.com** — prezzi nascosti (richiedono login/account). Classi qualità visibili nei titoli prodotto via WebSearch.
+- **putzer.com** — pagine prodotto restituiscono solo JS/CSS. Prezzi estraibili solo da snippet WebSearch.
+- **mazzucatolegnami.it** — prezzi e spec incomplete. Solo lista prodotti senza dettagli tecnici.
+
+**Pattern di ricerca efficaci:**
+- `"[fornitore] larice [dimensioni] prezzo"` — snippet da WebSearch per prezzi
+- `site:pellet-legnami.it larice` — prezzi e classi qualità leggibili
+- `"larice siberiano vs alpino [uso specifico]"` + WebFetch su risponde.promolegno.com
+- `"larice [dimensioni] rivestimento parete interno essiccato"` — trova fornitori con spec umidità
+
+**Note categoria — tavole larice rivestimento parete:**
+
+**Classi qualità (norma EN 13017-1 per conifere):**
+- **Classe A / 0-I**: senza nodi, pochi difetti — uso premium, prezzo +30-40%
+- **Classe B / I-II**: nodi sani fino a 25 mm, piccole riparazioni — uso standard
+- **Classe C / II**: nodi fino a 45 mm, forte variazione colore — rustico/economico
+- **AB** (nomenclatura mercato estero): corrisponde a B italiano, qualità superiore
+- **BC**: corrisponde a C italiano, rustico con nodi
+- **US / Boules**: selezione grezza non piallata, classi miste 0-II
+
+**Umidità target per interno:**
+- Secco in forno (KD) 8-12%: ideale per riscaldamento, ambienti secchi. Evita ritiro post-posa.
+- Naturale/stagionato 15-20%: accettabile per ambienti temperati. Rischio lieve ritiro.
+- Pellet-legnami.it dichiara 18% (naturale). Putzer non dichiara. Trumerholz non dichiara.
+- Per parete interna riscaldata: chiedere esplicitamente KD ≤12%.
+
+**Densità e peso:**
+- Larice alpino (Larix decidua): 550-650 kg/m³ secco
+- Larice siberiano (Larix sibirica): 650-725 kg/m³ secco — più denso del 7-9%
+- Calcolo peso tavola 80×200×18mm: volume = 0,08×0,20×0,018 = 0,000288 m³ → 650 kg/m³ × 0,000288 = **0,187 kg per tavola** (alpino) / **0,205 kg** (siberiano)
+
+**Differenza prezzo grezzo vs piallato:**
+- Dati bewoodshop.it su tavola 25×100mm: grezzo €4,00 / piallato €7,15 per 100cm → **+79% per piallato S4S**
+- Su formati maggiori il delta si riduce (lavorazione ha costo fisso). Stima realistica: +30-50% per S4S.
+- Spazzolato: +15-25% aggiuntivo rispetto a piallato (lavorazione estetica).
+
+**Provenienza — differenze pratiche:**
+- **Alpino** (Austria, Italia settentrionale, Tirolo): anelli larghi, nodi frequenti e grandi, colore rosso-arancio intenso. Più economico sul mercato IT. Classi A più rare.
+- **Siberiano** (taiga russa): anelli stretti, nodi piccoli, struttura omogenea, stabilità dimensionale superiore. Adatto per interni con riscaldamento. Richiedere FSC/PEFC.
+- **Scandinavo** (Finlandia, Norvegia): non è larice ma spesso pino nordico. Non confondere con larice scandinavo.
+- Durabilità EN 350-2: classe 3-4 per entrambi alpino e siberiano — non idonei per uso esterno senza trattamento.
+
+**Formati disponibili sul mercato (effettivi, non 80×200×18mm esatti):**
+- Spessori comuni: 18-19 mm, 22-25 mm, 28-32 mm
+- Larghezze comuni: 90-100 mm, 140-150 mm, 175-200 mm
+- Lunghezze: 2000-4000 mm
+- Per parete 80mm di larghezza: raro come formato standard. Di solito 90-100mm. Su misura disponibile.
+- La dimensione 200cm di lunghezza è disponibile ma meno comune di 400cm.
+
+**Etichetta energetica EU:** N/A — prodotti in legno non soggetti a etichettatura energetica EU (direttiva 2010/30/UE si applica a prodotti energetici, non a materiali da costruzione passivi).
+
+---
+
+### Fitness tracker / Recovery band screenless per CrossFit (budget ≤200€) — aggiornamento giugno 2026
+
+**Modelli verificati (shortlist CrossFit + salute 24/7, iOS, HRV/SpO2/VO2max):**
+- Amazfit Helio Strap (~€100) — screenless, BioTracker 6.0 PPG 5 fotodiodi, 20g, HRV sonno, SpO2 periodico, VO2max (richiede corsa 10min 75% HRmax + telefono), iOS HealthKit sì, no GPS, ~10 giorni batteria, no subscription
+- Google Fitbit Air (~€100) — screenless, 12g con strap (5.2g senza), GPS connected, HRV sonno, SpO2 periodico, NO VO2max, iOS 16.4+ HealthKit (read-only, non write), ~7 giorni batteria, no subscription (Premium opzionale €9.99/mese)
+- WHOOP 5.0 (~€199/anno) — screenless, PPG 26Hz, 26.5g, IP68 10m, HRV continuo 24/7, SpO2 continuo, VO2max sì, iOS 14+ sì, NO GPS, 14 giorni batteria, subscription obbligatoria €199/anno (hardware incluso)
+- Fitbit Charge 6 (~€85-130) — display AMOLED 1.04", 30g con strap, GPS built-in, HRV sonno, SpO2 notturno, VO2max sì (Cardio Fitness Score), iOS sì ma NO HealthKit nativo (solo app terze parti a pagamento), 5ATM, 7 giorni batteria, no subscription (Premium opzionale)
+- Garmin Vivosmart 6 (leak, ~€179, non ancora disponibile) — GPS built-in (confermato da leak), 30+ sport modes, HRV Status atteso (non confermato), SpO2 atteso, VO2max atteso, iOS sì, prezzo stimato €149-199
+
+**Note critiche per categoria CrossFit/recovery band:**
+
+**HRV — tipologie distinte da non confondere:**
+- HRV "continuo 24/7" vero: solo WHOOP 5.0. Raccoglie dati HRV ogni minuto, calcola recovery score al risveglio su dati notturni.
+- HRV "sonno only": Amazfit Helio, Fitbit Charge 6, Fitbit Air — misurano HRV durante il sonno, non durante il giorno.
+- Garmin Vivosmart 5: HRV usato internamente per Body Battery/stress, non esposto come HRV Status separato. Il 6 dovrebbe aggiungere HRV Status ufficiale.
+
+**Optical sensor + CrossFit — problema noto:**
+- Tutti i wristband (polso) hanno accuracy ridotta durante movimenti esplosivi CrossFit (sollevamento, box jump, kettlebell swing): oscillazioni del polso interferiscono col sensore PPG.
+- WHOOP soluzione documentata: posizionare sul bicipite — elimina interferenze grip/forearm, accuracy ~99% chest strap.
+- Fitbit Charge 6: sensore migliorato "60% più accurato" per HIIT, ma community reports mostrano problemi reali durante WOD con barbell. Wrist placement critico.
+- Amazfit Helio Strap: PPG BioTracker 6.0, 5 fotodiodi — migliore hardware tra i budget, ma non testato sistematicamente per CrossFit specifico.
+- Fitbit Air: overshot di 20-40bpm durante interval ad alta intensità confermato da DC Rainmaker.
+
+**VO2max — metodi e affidabilità:**
+- WHOOP 5.0: stima continua su 145+ attività, metodo più completo.
+- Garmin Vivosmart 6: atteso come il 5 (richiede attività cardio ≥15 min).
+- Fitbit Charge 6: "Cardio Fitness Score" — stima, non clinica, ma confermata funzionante.
+- Amazfit Helio: richiede corsa specifica ≥10min + telefono, VO2max sistematicamente sottostimato (test DC Rainmaker: 40 vs 47 Garmin+chest strap).
+- Fitbit Air: NO VO2max confermato.
+
+**iOS/HealthKit — differenze importanti:**
+- Amazfit Helio: HealthKit write sì (sleep, HRV, HR, VO2max, SpO2, resp rate, steps).
+- WHOOP 5.0: HealthKit sì (iOS 14+).
+- Garmin Vivosmart 6: HealthKit sì (tutti i Garmin post-2020).
+- Fitbit Charge 6 / Fitbit Air: NO HealthKit nativo — solo app terze parti a pagamento (es. "Fitbit to Apple Health Sync"). Gap rilevante per utenti iOS.
+
+**Subscription model WHOOP — costo totale EU:**
+- WHOOP One: €199/anno — hardware incluso (WHOOP 5.0 device).
+- Dopo primo anno: si rinnova €199/anno. Su 2 anni = €398 totale.
+- Tier superiori (Peak, Life) costano di più e includono WHOOP MG (con sensori medici aggiuntivi).
+- Nessun costo anticipato per device fisico — modello opposto a tutti gli altri.
+
+**Fonti affidabili per questa categoria:**
+- dcrainmaker.com — recensione approfondita Amazfit Helio Strap con test VO2max e GPS accuracy
+- dcrainmaker.com/2026/05/fitbit-review-vs-whoop.html — Fitbit Air vs WHOOP: dati accuracy HIIT
+- wearabledevices.com/devices/whoop-5 — spec complete WHOOP 5.0
+- smartwatchinsight.com/garmin-vivosmart-6/ — leak confermati Vivosmart 6 (GPS, 30+ sports)
+- community.fitbit.com — conferma assenza HealthKit nativo Fitbit
+- the5krunner.com — accuracy test WHOOP 5.0 in condizioni reali
+
+**Fonti problematiche:**
+- us.amazfit.com/products/helio-strap — restituisce solo JS Shopify, nessun dato spec
+- store.google.com/product/google_fitbit_air_specs — redirect consent cookie, non accessibile
+- wearablexp.com — JS-heavy, solo CSS/schema, no body article
+
+**Pattern di ricerca efficaci:**
+- `"[modello] HRV continuous 24h or sleep only"` — distingue tipi HRV
+- `"[modello] CrossFit weightlifting HR accuracy optical sensor"` — accuracy movimenti esplosivi
+- `"[modello] iOS HealthKit native sync confirmed"` — verifica integrazione reale
+- `"WHOOP subscription cost EU per year [anno]"` — pricing corrente EU
+- `site:dcrainmaker.com [modello] review` — il più affidabile per test approfonditi
+
+---
+
+### Fitness band cinesi CrossFit/salute (budget ≤200€) — confronto Huawei/Xiaomi/Honor/JCVital/Hume — aggiornamento giugno 2026 (v2)
+
+**Modelli verificati (shortlist CrossFit + HRV + SpO2 + VO2max + iOS):**
+- Huawei Band 11 Pro (~59-75€) — GPS built-in GNSS, 1.62" AMOLED 2000nit, 18g, 5ATM, 8-14gg batteria, HRV overnight (non confermato come 24/7 continuo dalla scheda ufficiale), TruSeen 5.5+ non confermato (solo "optical HR sensor"), NO VO2max confermato, iOS sì (iOS 13+), HealthKit sync tramite Huawei Health app (confermato per Band 9, probabile per 11 Pro)
+- Xiaomi Smart Band 10 Pro (~75€ idealo) — GPS 5 sistemi GNSS, 1.74" AMOLED 2000nit 60Hz, 21.6g, 5ATM, 15-21gg batteria, HRV sleep only (confermato "sleep HRV" nella spec ufficiale), NO VO2max confermato, iOS 13+ sì, Apple Health sync confermato (annuncio "Apple ecosystem support"), prezzo IT ~75€ (idealo giugno 2026). Disponibile globale giugno-agosto 2026.
+- JCVital Pro V8 ECG (~199$/~185€ solo sito ufficiale) — screenless, ECG (4 categorie classificazione), HRV continuo 24/7, SpO2 continuo, IP68, batteria 15+ giorni, VO2max sì, NO recensioni indipendenti trovate (solo marketing interno). Venduto solo su jcvital.com. NO distribuzione EU/Amazon. Marca sconosciuta, zero test terzi.
+- Hume Band 2.0 (~199-249$ solo sito ufficiale USA) — screenless, 8.6g, 5 LED 4 PD sensori, HRV continuo confermato, SpO2 continuo, iOS sì, Apple Health sì, raw data export sì, NO VO2max confermato, IP68, batteria 14gg. Distribuzione solo USA/UK, NO Italia/EU. Prezzo ~199-249$ (~185-230€) + spedizione internazionale.
+- Huawei Band 9 (~28-37€ idealo) — 1.47" AMOLED, 14g, 5ATM, TruSeen 5.5 confermato, HRV (metodo non specificato nella spec, probabilmente overnight), SpO2 automatico, VO2max confermato nei workout, iOS sì HealthKit sync sì, NO GPS. Prezzo IT molto competitivo.
+- Honor Band 9 (~28€ Amazon IT) — 1.56" AMOLED, 14g, 5ATM, NO GPS built-in (connected only), HR accuracy problems (5-10bpm higher in test indipendenti), NO VO2max confermato nelle spec, HRV non menzionato nelle spec ufficiali né nella recensione, iOS sì ma HealthKit subscription required (€2.99/mese per auto-push). Budget entry point.
+
+**Note critiche per brand cinesi:**
+
+**HRV "continuo 24/7" vs "overnight" — distinzione fondamentale:**
+- Huawei marketing usa "24/7 HRV monitoring" ma le review mostrano che si riferisce a HRV durante il sonno per recovery score, non campionamento ogni minuto durante il giorno.
+- Xiaomi Band 10 Pro dichiara esplicitamente "average HRV tracking during sleep" — overnight only, non continuo diurno.
+- Solo WHOOP 5.0 fa HRV davvero continuo (ogni minuto, 24h). Nessuna fitness band sotto €200 raggiunge questo livello.
+
+**VO2max — stato per ogni prodotto:**
+- Huawei Band 9: confermato (RAI + VO2max nel tracking workout su support.huawei.com)
+- Huawei Band 11 Pro: NON confermato nelle spec ufficiali o recensioni. Probabilmente assente.
+- Xiaomi Band 10 Pro: NON confermato. Nessuna fonte lo menziona.
+- JCVital V8: sì dichiarato, ma nessun test indipendente disponibile.
+- Hume Band 2.0: NON confermato. App focalizzata su longevità/metabolismo, non sport performance.
+- Honor Band 9: NON confermato.
+
+**Distribuzione EU — problema critico per JCVital e Hume Band:**
+- JCVital V8: nessun rivenditore EU trovato, solo sito jcvital.com con prezzi USD. Spedizione da Cina, dazi EU applicabili (~20%).
+- Hume Band 2.0: distribuzione solo USA/UK. Per EU spedizione internazionale ~$30+ + eventuale IVA import.
+
+**Honor HealthKit iOS — barriera nascosta:**
+- Honor Health app su iOS non fa HealthKit push automatico senza abbonamento "Honor Health Connect" ($2.99/mese). Dati esportabili manualmente come CSV.
+
+**GPS accuracy nei wristband cinesi:**
+- Huawei Band 11 Pro: GPS built-in GNSS confermato, accuracy "adeguata per uso casual", deviazioni di rotta rilevate in test. Non per sport ad alta intensità.
+- Xiaomi Band 10 Pro: GPS 5 sistemi (GPS+GLONASS+BeiDou+Galileo+QZSS) — spec più completa del gruppo. Non ancora testato in modo indipendente (lancio giugno 2026).
+- Huawei Band 9, Honor Band 9: NO GPS built-in, connected only.
+
+**Prezzi IT aggiornati (giugno 2026):**
+- Huawei Band 11 Pro: ~59-75€ (idealo/Amazon IT)
+- Xiaomi Smart Band 10 Pro: ~75€ (idealo, disponibilità giugno-agosto 2026)
+- Huawei Band 9: ~28-37€ (idealo/Amazon IT)
+- Honor Band 9: ~28€ (Amazon IT)
+- JCVital Pro V8: $199 (~185€) solo sito ufficiale, spedizione da Cina
+- Hume Band 2.0: $199-249 (~185-230€) solo USA/UK, no EU diretto
+
+**Fonti affidabili per questa categoria:**
+- consumer.huawei.com/en/wearables/[modello]/specs/ — spec ufficiali Huawei, direttamente leggibili
+- mi.com/global/product/[modello]/ — spec ufficiali Xiaomi, HRV sleep-only esplicitato
+- honor.com/global/wearables/[modello]/spec/ — struttura carica JS, non leggibile via WebFetch
+- techadvisor.com — recensioni Honor Band 9 con test HR accuracy, molto affidabile
+- gadgetpilipinas.net — review Huawei Band 11 Pro con sensori e GPS
+- wearablesarena.com — review Huawei Band 11 Pro con dettagli batteria e GPS
+- idealo.it — prezzi IT aggiornati
+
+**Fonti problematiche:**
+- humehealth.com — Shopify JS-heavy, nessuna spec leggibile via WebFetch
+- jcvital.com/products/[modello] — Shopify JS-heavy, nessuna spec leggibile via WebFetch
+- honor.com/global/wearables/[modello]/spec/ — HTML structure senza valori reali
+- wareable.com — HTTP 403 su WebFetch
+
+**Assenza totale di recensioni indipendenti per JCVital V8:**
+- Zero risultati su dcrainmaker, wareable, pcmag, techradar, notebookcheck.
+- Tutti i contenuti online sono marketing JCVital stesso o blog SEO che copiano i claim del produttore.
+- BANDIERA ROSSA: nessun test accuracy ECG, HRV, SpO2 da fonte terza.
+
+**Pattern di ricerca efficaci per questa categoria:**
+- `"[modello] HRV sleep only OR continuous 24h confirmed"` — distingue HRV overnight da continuo
+- `"[modello] VO2max confirmed specifications site:mi.com OR site:consumer.huawei.com"` — verifica VO2max ufficiale
+- `"[modello] iOS HealthKit native OR subscription required"` — barriera Honor nascosta
+- `"[brand] independent review dcrainmaker OR wareable OR pcmag"` — zero risultati per JCVital = bandiera rossa
+- `"[modello] prezzo idealo Italia [anno]"` — prezzi IT aggiornati
+
+**Aggiornamenti v2 (giugno 2026 — shortlist CrossFit):**
+
+**Huawei Band 11 Pro (2026):**
+- GPS built-in confermato (TechRadar, TechAdvisor, GizChina 2026) — £69.99/€74.90 lancio UK marzo 2026
+- "TruSeen 6.0" NON compare nelle spec ufficiali consumer.huawei.com — probabilmente claim affiliati/blogger. Il sensore è unnamed nelle spec ufficiali.
+- VO2max confermato via Huawei Support (training load + running ability index). MA: richiede attività outdoor (corsa, cammino, bici) — non disponibile su HIIT/lifting CrossFit.
+- HRV: overnight/sleep (malgrado marketing "all-day"). Stesso pattern di tutti i Huawei Band.
+- Batteria: 14gg dichiarati, 8gg uso tipico (dato ufficiale). Con GPS scende a ~2-4gg.
+- Bluetooth 6.0 (più recente del Band 9 che usa BT 5.0).
+
+**Xiaomi Smart Band 10 Pro (2026):**
+- Lancio Cina maggio 2026, globale previsto giu-ago 2026.
+- HRV sleep-only dichiarato esplicitamente da mi.com.
+- VO2max: NON confermato in nessuna spec ufficiale né review al giugno 2026.
+- Apple Health sync: confermato ufficialmente (primo Band a supportarlo). Non ancora testato in produzione da reviewer.
+- SpO2: manuale ogni 10 minuti (più onesto di Huawei che dice "continuo").
+- GPS 5 sistemi (GPS+GLONASS+BeiDou+Galileo+QZSS) — la spec GPS più completa del gruppo.
+- HR accuracy "98,2%" claim produttore, non verificato indipendentemente.
+- Dati locked in Mi Fitness — no raw export.
+
+**JCVital Pro V8 ECG:**
+- CONFERMA ASSOLUTA: zero review indipendenti su dcrainmaker, wareable, pcmag, techradar, notebookcheck.
+- Produttore: jointcorp.com (ODM/OEM factory cinese). JCVital è brand di lancio.
+- Distribuzione EU assente. Prezzo USD con dazi EU ~20% → reale ~240€.
+- "Medical-grade ECG" non verificabile. Nessuna certificazione CE MDR 2017/745 trovata.
+- Batteria 7gg — inferiore a Hume Band 2.0 (14gg) con sensori comparabili.
+- Score: 2/10 — NON raccomandabile.
+
+**Hume Band 2.0:**
+- HRV 24/7 continuo confermato (Wareable, healnourishgrow, wellnesspulse). Valori coerenti con Oura/WHOOP come trend, non come assoluti.
+- Raw data export confermato: Apple Health + Google Fit + Garmin + Fitbit + CSV export. Unico del gruppo con vera apertura dati.
+- SpO2: NON menzionato nelle spec ufficiali del sito. Probabilmente assente come metrica separata.
+- VO2max: non confermato. App focalizzata su longevità/recovery non sport performance.
+- No GPS, no sport modes strutturati — non adatto per training tracking CrossFit.
+- Distribuzione: worldwide ma sede USA. Nessun supporto EU locale. IVA import per EU.
+- Prezzo $249 (~230€) — supera budget 200€ di ~30€.
+- Peso 8,6g — il più leggero del gruppo, ottimo per CrossFit (non disturba durante lifts).
+- Score: 7,8/10 per utenti orientati a recovery/longevità con API aperta.
+
+**Honor Band 9 — aggiornamento:**
+- iOS HealthKit tecnicamente supportato ma sync incompleto: SpO2 e workout minutes non sempre pushati automaticamente (user reports Apple Community).
+- HR accuracy: 5-10bpm superiore durante esercizio (techadvisor test).
+- VO2max: non confermato.
+- Rispetto a Huawei Band 9 allo stesso prezzo (€35): inferiore su tutti i parametri. Difficile da raccomandare.
+
+**Fonti affidabili aggiunte (fitness band cinesi v2):**
+- gadgetsandwearables.com/2026 — Xiaomi Band 10 Pro review, HR accuracy test vs chest strap
+- the-gadgeteer.com — specs Xiaomi Band 10 Pro lancio, HRV sleep confermato
+- trustedreviews.com — Xiaomi Band 10 Pro review (HR accuracy, HIIT limitations)
+- healnourishgrow.com — Hume Band 2.0 review con raw data export confermato
+- myreviewabout.com — Hume Band 2.0 specs: 5 LED + 4 PD, 1.400 data points/day
+- smartwatchspecifications.com — Huawei Band 11 Pro GPS built-in confermato
+- gizguide.com — Huawei Band 11 Pro review (VO2max confermato, TruSeen unnamed)
+- huawei support content/en-us00736792 — VO2max/training load confermato per Band series
+
+**Fonti problematiche aggiunte:**
+- gizmochina.com — HTTP 403 su WebFetch
+- gizguide.com — JS-heavy, body articolo non estraibile via WebFetch
+- wareable.com — HTTP 403 su WebFetch (confermato anche per Hume Band 2.0)
+- wellnesspulse.com — HTTP 403 su WebFetch
+- healnourishgrow.com — accessibile via WebFetch (funziona)
+- jointcorp.com — HTTP 403 su WebFetch
+
+---
+
+### Fitness tracker / Smart band con sensori avanzati (budget ≤200€) — aggiornamento giugno 2026
+
+**Modelli verificati:**
+- Fitbit Charge 6 (~130-160€) — built-in GPS, AMOLED 1.04", 15g senza strap, 5ATM, 7 giorni batteria
+- Garmin Vivosmart 5 (~100-130€) — connected GPS (no built-in), 24.5g, 5ATM, 7 giorni, OLED 10.5×18.5mm
+- Amazfit Band 7 (~40-55€) — no GPS built-in (connected), 28g, 5ATM, 18 giorni, AMOLED 1.47"
+- Xiaomi Smart Band 9 Pro (~60-80€) — built-in GPS (5 sistemi), 24.5g, 5ATM, 21 giorni, AMOLED 1.74"
+- Samsung Galaxy Fit 3 (~50-65€) — connected GPS, 18.5g, 5ATM + IP68, 13 giorni, AMOLED 1.6"
+- Huawei Band 9 (~40-60€) — no GPS, 14g, 5ATM, 14 giorni, AMOLED 1.47"
+
+**Note critiche per categoria fitness tracker:**
+
+**HRV — distinzione fondamentale:**
+- HRV "continuo" vero (campionamento ogni minuto o più frequente, 24h): nessun modello in questa fascia di prezzo. Tutti fanno HRV durante il sonno o su richiesta.
+- Fitbit Charge 6: HRV solo notturno (durante sonno ≥3h). NESSUNA misurazione diurna continua.
+- Garmin Vivosmart 5: HRV raccolto durante il sonno per Body Battery e stress; nessun HRV Status separato (feature riservata a Garmin mid/high). Dati usati internamente, non esposti come metrica diretta.
+- Amazfit Band 7: HRV usato per stress RMSSD, non esposto come valore separato al'utente.
+- Xiaomi Band 9 Pro: HRV non disponibile come metrica esplicita.
+- Huawei Band 9: HRV presente ma non continuo diurno.
+
+**VO2max:**
+- Garmin Vivosmart 5: confermato (richiede attività con cardio ≥15 min).
+- Fitbit Charge 6: confermato come "Cardio Fitness Score" (stima, non clinica).
+- Amazfit Band 7: NON confermato nelle spec ufficiali.
+- Xiaomi Band 9 Pro: confermato (Training Load, VO2max nella sezione sport).
+- Samsung Galaxy Fit 3: non confermato nelle spec ufficiali Samsung.
+- Huawei Band 9: confermato (con avvertenza: non visibile durante workout outdoor su alcuni modelli).
+
+**iOS e HealthKit:**
+- Fitbit Charge 6: iOS sì, HealthKit NATIVO NO — solo tramite app terze parti a pagamento.
+- Garmin Vivosmart 5: iOS sì, HealthKit sì via Garmin Connect (post-2020 tutti i Garmin).
+- Amazfit Band 7: iOS sì, HealthKit sì via Zepp app (sync confermato).
+- Xiaomi Band 9 Pro: iOS sì (≥12), HealthKit sì via Mi Fitness (permesso da abilitare).
+- Samsung Galaxy Fit 3: SOLO ANDROID. Non funziona con iPhone. Eliminato dalla selezione iOS.
+- Huawei Band 9: iOS sì (≥13), HealthKit sì via Huawei Health app (sync confermato).
+
+**CrossFit/HIIT come profilo sport:**
+- Garmin Vivosmart 5: HIIT confermato tra i 14 profili.
+- Amazfit Band 7: 120 sport mode, HIIT presumibilmente presente (non nominato esplicitamente).
+- Xiaomi Band 9 Pro: 150+ profili, HIIT presente.
+- Fitbit Charge 6: 40 profili, HIIT presente tra le attività.
+- Huawei Band 9: 100+ profili, HIIT confermato.
+- Samsung Galaxy Fit 3: 100+ profili, HIIT presumibilmente presente.
+
+**Fonti affidabili per fitness tracker:**
+- wiki.garminrumors.com — specifiche Garmin complete, sensori, sport profiles
+- consumer.huawei.com/en/wearables/[modello]/specs/ — specifiche ufficiali Huawei, direttamente leggibili
+- mi.com/global/product/[modello]/specs/ — specifiche ufficiali Xiaomi, direttamente leggibili
+- samsung.com/us/support/answer/ANS10004550/ — specs Galaxy Fit 3 (limitato, non ha HRV/VO2max esplicitato)
+- dcrainmaker.com — recensioni con dettaglio tecnico su GPS accuracy, HRV, SpO2 metodi
+- notebookcheck.net — recensioni dettagliate Amazfit con analisi accuracy
+- forums.garmin.com — conferme su funzionalità limitate Vivosmart 5 (HRV Status non disponibile)
+- community.fitbit.com — conferme su assenza HealthKit nativo Fitbit
+
+**Fonti problematiche per fitness tracker:**
+- store.google.com/fitbit_charge_6_specs — redirect cookie consent, non accessibile via WebFetch
+- us.amazfit.com/products/amazfit-band-7 — restituisce solo JS (Shopify), nessun dato leggibile
+- versus.com — HTTP 403 su WebFetch diretto
+- wareable.com — HTTP 403 su WebFetch diretto
+- gadgetsandwearables.com — restituisce struttura HTML senza body articolo
+
+**Pattern di ricerca efficaci per fitness tracker:**
+- `"[modello] HRV continuous daytime or sleep only"` — distingue HRV continuo da notturno
+- `"[modello] HealthKit iOS sync confirmed"` — verifica integrazione nativa vs terze parti
+- `"[modello] VO2max confirmed specifications"` — verifica se è feature effettiva o solo marketing
+- `site:wiki.garminrumors.com [modello]` — spec Garmin complete
+- `site:consumer.huawei.com [modello] specs` — spec ufficiali Huawei
+- `site:dcrainmaker.com [modello] review` — profondità tecnica GPS, sensori, accuracy

@@ -1,0 +1,83 @@
+{
+  "agent": "review-analyst",
+  "products": [
+    {
+      "name": "Huawei Band 11 Pro",
+      "brand": "Huawei",
+      "model": "Band 11 Pro",
+      "score": 5,
+      "review_count": "limitato (prodotto nuovo Q2 2026)",
+      "avg_rating": 4.2,
+      "sources": ["AliExpress reviews (poche)", "YouTube early reviews", "Reddit r/Huawei"],
+      "strengths_from_reviews": ["HRV TruSeen 6.0 piu accurato dei predecessori", "Batteria reale 10-12gg", "Build quality solida"],
+      "weaknesses_from_reviews": ["App Huawei Health UX mediocre", "Apple Health sync richiede app terza", "GPS assistito lento a fixare", "Poche review indipendenti (troppo nuovo)"],
+      "fake_review_risk": "medio — poche review, mix genuino/promozionale",
+      "verdict": "Prodotto promettente ma troppo nuovo per avere review affidabili. Le prime impressioni sono positive ma non validate."
+    },
+    {
+      "name": "Xiaomi Smart Band 10 Pro",
+      "brand": "Xiaomi",
+      "model": "Band 10 Pro",
+      "score": 6.5,
+      "review_count": "crescente (lancio maggio 2026)",
+      "avg_rating": 4.4,
+      "sources": ["YouTube reviews (GSMArena, NotebookCheck)", "Reddit r/Xiaomi", "AliExpress reviews"],
+      "strengths_from_reviews": ["GPS accurato e veloce", "Display AMOLED eccellente", "Batteria 21gg confermata", "Apple Health sync funziona (primo Xiaomi Band)"],
+      "weaknesses_from_reviews": ["HRV solo overnight, non 24/7", "Mi Fitness app basica", "Rilevamento sonno impreciso in alcune review", "VO2max stimato, non calibrato"],
+      "fake_review_risk": "basso — brand noto con review genuine su YouTube",
+      "verdict": "Le review confermano il miglior Band Xiaomi di sempre. Apple Health nativo e la vera novita. HRV overnight limita l'uso per recovery CrossFit."
+    },
+    {
+      "name": "JCVital Pro V8 ECG",
+      "brand": "JCVital",
+      "model": "Pro V8 ECG",
+      "score": 2,
+      "review_count": "ZERO review indipendenti",
+      "avg_rating": null,
+      "sources": [],
+      "strengths_from_reviews": [],
+      "weaknesses_from_reviews": ["Nessuna review trovata su nessuna piattaforma", "Nessun video YouTube", "Nessuna menzione su Reddit", "Brand inesistente online"],
+      "fake_review_risk": "N/A — nessuna review da valutare",
+      "verdict": "IMPOSSIBILE valutare. Zero review = zero fiducia. A 200 EUR e un salto nel buio totale."
+    },
+    {
+      "name": "Hume Band 2.0",
+      "brand": "Hume Health",
+      "model": "Band 2.0",
+      "score": 3,
+      "review_count": "minimo",
+      "avg_rating": 2.5,
+      "sources": ["Trustpilot (1.4/5)", "Reddit r/wearables (pochi post)", "Product Hunt"],
+      "strengths_from_reviews": ["Concetto raw data apprezzato dalla community dev", "Design minimale piacevole"],
+      "weaknesses_from_reviews": ["Trustpilot 1.4/5 con lamentele gravi: ritardi consegna, prodotto non funzionante, nessuna risposta assistenza", "Battery life reale 2-3gg non 5gg dichiarati", "App instabile", "Subscription pricing confuso"],
+      "fake_review_risk": "basso — le review negative sono genuine e dettagliate",
+      "verdict": "Il Trustpilot 1.4/5 e un segnale d'allarme critico. Le lamentele sono coerenti: consegna, qualita, assistenza. Sconsigliato."
+    },
+    {
+      "name": "Huawei Band 9",
+      "brand": "Huawei",
+      "model": "Band 9",
+      "score": 5.5,
+      "review_count": "abbondante (1 anno di vita)",
+      "avg_rating": 4.3,
+      "sources": ["Amazon reviews (1000+)", "YouTube (GSMArena, TechRadar)", "Reddit r/Huawei", "Altroconsumo"],
+      "strengths_from_reviews": ["Comfort eccezionale (14g)", "Batteria reale 12-14gg", "Display luminoso outdoor", "Prezzo imbattibile"],
+      "weaknesses_from_reviews": ["HRV non esportabile facilmente", "App Huawei Health chiusa", "SpO2 impreciso vs pulse oximeter", "No GPS penalizza outdoor"],
+      "fake_review_risk": "basso — prodotto maturo con review genuine",
+      "verdict": "Solidissimo per il prezzo. Le review confermano un prodotto affidabile ma limitato. Perfetto come entry-level, insufficiente per CrossFit serio."
+    },
+    {
+      "name": "Honor Band 9",
+      "brand": "Honor",
+      "model": "Band 9",
+      "score": 4,
+      "review_count": "moderato",
+      "avg_rating": 3.9,
+      "sources": ["Amazon reviews", "YouTube reviews", "Reddit"],
+      "strengths_from_reviews": ["Design elegante", "Display nitido", "Prezzo competitivo"],
+      "weaknesses_from_reviews": ["Apple Health sync broken da mesi", "HR cadence lock durante esercizio (blocca HR alla cadenza del passo)", "App Honor Health basica e buggata", "Notifiche inaffidabili"],
+      "fake_review_risk": "basso",
+      "verdict": "Apple Health broken e HR cadence lock sono deal-breaker per l'utente target. Le review negative su questi punti sono coerenti e numerose."
+    }
+  ]
+}

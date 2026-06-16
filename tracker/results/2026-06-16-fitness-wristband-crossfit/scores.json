@@ -1,0 +1,89 @@
+{
+  "weights": {
+    "price": 0.15,
+    "reviews": 0.18,
+    "specs": 0.20,
+    "technical_critic": 0.15,
+    "sustainability": 0.05,
+    "lifecycle": 0.10,
+    "brand": 0.13,
+    "timing": 0.04
+  },
+  "products": [
+    {
+      "name": "WHOOP 5.0 (One Annual)",
+      "scores": {
+        "price": 5.0,
+        "reviews": 8.0,
+        "specs": 8.5,
+        "technical_critic": 8.5,
+        "sustainability": 1.0,
+        "lifecycle": 3.0,
+        "brand": 4.6,
+        "timing": 5.0
+      },
+      "total": 63.1,
+      "budget_note": "Entro budget anno 1 (€199/anno). TCO 3 anni: €597"
+    },
+    {
+      "name": "Fitbit Charge 6",
+      "scores": {
+        "price": 9.0,
+        "reviews": 6.5,
+        "specs": 5.0,
+        "technical_critic": 6.0,
+        "sustainability": 6.0,
+        "lifecycle": 4.0,
+        "brand": 4.5,
+        "timing": 9.5
+      },
+      "total": 60.9,
+      "budget_note": "Entro budget (€84,90 — risparmio 58%)"
+    },
+    {
+      "name": "Garmin Vivosmart 6 (atteso)",
+      "scores": {
+        "price": 6.0,
+        "reviews": 5.0,
+        "specs": 6.0,
+        "technical_critic": 7.0,
+        "sustainability": 5.0,
+        "lifecycle": 7.0,
+        "brand": 6.4,
+        "timing": 2.0
+      },
+      "total": 59.1,
+      "budget_note": "Entro budget (~€179 stimato). NON DISPONIBILE — score proiettato"
+    },
+    {
+      "name": "Amazfit Helio Strap",
+      "scores": {
+        "price": 8.0,
+        "reviews": 6.0,
+        "specs": 7.0,
+        "technical_critic": 5.5,
+        "sustainability": 2.0,
+        "lifecycle": 5.0,
+        "brand": 4.0,
+        "timing": 6.0
+      },
+      "total": 58.7,
+      "budget_note": "Entro budget (€99,91 — risparmio 50%)"
+    },
+    {
+      "name": "Google Fitbit Air",
+      "scores": {
+        "price": 7.0,
+        "reviews": 5.0,
+        "specs": 5.5,
+        "technical_critic": 4.5,
+        "sustainability": 7.0,
+        "lifecycle": 5.0,
+        "brand": 4.5,
+        "timing": 5.5
+      },
+      "total": 53.8,
+      "budget_note": "Entro budget (€99,99 — risparmio 50%)"
+    }
+  ]
+}

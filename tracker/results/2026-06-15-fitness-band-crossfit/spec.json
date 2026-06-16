@@ -1,0 +1,26 @@
+{
+  "query": "fitness tracker / smart band con sensori avanzati (HRV, VO2max, SpO2, sonno)",
+  "budget": 200,
+  "currency": "EUR",
+  "date": "2026-06-15",
+  "use_case": "Salute quotidiana + allenamento CrossFit in egual misura",
+  "sport": "CrossFit (corsa, pesi, movimenti funzionali, HIIT)",
+  "form_factor": "Band sottile e discreta, portabile 24/7 incluso sonno",
+  "smartphone": "iPhone (iOS, HealthKit obbligatorio)",
+  "battery_requirement": "Minimo 7 giorni",
+  "weights": {
+    "spec": 0.22,
+    "technical_critic": 0.18,
+    "price": 0.16,
+    "reviews": 0.14,
+    "lifecycle": 0.12,
+    "brand": 0.10,
+    "sustainability": 0.08
+  },
+  "discovery_instructions": {
+    "priority_sensors": ["HRV continuo", "VO2max", "SpO2", "sonno fasi REM/profondo"],
+    "ios_healthkit": "obbligatorio",
+    "crossfit_specific": true,
+    "battery_min_days": 7
+  }
+}

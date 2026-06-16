@@ -1,0 +1,83 @@
+{
+  "agent": "sustainability-scout",
+  "products": [
+    {
+      "name": "Huawei Band 11 Pro",
+      "brand": "Huawei",
+      "model": "Band 11 Pro",
+      "score": 4.5,
+      "certifications": ["CE (auto-dichiarato)", "RoHS", "WEEE"],
+      "carbon_footprint": "non dichiarato",
+      "packaging": "plastica + cartone, non riciclabile al 100%",
+      "repairability": "non riparabile, batteria sigillata",
+      "transport_impact": "aereo da CN o warehouse EU (impatto ridotto se EU)",
+      "labor_concerns": "Huawei supply chain opaca, controversie Xinjiang",
+      "verdict": "Standard cinese — nessun impegno particolare su sostenibilita. Meglio di brand sconosciuti per trasparenza minima."
+    },
+    {
+      "name": "Xiaomi Smart Band 10 Pro",
+      "brand": "Xiaomi",
+      "model": "Band 10 Pro",
+      "score": 4,
+      "certifications": ["CE", "FCC", "RoHS"],
+      "carbon_footprint": "Xiaomi pubblica ESG report ma senza dettaglio per prodotto",
+      "packaging": "packaging ridotto, materiali misti",
+      "repairability": "non riparabile",
+      "transport_impact": "warehouse EU disponibile",
+      "labor_concerns": "Supply chain Xiaomi monitorata ma con gap audit",
+      "verdict": "Xiaomi ha ESG report corporate ma nessun impegno concreto a livello prodotto. Standard industriale cinese."
+    },
+    {
+      "name": "JCVital Pro V8 ECG",
+      "brand": "JCVital",
+      "model": "Pro V8 ECG",
+      "score": 2,
+      "certifications": ["CE (non verificabile)"],
+      "carbon_footprint": "non dichiarato",
+      "packaging": "sconosciuto",
+      "repairability": "non riparabile",
+      "transport_impact": "solo spedizione da CN, aereo",
+      "labor_concerns": "supply chain completamente opaca, brand sconosciuto",
+      "verdict": "Zero trasparenza su ogni fronte. CE probabilmente auto-dichiarato senza test. Rischio sicurezza batteria."
+    },
+    {
+      "name": "Hume Band 2.0",
+      "brand": "Hume Health",
+      "model": "Band 2.0",
+      "score": 1,
+      "certifications": ["nessuna verificabile"],
+      "carbon_footprint": "non dichiarato",
+      "packaging": "sconosciuto",
+      "repairability": "non riparabile",
+      "transport_impact": "spedizione da CN, aereo",
+      "labor_concerns": "startup senza trasparenza supply chain",
+      "verdict": "Peggior profilo del gruppo. Nessuna certificazione verificabile, nessuna trasparenza, startup con Trustpilot 1.4/5."
+    },
+    {
+      "name": "Huawei Band 9",
+      "brand": "Huawei",
+      "model": "Band 9",
+      "score": 4,
+      "certifications": ["CE", "RoHS", "WEEE"],
+      "carbon_footprint": "non dichiarato per singolo prodotto",
+      "packaging": "packaging compatto, materiali standard",
+      "repairability": "non riparabile",
+      "transport_impact": "warehouse EU disponibile",
+      "labor_concerns": "come Band 11 Pro — supply chain Huawei",
+      "verdict": "Identico al Band 11 Pro per sostenibilita. A 35 EUR l'impatto per euro speso e accettabile."
+    },
+    {
+      "name": "Honor Band 9",
+      "brand": "Honor",
+      "model": "Band 9",
+      "score": 3,
+      "certifications": ["CE", "RoHS"],
+      "carbon_footprint": "non dichiarato",
+      "packaging": "standard cinese",
+      "repairability": "non riparabile",
+      "transport_impact": "warehouse EU",
+      "labor_concerns": "ex-Huawei, supply chain condivisa, meno trasparente di Huawei",
+      "verdict": "Leggermente peggio di Huawei per trasparenza (Honor pubblica meno dati ESG). Standard basso."
+    }
+  ]
+}

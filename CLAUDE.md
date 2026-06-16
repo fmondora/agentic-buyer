@@ -11,17 +11,24 @@
 - Ogni agente produce output strutturato in markdown
 - La skill `buy-report` sintetizza i risultati e genera il report finale
 
-## Flusso /buy
-1. **Discovery** (foreground) — domande rapide con scelte inline per capire cosa vuole l'utente → produce spec arricchita + pesi personalizzati
-2. **7 agenti** (parallelo, background) — cercano con la spec arricchita e le istruzioni specifiche del Discovery
-3. **StrategicBuyer** (sequenziale, foreground) — riceve i risultati dei 7 agenti, analizza timing acquisto sui prodotti trovati
-4. **Sintesi** — calcola punteggi con i pesi personalizzati, genera report
+## Flusso /buy (Pipeline v2 — Funnel)
+1. **Discovery** (foreground) — domande rapide con scelte inline → spec arricchita + pesi + filtri hard/soft
+2. **Scout** (foreground) — cerca ampiamente tutti i candidati, applica filtri hard, produce shortlist (target 5-8, cap 15)
+3. **9 evaluator** (parallelo, background) — TUTTI ricevono la stessa shortlist e valutano dalla loro prospettiva
+4. **Sintesi** — calcola punteggi con pesi personalizzati, budget come vincolo morbido, genera report
+
+### Principi pipeline v2
+- **Scout cerca, evaluator valutano**: nessun evaluator cerca prodotti autonomamente
+- **Budget e vincolo morbido**: non elimina prodotti, pesa nella valutazione finale
+- **Filtri hard**: solo compatibilita tecnica, disponibilita, categoria (applicati dallo Scout)
+- **Copertura completa**: tutti gli evaluator valutano gli stessi prodotti, nessun buco
 
 ## Agenti
-9 agenti in `.claude/agents/`:
-- **discovery** — interattivo, domande con scelte inline, personalizza pesi (foreground, step 1)
-- price-hunter, review-analyst, spec-comparer, technical-critic, sustainability-scout, lifecycle-advisor, brand-rater (background, parallelo, step 2)
-- **strategic-buyer** — analisi timing, trend prezzi, stagionalita (foreground, sequenziale dopo step 2)
+12 agenti in `.claude/agents/`:
+- **discovery** — interattivo, domande con scelte inline, personalizza pesi, definisce filtri hard/soft (foreground, step 1)
+- **scout** — cerca ampiamente su EU, applica filtri hard, produce shortlist (foreground, step 2 di /buy)
+- **scout-china** — cerca su piattaforme cinesi (AliExpress, Temu, Banggood, 1688, Alibaba), calcola costo reale EU (foreground, step 2 di /buy_china)
+- price-hunter, review-analyst, spec-comparer, technical-critic, sustainability-scout, lifecycle-advisor, brand-rater, strategic-buyer, community-hacker (background, tutti in parallelo, step 3)
 
 ## Pesi sintesi finale (default — personalizzabili dal Discovery)
 | Dimensione | Peso | Agente |
@@ -34,12 +41,14 @@
 | Ciclo di vita | 8% | LifecycleAdvisor |
 | Reputazione brand | 18% | BrandRater |
 | Timing acquisto | 12% | StrategicBuyer |
+| Hackability community | 10% | CommunityHacker |
 
 I pesi vengono personalizzati dal Discovery in base alle risposte dell'utente (es: "cinema stanza buia" → Critica tecnica +5%, "brand importante" → Brand +5%).
 
 ## Playbook per sito e database pubblici
 - In `.claude/agents/tools/` ci sono playbook riutilizzabili per navigare siti e database specifici
-- **Siti e-commerce**: `amazon-eu.md`, `trovaprezzi.md`, `idealo.md`, `ebay.md`, `global-search.md`
+- **Siti e-commerce EU**: `amazon-eu.md`, `trovaprezzi.md`, `idealo.md`, `ebay.md`, `global-search.md`
+- **Siti e-commerce cinesi**: `china-ecommerce.md` — AliExpress, Temu, Banggood, DHgate, Geekbuying, 1688, Taobao, Alibaba (con calcolo costo reale EU)
 - **Database pubblici EU**:
   - `eprel.md` — EU Energy Label: classe energetica, consumo kWh (usato da SpecComparer, SustainabilityScout)
   - `safety-gate.md` — Safety Gate/RAPEX: richiami prodotto EU, alert sicurezza (usato da BrandRater)
@@ -59,7 +68,8 @@ I pesi vengono personalizzati dal Discovery in base alle risposte dell'utente (e
 - Ogni agente produce un blocco `json:structured-output` alla fine del suo output markdown
 - Lo schema e definito in `.claude/agents/tools/output-schema.md`
 - I risultati vengono salvati in `tracker/results/{date}-{slug}/`
-  - `spec.json` — spec Discovery + pesi
+  - `spec.json` — spec Discovery + pesi + filtri
+  - `scout.json` — shortlist Scout + prodotti eliminati
   - `agents/*.json` — output strutturato di ogni agente
   - `products.json` — lista unificata prodotti (merge cross-agente)
   - `scores.json` — punteggi calcolati con pesi personalizzati

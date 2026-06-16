@@ -1,0 +1,77 @@
+{
+  "agent": "strategic-buyer",
+  "products": [
+    {
+      "name": "Huawei Band 11 Pro",
+      "brand": "Huawei",
+      "model": "Band 11 Pro",
+      "score": 8,
+      "verdict": "COMPRA ORA",
+      "current_price": 59.90,
+      "price_trend": "stable-low",
+      "reason": "Appena lanciato, 6.18 sale attivo su AliExpress/Temu. Prezzo gia competitivo. Non scendera ulteriormente nei prossimi 3 mesi.",
+      "next_event": "6.18 Mid-Year Sale (ORA, fino al 20 giugno)",
+      "timing_notes": "Prodotto nuovo (Q2 2026), prezzo entry-level gia aggressivo. 11.11 potrebbe portare -5/10% ma tra 5 mesi."
+    },
+    {
+      "name": "Xiaomi Smart Band 10 Pro",
+      "brand": "Xiaomi",
+      "model": "Band 10 Pro",
+      "score": 7,
+      "verdict": "COMPRA ORA",
+      "current_price": 77.00,
+      "price_trend": "stable",
+      "reason": "Lanciato maggio 2026, periodo 6.18 con possibili coupon extra. Xiaomi mantiene prezzi stabili per i primi 6 mesi.",
+      "next_event": "6.18 Mid-Year Sale (ORA)",
+      "timing_notes": "Prezzo potrebbe scendere a 65-70 EUR per 11.11 (novembre). Se non urgente, aspettare conviene."
+    },
+    {
+      "name": "JCVital Pro V8 ECG",
+      "brand": "JCVital",
+      "model": "Pro V8 ECG",
+      "score": 5,
+      "verdict": "RISCHIO",
+      "current_price": 200.00,
+      "price_trend": "unknown",
+      "reason": "Brand sconosciuto, nessuno storico prezzi. Nessun dato su promozioni passate o future. Rischio alto.",
+      "next_event": "N/A",
+      "timing_notes": "Nessun pattern di pricing analizzabile. Non consigliato l'acquisto indipendentemente dal timing."
+    },
+    {
+      "name": "Hume Band 2.0",
+      "brand": "Hume Health",
+      "model": "Band 2.0",
+      "score": 7,
+      "verdict": "ASPETTA CALO",
+      "current_price": 270.00,
+      "price_trend": "overpriced",
+      "reason": "Startup con Trustpilot 1.4/5. Prezzo alto per le feature. Potrebbe essere costretto a scontare per attirare clienti.",
+      "next_event": "Possibili sconti estivi o Black Friday",
+      "timing_notes": "Se interessati al raw data access, aspettare un calo a sotto 200 EUR. Rischio: la startup potrebbe chiudere prima."
+    },
+    {
+      "name": "Huawei Band 9",
+      "brand": "Huawei",
+      "model": "Band 9",
+      "score": 9,
+      "verdict": "COMPRA ORA",
+      "current_price": 35.00,
+      "price_trend": "historical-low",
+      "reason": "Prezzo ai minimi storici su AliExpress/Temu. 6.18 sale attivo. A 35 EUR e un affare imperdibile.",
+      "next_event": "6.18 Mid-Year Sale (ORA)",
+      "timing_notes": "Prodotto maturo (1 anno), prezzo gia al minimo. Non scendera ulteriormente. Best buy assoluto per il prezzo."
+    },
+    {
+      "name": "Honor Band 9",
+      "brand": "Honor",
+      "model": "Band 9",
+      "score": 8,
+      "verdict": "COMPRA ORA",
+      "current_price": 35.00,
+      "price_trend": "historical-low",
+      "reason": "Stessa dinamica di Huawei Band 9. Prezzo minimo storico. Ma Apple Health broken lo penalizza.",
+      "next_event": "6.18 Mid-Year Sale (ORA)",
+      "timing_notes": "Buon prezzo ma i problemi Apple Health lo rendono meno interessante per utente iOS."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "agent": "brand-rater",
+  "products": [
+    {
+      "name": "Huawei Band 11 Pro",
+      "brand": "Huawei",
+      "model": "Band 11 Pro",
+      "score": 6,
+      "tier": "C",
+      "tier_label": "Brand cinese affermato — buona qualita hardware, ecosistema chiuso",
+      "strengths": ["Brand globale riconosciuto", "R&D proprietaria (TruSeen 6.0)", "Assistenza in Italia (limitata)", "Build quality costante"],
+      "weaknesses": ["Ecosistema chiuso (Huawei Health)", "Controversie geopolitiche USA/EU", "Apple Health solo via app terza", "Privacy dati — server in Cina"],
+      "verdict": "Brand solido per hardware, ma ecosistema chiuso e sync iOS problematico. Fascia C per lock-in e privacy."
+    },
+    {
+      "name": "Xiaomi Smart Band 10 Pro",
+      "brand": "Xiaomi",
+      "model": "Band 10 Pro",
+      "score": 6,
+      "tier": "C",
+      "tier_label": "Brand cinese mass-market — ottimo value, ecosistema in miglioramento",
+      "strengths": ["Leader mondiale wearable per volumi", "Primo Band con Apple Health nativo", "Prezzo aggressivo", "Community ampia"],
+      "weaknesses": ["Mi Fitness app mediocre", "Storico problemi sync Apple Health", "Privacy — MIUI data collection", "Assistenza post-vendita debole in EU"],
+      "verdict": "Il passo avanti con Apple Health nativo e significativo. Ma serve verificare che funzioni davvero (primo Xiaomi Band con sync diretto)."
+    },
+    {
+      "name": "JCVital Pro V8 ECG",
+      "brand": "JCVital",
+      "model": "Pro V8 ECG",
+      "score": 1,
+      "tier": "D",
+      "tier_label": "Brand sconosciuto — rischio altissimo",
+      "strengths": [],
+      "weaknesses": ["Zero presenza online", "Nessuna review", "Nessuna certificazione verificabile", "Nessun track record", "Possibile white-label"],
+      "verdict": "Brand inesistente. Nessuna prova che il prodotto funzioni come dichiarato. Sconsigliato fortemente."
+    },
+    {
+      "name": "Hume Band 2.0",
+      "brand": "Hume Health",
+      "model": "Band 2.0",
+      "score": 3,
+      "tier": "C-",
+      "tier_label": "Startup — innovativa ma ad alto rischio",
+      "strengths": ["Raw data access unico", "Filosofia open data", "Posizionamento developer-friendly"],
+      "weaknesses": ["Trustpilot 1.4/5", "Startup con funding incerto", "Consegne in ritardo", "Assistenza inesistente", "Rischio chiusura"],
+      "verdict": "Idea interessante (raw data) ma esecuzione pessima. Trustpilot 1.4/5 e un red flag devastante."
+    },
+    {
+      "name": "Huawei Band 9",
+      "brand": "Huawei",
+      "model": "Band 9",
+      "score": 6,
+      "tier": "C",
+      "tier_label": "Come Band 11 Pro — stesso brand, stesse dinamiche",
+      "strengths": ["Brand affermato", "Prodotto maturo e testato", "Prezzo imbattibile"],
+      "weaknesses": ["Ecosistema chiuso", "Apple Health indiretto", "Privacy server Cina"],
+      "verdict": "Stesse considerazioni del Band 11 Pro. A 35 EUR il rischio e minimo."
+    },
+    {
+      "name": "Honor Band 9",
+      "brand": "Honor",
+      "model": "Band 9",
+      "score": 5,
+      "tier": "C+",
+      "tier_label": "Ex-Huawei — brand in crescita ma ecosistema fragile",
+      "strengths": ["Spin-off Huawei con indipendenza crescente", "Design curato", "Prezzo competitivo"],
+      "weaknesses": ["Apple Health broken da mesi senza fix", "Ecosistema Honor Health immaturo", "Assistenza EU quasi inesistente", "HR cadence lock durante esercizio"],
+      "verdict": "Potenziale ma l'Apple Health broken e un deal-breaker per utente iOS. Non consigliato finche non fixano il sync."
+    }
+  ]
+}

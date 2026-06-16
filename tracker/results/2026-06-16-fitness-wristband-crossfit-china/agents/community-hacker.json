@@ -1,0 +1,86 @@
+{
+  "agent": "community-hacker",
+  "products": [
+    {
+      "name": "Xiaomi Smart Band 10 Pro",
+      "brand": "Xiaomi",
+      "model": "Smart Band 10 Pro",
+      "score": 7.5,
+      "github_projects": [
+        {"name": "Gadgetbridge", "url": "https://codeberg.org/Freeyourgadget/Gadgetbridge", "language": "Java", "note": "Mostly supported (nightly), protobuf Xiaomi"},
+        {"name": "python-miio", "url": "https://github.com/rytilahti/python-miio", "language": "Python", "note": "3000+ stelle, ecosistema Xiaomi"},
+        {"name": "XiaomiMiBand5Dashboard", "url": "https://github.com/simonedesogus/XiaomiMiBand5Dashboard", "language": "Python", "note": "Dashboard Grafana+InfluxDB da Gadgetbridge DB"}
+      ],
+      "integrations": {"home_assistant": true, "grafana_influxdb": true, "apple_health": true},
+      "data_portability": {"export_formats": ["SQLite (Gadgetbridge)", "CSV (Mi Fitness)", "JSON (Health Auto Export)"], "granularity": "per-second HR", "lock_in": "basso"},
+      "community_activity": "large",
+      "ios_workflow": "Band → Mi Fitness → Apple Health → Health Auto Export → JSON/CSV",
+      "verdict": "Apple Health nativo + ecosistema RE maturo. Vincitore chiaro per developer iOS."
+    },
+    {
+      "name": "Hume Band 2.0",
+      "brand": "Hume Health",
+      "model": "Band 2.0",
+      "score": 6.5,
+      "github_projects": [],
+      "integrations": {"home_assistant": false, "grafana_influxdb": false, "apple_health": true},
+      "data_portability": {"export_formats": ["raw data via app", "Apple Health bridge"], "granularity": "1400 datapoints/day", "lock_in": "alto (app proprietaria)"},
+      "community_activity": "none",
+      "verdict": "Raw data senza subscription ma ZERO community, ZERO GitHub, ZERO SDK. Black box con buone intenzioni."
+    },
+    {
+      "name": "Huawei Band 9",
+      "brand": "Huawei",
+      "model": "Band 9",
+      "score": 6.0,
+      "github_projects": [
+        {"name": "Gadgetbridge", "url": "https://codeberg.org/Freeyourgadget/Gadgetbridge", "language": "Java", "note": "Mostly supported, no-vendor pairing"},
+        {"name": "huawei-health-to-gpx", "url": "https://github.com/tommyblue/huawei-health-to-gpx", "language": "Python", "note": "Export GPX"},
+        {"name": "HMS Health Kit SDK", "url": "https://github.com/huaweicodelabs", "language": "Various", "note": "SDK ufficiale, HR richiede enterprise account"}
+      ],
+      "integrations": {"home_assistant": false, "grafana_influxdb": false, "apple_health": true},
+      "data_portability": {"export_formats": ["SQLite (Gadgetbridge)", "GPX"], "granularity": "per-minute HR", "lock_in": "medio-alto"},
+      "community_activity": "medium",
+      "risks": ["firmware 3.1.0.31 rompe Gadgetbridge pairing", "HR gated enterprise developer"],
+      "verdict": "Gadgetbridge supportato ma firmware update rischiosi. HR data gated dietro enterprise."
+    },
+    {
+      "name": "Honor Band 9",
+      "brand": "Honor",
+      "model": "Band 9",
+      "score": 5.5,
+      "github_projects": [
+        {"name": "Gadgetbridge", "note": "Supporto probabile ma NON confermato per Band 9"},
+        {"name": "Honor Band 4 RE", "note": "Reverse engineering BLE LPv3 (vecchio)"}
+      ],
+      "integrations": {"home_assistant": false, "grafana_influxdb": false, "apple_health": true},
+      "data_portability": {"export_formats": ["Honor Health export (basic)"], "granularity": "unknown", "lock_in": "alto"},
+      "community_activity": "small",
+      "verdict": "Stessa base Huawei ma supporto Gadgetbridge non confermato, community piu piccola."
+    },
+    {
+      "name": "Huawei Band 11 Pro",
+      "brand": "Huawei",
+      "model": "Band 11 Pro",
+      "score": 5.0,
+      "github_projects": [
+        {"name": "Gadgetbridge", "note": "SPERIMENTALE e NON TESTATO (nessun tester con device reale)"}
+      ],
+      "integrations": {"home_assistant": false, "grafana_influxdb": false, "apple_health": true},
+      "data_portability": {"export_formats": ["SQLite (Gadgetbridge teorico)", "GPX"], "granularity": "unknown", "lock_in": "alto"},
+      "community_activity": "none",
+      "verdict": "Gadgetbridge solo teorico. Device troppo nuovo per community RE."
+    },
+    {
+      "name": "JCVital Pro V8 ECG",
+      "brand": "JCVital",
+      "model": "Pro V8 ECG",
+      "score": 2.0,
+      "github_projects": [],
+      "integrations": {"home_assistant": false, "grafana_influxdb": false, "apple_health": false},
+      "data_portability": {"export_formats": ["ECG PDF"], "granularity": "unknown", "lock_in": "totale"},
+      "community_activity": "none",
+      "verdict": "Black box totale. Zero GitHub, zero community, zero documentazione BLE. OEM white-label."
+    }
+  ]
+}

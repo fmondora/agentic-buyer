@@ -1,0 +1,29 @@
+{
+  "query": "pannelli di larice da 80x200x1,8 cm",
+  "budget": 60,
+  "currency": "EUR",
+  "quantity": ">10",
+  "use": "rivestimento parete interno",
+  "finish_preferences": ["grezzo", "piallato", "spazzolato"],
+  "quality": "rustica (nodi ammessi)",
+  "priority_order": ["prezzo", "qualita_legno", "disponibilita", "provenienza"],
+  "weights": {
+    "price": 0.32,
+    "reviews": 0.10,
+    "specs": 0.16,
+    "technical_critic": 0.12,
+    "sustainability": 0.06,
+    "lifecycle": 0.10,
+    "brand": 0.14
+  },
+  "discovery_instructions": {
+    "price_hunter": "Rivenditori legname online IT, Amazon, eBay, Leroy Merlin. Sconti quantita >10",
+    "spec_comparer": "Umidita KD, tolleranze, classi qualita, differenze finiture",
+    "technical_critic": "Rischio deformazione interno, grezzo vs piallato, spessore 18mm",
+    "lifecycle_advisor": "Durata interno, trattamento post-posa, manutenzione",
+    "brand_rater": "Stock confermato, spedizione Italia, ordini >10 pezzi",
+    "review_analyst": "Qualita imballaggio 200cm, corrispondenza foto, resi legname",
+    "sustainability_scout": "FSC/PEFC a parita prezzo, provenienza bassa priorita"
+  },
+  "date": "2026-06-15"
+}

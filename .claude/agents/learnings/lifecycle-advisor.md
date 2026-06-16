@@ -48,6 +48,297 @@
 
 ## Note per categoria
 
+### Tavole/pannelli larice per rivestimento parete interno (analisi giugno 2026)
+
+**Indice riparabilità francese/iFixit:** Non applicabile a materiali da costruzione/rivestimenti. Categorie non coperte da nessuno dei due sistemi.
+
+**Classe di durabilità naturale larice (UNI EN 350):** Classe 3-4 (moderatamente durabile). In uso interno asciutto (umidità < 20%) la durabilità è di fatto illimitata — il fattore limitante non è la resistenza del materiale ma la manutenzione estetica. La durata di 4-7 anni dichiarata da alcune fonti si riferisce a condizioni sfavorevoli (esterno esposto). In interno ben condizionato: stima realistica 50-100+ anni.
+
+**Trattamento post-posa:**
+- Lasciare naturale: possibile e accettabile esteticamente. Il larice ingiallisce/scurisce progressivamente per ossidazione e UV (anche da finestre), assumendo una patina ambrata poi brunita. Non è un danno ma una trasformazione estetica.
+- Olio (es. Rubio Monocoat Oil Plus 2C, Osmo Polyx): protezione idrorepellente + controllo colore. Nessun film, penetra nel legno. Manutenzione: ritrattamento ogni 5-10 anni per pareti (molto meno usura che pavimenti), o quando il colore sbiadisce visibilmente.
+- Impregnante: protezione maggiore, più film in superficie. Ritrattamento ogni 5-6 anni con carteggiatura leggera.
+- Vernice: film duro, protegge molto ma si screpola nel tempo, richiede carteggiatura completa a ogni ritrattamento.
+- Cera: per uso interno ornamentale, ritrattamento ogni 2-3 anni — meno usato su pareti.
+- Consiglio pratico: olio monocomponente (es. Osmo, Rubio) è il migliore equilibrio per pareti rustiche: protegge, valorizza la venatura, ritrattamento facile senza carteggiatura.
+
+**Evoluzione cromatica in interno:**
+- Anno 0: giallo dorato / rosso-brunastro con nodi evidenti
+- Anno 1-3: ossidazione progressiva, il colore si scalda verso ambra/miele
+- Anno 5-10: patina bruna calda, nodi più scuri, aspetto "vissuto"
+- Senza UV diretti e senza trattamento: processo molto lento (decenni)
+- Con esposizione solare diretta da finestra: processo accelerato in 2-5 anni
+- Con olio: colore stabilizzato, processo rallentato significativamente
+
+**Criticità specifiche del larice rustico:**
+- **Resina**: il larice può essudare resina (specialmente nei nodi) per i primi 1-3 anni, soprattutto con riscaldamento. Normale, si tampona con solvente (trementina o alcool). Non è un difetto strutturale.
+- **Ritiro**: tavole non stagionate adeguatamente possono retrarre con il riscaldamento invernale (fessure tra tavole). Prevenire con stagionatura pre-posa (7-10 giorni in ambiente dove verrà montato) e gap di 2-3mm tra tavole.
+- **Nodi cadenti** (grado rustico): in qualità rustica i nodi non aderenti possono cadere. Trattamento: stucco al quarzo compatibile con il legno o resina epossidica trasparente.
+
+**Riparabilità (sostituzione singolo pannello):**
+- Profili con incastro maschio-femmina (perline): sostituzione singola difficile senza smontare dall'alto verso il basso. Possibile ma laborioso.
+- Profili a clips/vite a vista: sostituzione singola facile, fai-da-te accessibile.
+- Tavole con vite a vista: sostituzione triviale, bullone/vite accessibile.
+- Criticità cromatica: una tavola nuova sarà visibilmente più chiara di quelle invecchiate. Soluzioni: imbrunimento artificiale (acido tannico + solfato ferroso, o impregnante colorato scuro), oppure sostituire una zona intera per uniformità.
+- Ricambi: il larice è essenza comune, disponibile nei legnami locali senza problemi. Costo ~30-70 €/m2 per tavole nuove.
+
+**Fine vita:**
+- Il legno massiccio è il materiale da costruzione con il ciclo di vita più virtuoso.
+- Riuso diretto: tavole in buono stato vengono ricomprate da operatori specializzati in legno di recupero (es. Wood Revive, Torreano, Volgger Holz). Il larice antico ha valore di mercato superiore al larice nuovo per l'aspetto vissuto.
+- Riciclo: in caso di impossibilità al riuso, il legno si ricicla in pannelli MDF/truciolare o viene usato come combustibile (pellet/cippato).
+- Compostaggio: possibile se non trattato con vernici/impregnanti biocidi.
+- RAEE: non applicabile — il legno non è RAEE. Va conferito come rifiuto verde o ingombrante, oppure portato al centro di raccolta (isola ecologica) — filiera rifiuti speciali se trattato con biocidi.
+
+**Prezzi pannelli larice (giugno 2026):**
+- Larice grezzo/rustico: ~€30-70/m2 per tavole lavorate
+- Larice per rivestimento esterno: ~€50-100/m2
+- Larice antico di recupero (rivestimento): ~€60-120/m2 (premium per effetto vissuto immediato)
+- Nella fascia richiesta (fino a €60/pannello per 80x200x1,8cm = 1,6m2): ~€37,5/m2 — fascia bassa-media, compatibile con larice rustico di qualità A/B o speziato
+
+**Fonti affidabili per legno/materiali costruzione:**
+- pgcasa.it — caratteristiche, prezzi, durata larice (affidabile)
+- pandawood.it — schede tecniche essenze legnose, comportamento in interno
+- woodrevive.it — legno di recupero, valore riuso larice antico
+- rubiomonocoat.it — trattamento olio legno interni, manutenzione
+- garbelotto.it — specie legnose, caratteristiche tecniche
+- infobuild.it — normative edilizia, classi durabilità, UNI EN 350
+- zennarolegnami.com — profili larice, qualità, dimensioni disponibili
+- risponde.promolegno.com — Q&A tecnico su legno (Promo_Legno, associazione di settore)
+
+**Fonti problematiche per questa categoria:**
+- assolegnorisponde.it — certificato SSL non valido, WebFetch fallisce
+- ottolinilegnami.com/post — pagina 404
+- adler-italia.it — pagina JS-heavy, solo CSS nel contenuto
+
+### Fitness tracker / Smart band fascia 100-200€ — analisi approfondita giugno 2026 (aggiornamento)
+
+**WHOOP 5.0 — modello subscription device-as-a-service:**
+- Il device NON è di proprietà dell'utente nel modello USA standard: si "affitta" con la membership
+- In Italia (test da maggio 2026): WHOOP sta sperimentando vendita separata device (69€) + subscription 199€/anno
+- Aggiornamento hardware: chi ha 12+ mesi di membership rimanente riceve il nuovo hardware gratis al lancio
+- Quando si cancella la membership: il device deve essere restituito (restocking fee $110 se non restituito in USA)
+- Upcycle: WHOOP incoraggia a regalare il vecchio device a un amico (programma ricompensa $50 credito accessori)
+- Nessun trade-in formale: no programma ritiro/riciclo ufficiale — solo suggerimento di riciclare responsabilmente
+- IP68 + silicone, testato per CrossFit intenso (review the5krunner confermata per uso professionale)
+- Strap sostituzione: cinturini sostitutivi di terze parti disponibili su Amazon (silicone waterproof)
+- Mercato usato WHOOP: quasi inesistente in Italia (il device senza membership attiva è inutilizzabile, o richiede nuova sub)
+
+**Google Fitbit Air — nuova piattaforma Google Health (maggio 2026):**
+- Fitbit app → Google Health: migrazione automatica completata maggio 2026, dati storici migrati su Google Account
+- Legacy Fitbit Web API: shutdown settembre 2026 (API di terze parti, non il device)
+- Il device Fitbit Air è NUOVO (lancio 2025): supporto dichiarato almeno fino a febbraio 2028 (politica Google: 2 anni dopo fine vendita)
+- Garanzia EU: 2 anni (EEA) — Google sostituisce con unità ricondizionata se difetto di fabbrica
+- Pixel Care+: protezione aggiuntiva acquistabile entro 30 giorni dall'acquisto (copre riparazioni/sostituzioni)
+- Housing: policarbonato riciclato + PBT — cinturino tessile con fibbia in acciaio inox
+- Cinturino: sistema quick-swap, ricambi first-party (silicone Active Band, nylon Performance Loop) + third-party
+- iFixit: nessun teardown o score per Fitbit Air (dispositivo troppo recente/sigillato)
+- Valore usato: mercato limitato, Fitbit Air su BackMarket UK ~£80 (stimato 60-80€ in Italia)
+
+**Amazfit Helio Strap — screenless tracker con Zepp App:**
+- Nessun abbonamento richiesto (differenziatore chiave vs WHOOP)
+- Update policy: Zepp Health ha esteso a 3+ anni per modelli strategici; Helio Strap incluso esplicitamente (aggiornamenti Sept 2025, Dec 2025 confermati, rollout anche in Italia)
+- Garanzia: 12 mesi ufficiale Amazfit, ma 2 anni per legge EU nei negozi europei
+- Cinturino: sistema standard 22mm quick-release; ampia disponibilità third-party (silicone, nylon) da ~7-15€ su Amazon
+- Waterproof: non specificato IP68, verifica in corso — adeguato per sudorazione ma verificare per nuoto
+- iFixit: nessun teardown (prodotto di nicchia, non coperto)
+- Indice riparabilità FR: non applicabile (smart band non coperta)
+- Valore usato: molto basso per prodotti screenless di nicchia (stimato 20-40€ dopo 2-3 anni)
+
+**Garmin Vivosmart 6 — prodotto NON ancora disponibile (giugno 2026):**
+- Lancio previsto: annuncio probabile maggio-giugno 2026 (the5krunner), disponibilità effettiva da determinare
+- Prezzo atteso: €150-180 (stima da leak)
+- Nessun dato ufficiale su specifiche, waterproofing, strap, supporto software
+- Per il ciclo di vita: dati proxy da Vivosmart 5 (Garmin track record eccellente, strap quick-release, supporto pluriennale)
+- Garmin storico: mai dichiarato EOL anticipato su fitness tracker, aggiornamenti attivi >3 anni su tutti i modelli
+- iFixit Garmin (proxy Venu Sq): score 3/10 — involucro difficile da riaprire; strap rimane l'unico componente user-serviceable
+- ATTENZIONE: valutazione incerta per definizione — prodotto non sul mercato al momento dell'analisi
+
+**Fonti aggiuntive affidabili per questa categoria:**
+- tuttotech.net — notizie WHOOP italia, vendita separata device confermata maggio 2026
+- the5krunner.com/2025/10/31/... — review approfondita WHOOP 5.0 per atleti CrossFit
+- pasqualepillitteri.it/en/news/... — analisi Fitbit Air e transizione Google Health 2026
+- support.whoop.com/s/article/Upcycling — procedura upcycling WHOOP (gifting + credito accessori)
+- support.google.com/product-documentation — garanzia Fitbit Air EU 2 anni confermata
+- technowize.com/vivosmart-6-leak — specifiche leaked Vivosmart 6
+
+**Fonti problematiche:**
+- eBay.it per WHOOP usato: praticamente nessun annuncio (il device senza abbonamento è inutile)
+- Subito.it WHOOP: solo accessori (caricatori), non device completo
+
+### Fitness band cinesi fascia 35-250€ — analisi ciclo di vita (giugno 2026)
+
+**Huawei Band 9 e Band 11 Pro — limitazione acqua calda CRITICA:**
+- Entrambi i device Huawei dichiarano esplicitamente di NON indossare in acqua calda, docce calde, saune
+- consumer.huawei.com/it (pagina specs Band 11 Pro) conferma: "not intended to be worn during hot showers, hot spring immersion, or saunas"
+- Per CrossFit (doccia post-allenamento), questa è una limitazione operativa reale che riduce la vita del sigillo
+- Politica software Huawei per wearable: 24 mesi dichiarati — corta rispetto ai competitor
+- Connettore proprietario che cambia generazione (Band 9 ≠ Band 11 Pro) — ecosistema strap non retrocompatibile
+- Assistenza Huawei Italia strutturata: consumer.huawei.com/it con riparazione postale gratuita
+- Score ciclo di vita: Band 11 Pro 5/10, Band 9 4/10
+
+**Xiaomi Smart Band 10 Pro — miglior ciclo di vita della categoria cinese:**
+- Lancio globale 28 maggio 2026 — prodotto recentissimo
+- HyperOS 3 già rilasciato su Band 10 standard (dicembre 2025); Band 10 Pro attesa HyperOS 3+ nei prossimi mesi
+- Connettore compatibile con Band 8/9/10 (3 generazioni stabili) — ecosistema ricambi ampio
+- Cinturini ufficiali su mi.com/it + terze parti abbondanti (Niboow compatibile Band 10/9/8 su Amazon.it)
+- Nessuna limitazione acqua calda dichiarata (5ATM + IP68)
+- Score ciclo di vita: 6/10
+
+**Honor Band 9:**
+- Politica 7 anni aggiornamenti Honor si applica SOLO alla serie Magic smartphone — NON alle smart band
+- Per Band series Honor: politica effettiva 2-3 anni firmware (simile a Huawei)
+- Nessuna limitazione acqua calda dichiarata
+- Rete assistenza Honor in Italia meno capillare di Huawei
+- Score ciclo di vita: 4.5/10
+
+**JCVital Pro V8 ECG e Hume Band 2.0 — brand senza ecosistema EU:**
+- JCVital = brand di Shenzhen Youhong Technology Co. / Jointcorp (produttore OEM/ODM) — senza distribuzione EU strutturata
+- Hume Band = startup USA direct-to-consumer, forte dipendenza da server cloud — se l'azienda chiude il device diventa inutile
+- Entrambi venduti in USD da siti USA: la garanzia EU minima di 2 anni NON si applica automaticamente agli acquisti fuori UE
+- Garanzia Hume: 1 anno standard + opzione "a vita" per $35 (HumeCare) — trovata marketing senza track record
+- Nessun centro assistenza autorizzato in Italia/EU per entrambi i brand
+- Zero ricambi disponibili su Amazon.it/EU
+- Zero mercato usato identificabile in Italia (eBay, Subito)
+- Score ciclo di vita: JCVital 2/10, Hume 2/10
+- Hume Health Trustpilot (humehealth.com, giugno 2026): 3.6/5 su 4.152 recensioni — problemi principali: rimborsi non processati (attesa mesi), prodotti non consegnati, customer service >5gg risposta, inaccuratezze sensori. Il dato "1.4/5" citato in alcuni brief e probabilmente riferito a una pagina specifica o periodo precedente.
+- JCVital = brand front su sito Shopify (jcvital.com) senza termini di garanzia pubblicati pubblicamente. Garanzia verificabile solo contattando direttamente il produttore.
+
+**Benchmark ciclo di vita per fitness tracker (riferimento per confronti):**
+| Brand/Device | Score ciclo di vita | Note chiave |
+|---|---|---|
+| Garmin Vivosmart 5/6 | 8/10 | Assistenza EU, 3+ anni SW, sostituzione device ufficiale ~50-80€, cinturino quick-release |
+| WHOOP 5.0 | 7/10 (con sub) | Hardware sostituito gratis ogni generazione per abbonati, ma device inutile senza abbonamento |
+| Fitbit Air (Google) | 6.5/10 | Garanzia EU 2 anni, cinturino quick-swap, 2 anni SW garantiti, valore usato ~60% |
+| Xiaomi Band 10 Pro | 6/10 | Miglior cinese — connettore 3 generazioni stabile, ampi accessori, IP68 |
+| Huawei Band 11 Pro | 5/10 | Assistenza IT strutturata ma limitazione acqua calda = problema CrossFit |
+| Honor Band 9 | 4.5/10 | No limitazione acqua calda ma assistenza IT meno capillare |
+| Huawei Band 9 | 4/10 | Limitazione acqua calda, supporto 24 mesi, usa-e-getta |
+| JCVital Pro V8 / Hume Band 2.0 | 2/10 | Brand senza distribuzione EU, server cloud come punto di failure, zero assistenza IT |
+
+**Regola generale per brand DTC americani/cinesi senza distribuzione EU:**
+- La garanzia commerciale del venditore (1 anno) è l'unica protezione — la garanzia EU non si applica
+- Dipendenza da app/server cloud = rischio di inutilizzabilità se il brand viene acquisito, pivot, o chiude
+- Zero valore usato su mercati italiani (nessun acquirente conosce il brand)
+- Contromisura: usare PayPal o carta di credito con protezione acquisti come assicurazione aggiuntiva
+
+**Batteria come limite reale per uso CrossFit:**
+- Nessun device di questa fascia ha batteria user-replaceable
+- Uso CrossFit intenso (GPS + HR continuo) degrada la batteria più rapidamente della media
+- Stima vita utile realistica: 18-30 mesi prima che l'autonomia diventi inaccettabile per tutti questi modelli
+
+**Cinturini per CrossFit:**
+- Xiaomi Band 10 Pro: meglio equipaggiata (opzioni silicone, nylon traspirante, ceramica)
+- Huawei Band 11 Pro: fluoroelastomero ufficiale (resistente a sudore) + nylon
+- Huawei Band 9: rapida sostituzione, 49 offerte su trovaprezzi da ~7,80€
+- Honor Band 9: cinturini su Amazon — compatibilità con sistema semi-proprietario
+
+**Fonti affidabili per questa categoria:**
+- consumer.huawei.com/it/wearables/band11-pro/specs/ — specs e limitazioni acqua calda
+- mi.com/it/product/xiaomi-smart-band-10-pro/ — specs ufficiali Band 10 Pro
+- gizchina.it — accessori Xiaomi Band 10 Italia
+- notebookcheck.net — notizie lancio Band 11 Pro Europa
+- smartwatchinsight.com — leak Xiaomi Band 10 Pro
+- versus.com — confronti spec tra band
+- consumer.huawei.com/ie/support/warranty-policy/ — garanzia Huawei wearable 24 mesi confermata (pagina IE, stessa policy EU)
+- wareable.com/health-tech/hume-band-2-0-review — review Hume Band 2.0 indipendente 2026
+- healnourishgrow.com/hume-band-review/ — analisi Hume Band 2.0 con confronto vs WHOOP
+- jointcorp.com — sito produttore Jointcorp (JCVital), profilo OEM/ODM Shenzhen Youhong Technology
+
+**Fonti problematiche per questa categoria:**
+- JCVital su eBay: zero risultati usato — brand non presente nel mercato secondario italiano
+- Hume Band su Subito.it/eBay.it: zero annunci — mercato secondario inesistente in Italia
+- consumer.huawei.com/it/support/warranty-policy/wearables/ — WebFetch restituisce contenuto ma non i dettagli specifici per Band series; dati garanzia 24 mesi verificati tramite altri canali
+- trustpilot.com (WebFetch diretto) — restituisce 403; usare WebSearch per leggere snippet e rating
+- jcvital.com warranty/refund page — non indicizzata su Google; la policy non e pubblica, accessibile solo navigando il sito direttamente
+
+### Fitness tracker / Smart band fascia fino a 200€ (analisi giugno 2026)
+
+**Indice riparabilità francese:** NON applicabile alla categoria fitness tracker/smart band. Il regolamento francese copre: smartphone, laptop, aspirapolveri, lavastoviglie, idropulitrici, lavatrici. I wearables/smart band non rientrano nelle categorie con obbligo di indice.
+
+**iFixit — copertura fitness tracker:**
+- **Fitbit Charge 6**: score 4/10 — unico fitness tracker nella categoria con score ufficiale iFixit. Design sigillato, priorità waterproofing su riparabilità. Solo il cinturino è user-serviceable.
+- **Garmin Venu Sq Music Edition**: score 3/10 — proxy per la filosofia costruttiva Garmin su fitness tracker. Pessimo come smartwatch Garmin.
+- **Amazfit, Xiaomi, Samsung Fit 3, Huawei Band**: nessun score iFixit disponibile per le smart band di fascia bassa. iFixit non copre questi prodotti.
+- **Garmin Vivosmart (prima generazione)**: teardown disponibile ma senza score numerico; involucro con silicone sealant intorno, difficile da riaprire.
+
+**Batteria nelle smart band — problema strutturale:**
+- In TUTTE le smart band di questa fascia la batteria è sigillata e non user-replaceable.
+- Sostituzione ufficiale: possibile solo tramite service center del brand a costo variabile (spesso non conveniente rispetto al prezzo del device).
+- Garmin: servizio ufficiale invia unità ricondizionata (non ripara la batteria), costo ~50-80€, può richiedere 2-4 settimane.
+- Xiaomi, Amazfit, Huawei: assistenza tramite centri autorizzati; per prodotti con prezzo <100€ spesso non economicamente conveniente riparare.
+- Samsung Galaxy Fit 3: assistenza Samsung, stesso approccio — device sotto i 50€ praticamente mai conveniente riparare.
+- **Conseguenza**: quando la batteria degrada (tipicamente 2-3 anni di uso intenso) il device diventa rifiuto elettronico, tranne se si riesce a trovare un centro specializzato in riparazione wearables.
+
+**Supporto software — rischi critici per categoria:**
+
+| Brand/Device | Supporto software | Rischio |
+|---|---|---|
+| Fitbit Charge 6 | Fine supporto firmware Q3 2026; brand in dismissione da Google entro fine 2026 | **CRITICO — supporto già terminato** |
+| Garmin Vivosmart 5 | Aggiornamenti confermati fino a marzo 2026+, nessuna data EOL dichiarata; storico Garmin eccellente | Basso |
+| Amazfit Band 7/8/9 | Policy estesa a 3+ anni per modelli strategici; Band serie non inclusa esplicitamente nell'estensione | Medio |
+| Xiaomi Smart Band 9 Pro | HyperOS 2 (nov 2024), HyperOS 3 confermato (dic 2025); aggiornamenti attivi | Basso-medio |
+| Samsung Galaxy Fit 3 | 2-3 anni garantiti (lancio 2024 → supporto fino ~2027); aggiornamenti confermati a feb 2026 | Basso |
+| Huawei Band 9 | HarmonyOS 4.2 ricevuto; politica ufficiale: 24 mesi di aggiornamenti | Medio |
+
+**Waterproofing per uso intenso CrossFit/doccia:**
+- IP68 + 5ATM = protezione fino a 50m × 10 minuti (standard). Adeguato per nuoto, doccia, sudorazione.
+- Huawei Band 9: **ufficialmente sconsigliato in doccia calda** (il costruttore stesso lo indica — acqua calda + detergente degradano il sigillo). Critico per uso CrossFit+doccia frequente.
+- Galaxy Fit 3: confermato affidabile in doccia e nuoto da test reali 6 mesi (aliexpress wiki + androidauthority).
+- Garmin Vivosmart 5, Xiaomi Band 9 Pro, Amazfit Band 9: 5ATM + IP68 dichiarati. Garmin ha track record eccellente su waterproofing di serie.
+- **Cinturini**: per uso CrossFit preferire cinturini in silicone morbido (sweat-resistant, asciuga veloce) o nylon (Xiaomi ha opzione ufficiale nylon).
+
+**Cinturini sostitutivi — ecosistema accessori:**
+- Xiaomi Band 9 Pro: connettore standard con meccanismo quick-release; ampia disponibilità cinturini ufficiali e third-party (silicone, nylon, metallo) da ~7€
+- Garmin Vivosmart 5: cinturini Garmin originali + terze parti disponibili (StrapsCo, Amazon); sistema quick-release
+- Huawei Band 9: quick-release; ricambi su Amazon.it da ~8€, trovaprezzi ha 49 offerte da 7,80€
+- Fitbit Charge 6: cinturini disponibili su cinturinowatch.it e trovaprezzi; sistema proprietario Fitbit ma ampia compatibilità terze parti da ~15€
+- Samsung Galaxy Fit 3: cinturini su Amazon IT, eBay, sistema standard 20mm
+
+**Valore usato stimato (2-3 anni — smart band fascia economica):**
+- Smart band economiche (<60€ nuove) hanno valore residuo quasi nullo dopo 2-3 anni: 5-20€ massimo
+- Smart band fascia media (60-200€ nuove):
+  - Fitbit Charge 6 (nuovo ~110€) → valore usato 2026: 40-70€ (BackMarket ~£108 UK, refurbed.it 127€ ricondizionato)
+  - Garmin Vivosmart 5 (nuovo ~130€) → valore usato 2025: 60-90€
+  - Xiaomi Smart Band 9 Pro (nuovo ~48€) → valore residuo quasi nullo: 10-20€
+  - Samsung Galaxy Fit 3 (nuovo ~32€) → praticamente nessun mercato usato: 5-15€
+  - Amazfit Band 9 (~40-50€ nuovo) → mercato usato limitato: 10-20€
+  - Huawei Band 9 (~25€ nuovo) → valore residuo trascurabile: 5-10€
+- Brand con mercato usato riconoscibile: Fitbit e Garmin
+
+**Trade-in:**
+- Garmin: nessun programma trade-in diretto
+- Xiaomi: partnership Recommerce per trade-in in 13 paesi EU inclusa Italia (lanciato settembre 2025) — ma probabilmente non copre smart band, solo smartphone
+- Amazfit: programma trade-in esistito nel 2022 ma solo USA; non confermato per EU 2025-2026
+- Samsung, Fitbit, Huawei: nessun programma trade-in per fitness tracker in Italia
+
+**RAEE smart band:**
+- Tutte le smart band contengono batteria Li-Po non rimovibile → conferire obbligatoriamente in isola ecologica come RAEE (categoria "piccoli apparecchi elettronici") — NON in pattumiera
+- In alternativa: punti ritiro RAEE in negozi elettronica (Unieuro, MediaWorld, MediaMarkt)
+
+**Prezzi accertati Italia giugno 2026:**
+| Modello | Prezzo nuovo | Fonte |
+|---|---|---|
+| Fitbit Charge 6 | ~110-121€ | idealo.it |
+| Garmin Vivosmart 5 | ~130-134€ | idealo.it |
+| Xiaomi Smart Band 9 Pro | ~48-50€ | idealo.it / Amazon.it |
+| Samsung Galaxy Fit 3 | ~32-35€ | idealo.it |
+| Huawei Band 9 | ~25-30€ | trovaprezzi.it |
+| Amazfit Band 9 | ~40-50€ (stimato) | trovaprezzi.it (non trovato esatto) |
+
+**Fonti affidabili per fitness tracker/smart band:**
+- oxygenfit.co.uk — analisi approfondita Fitbit EOL, dati support timeline confermati
+- the5krunner.com — Amazfit support policy changes febbraio 2026
+- xiaomitime.com — aggiornamenti HyperOS Xiaomi Band 9 Pro
+- sammobile.com / sammyfans.com — aggiornamenti Samsung Galaxy Fit 3
+- androidauthority.com — review Samsung Galaxy Fit 3 con test durabilità reale
+- huaweicentral.com — aggiornamenti HarmonyOS Huawei Band 9
+- consumer.huawei.com/it — avvisi ufficiali waterproofing Huawei (doccia calda sconsigliata)
+- ifixit.com/repairability/smartwatch-repairability-scores — unico score iFixit per wearables (Fitbit Charge 6: 4/10)
+
+**Fonti problematiche per questa categoria:**
+- idealo.it "Amazfit Band 9" — non restituisce pagina diretta del prodotto nella ricerca Google; preferire trovaprezzi.it per Amazfit
+- Ricerche "Amazfit Band 9 CrossFit review" — confondono con Xiaomi Band 9; i due prodotti sono diversi
+
 ### Ombrelloni da esterno palo laterale/sbalzo (analisi giugno 2026)
 
 **GAP CRITICO DI BUDGET**: I brand nominati nel discovery (Scolaro, Caravita, FIM, Umbrosa, Doppler) sono tutti prodotti professionali/semi-professionali con prezzi reali 1.000-2.500€+. Il budget 500-700€ non copre nessuno di questi brand per dimensioni 3.5m+. Il Scolaro Napoli Braccio Ø3.5 costa ~1.060€ IVA inclusa (già scontato del 40%). Informare sempre l'utente di questo gap.

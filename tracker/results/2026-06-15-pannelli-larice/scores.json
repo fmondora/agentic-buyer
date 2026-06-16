@@ -1,0 +1,103 @@
+{
+  "weights": {
+    "price": 0.32,
+    "reviews": 0.10,
+    "specs": 0.16,
+    "technical_critic": 0.12,
+    "sustainability": 0.06,
+    "lifecycle": 0.10,
+    "brand": 0.14
+  },
+  "products": [
+    {
+      "name": "ilmiopezzo.com — Pannello larice 3 strati 19mm su misura 200x80cm",
+      "scores": {
+        "price": 6,
+        "reviews": 8,
+        "specs": 8,
+        "technical_critic": 8,
+        "sustainability": 8,
+        "lifecycle": 9,
+        "brand": 7
+      },
+      "total": 73.8,
+      "timing_verdict": "COMPRA ORA",
+      "note": "Unico pannello larice vero 200x80cm. Prezzo ~53-70 EUR/pz borderline budget"
+    },
+    {
+      "name": "Putzer — Larice alpino piallato 24x190x2000mm",
+      "scores": {
+        "price": 5,
+        "reviews": 6,
+        "specs": 8,
+        "technical_critic": 8,
+        "sustainability": 8,
+        "lifecycle": 9,
+        "brand": 8
+      },
+      "total": 70.4,
+      "timing_verdict": "COMPRA ORA",
+      "note": "Larice alpino piallato 4 lati, 3-4 tavole per modulo 80cm = 57-76 EUR. Filiera corta EU"
+    },
+    {
+      "name": "Pellet Legnami — Larice siberiano 20x90x2000mm AB",
+      "scores": {
+        "price": 6,
+        "reviews": 7,
+        "specs": 7,
+        "technical_critic": 7,
+        "sustainability": 5,
+        "lifecycle": 9,
+        "brand": 7
+      },
+      "total": 68.2,
+      "timing_verdict": "COMPRA PRESTO",
+      "note": "9 tavole per modulo 80cm = 66 EUR. Qualita AB, larice siberiano. Rischio supply chain"
+    },
+    {
+      "name": "Pellet Legnami — Larice siberiano 28x140x2000mm BC",
+      "scores": {
+        "price": 6,
+        "reviews": 7,
+        "specs": 6,
+        "technical_critic": 6,
+        "sustainability": 5,
+        "lifecycle": 9,
+        "brand": 7
+      },
+      "total": 65.0,
+      "timing_verdict": "COMPRA PRESTO",
+      "note": "6 tavole per modulo 80cm = 67 EUR. Rustico con nodi. 52 pz in stock"
+    },
+    {
+      "name": "Pellet Legnami — Perlina larice sib. 26x145x4000mm B",
+      "scores": {
+        "price": 7,
+        "reviews": 7,
+        "specs": 7,
+        "technical_critic": 6,
+        "sustainability": 5,
+        "lifecycle": 9,
+        "brand": 7
+      },
+      "total": 68.4,
+      "timing_verdict": "COMPRA PRESTO",
+      "note": "~35 EUR/m2, formato 4m, 135 pz in stock. Buon rapporto qualita/prezzo"
+    },
+    {
+      "name": "Leroy Merlin — Abete lamellare 200x80x18mm",
+      "scores": {
+        "price": 9,
+        "reviews": 5,
+        "specs": 4,
+        "technical_critic": 4,
+        "sustainability": 6,
+        "lifecycle": 6,
+        "brand": 4
+      },
+      "total": 59.2,
+      "timing_verdict": "COMPRA ORA",
+      "note": "NON e larice. Abete lamellare. EUR 39.90 ritiro. Il piu economico ma materiale diverso"
+    }
+  ]
+}

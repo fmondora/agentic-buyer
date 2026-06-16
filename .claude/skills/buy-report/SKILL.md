@@ -1,15 +1,15 @@
 ---
 name: buy-report
-description: Sintetizza i risultati degli 8 agenti e genera il report finale di acquisto
+description: Sintetizza i risultati degli agenti evaluator e genera il report finale di acquisto
 ---
 
 # Skill: Generazione Report Acquisto
 
 ## Quando usare
-Questa skill viene invocata dall'orchestratore `/buy` dopo che tutti gli 8 agenti hanno completato il loro lavoro. Ricevi i risultati grezzi degli 8 agenti e produci un report finale strutturato.
+Questa skill viene invocata dall'orchestratore `/buy` dopo che tutti gli 8 agenti hanno completato il loro lavoro. Ricevi i risultati grezzi degli agenti evaluator e produci un report finale strutturato.
 
 ## Input atteso
-Ricevi i finding di 8 agenti:
+Ricevi i finding degli agenti evaluator (fino a 9):
 1. **PriceHunter** — prezzi e disponibilita
 2. **ReviewAnalyst** — recensioni e sentiment
 3. **SpecComparer** — specifiche tecniche e dati energetici
@@ -18,6 +18,7 @@ Ricevi i finding di 8 agenti:
 6. **LifecycleAdvisor** — riparabilita, upgradabilita, fine vita, longevita
 7. **BrandRater** — reputazione brand, impatto territoriale, etica
 8. **StrategicBuyer** — timing acquisto, trend prezzi, stagionalita, ciclo prodotto
+9. **CommunityHacker** (opt-in) — hackability, progetti open source, integrazioni community, data portability
 
 ## Procedura di sintesi
 

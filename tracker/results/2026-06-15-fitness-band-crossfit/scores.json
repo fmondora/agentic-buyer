@@ -1,0 +1,97 @@
+{
+  "weights": {
+    "spec": 0.22,
+    "technical_critic": 0.18,
+    "price": 0.16,
+    "reviews": 0.14,
+    "lifecycle": 0.12,
+    "brand": 0.10,
+    "sustainability": 0.08
+  },
+  "products": [
+    {
+      "name": "Garmin Vivosmart 5",
+      "scores": {
+        "spec": 7,
+        "technical_critic": 4.5,
+        "price": 5,
+        "reviews": 7.4,
+        "lifecycle": 7,
+        "brand": 7.5,
+        "sustainability": 6
+      },
+      "total": 62.1,
+      "notes": "Miglior ecosistema iOS, Body Battery eccellente per recovery, HR piu accurato su HIIT. Modello 2022 ma supporto 4+ anni. HRV Status bloccato firmware."
+    },
+    {
+      "name": "Amazfit Helio Strap",
+      "scores": {
+        "spec": 7.5,
+        "technical_critic": 5,
+        "price": 6,
+        "reviews": 7,
+        "lifecycle": 5,
+        "brand": 4.5,
+        "sustainability": 2
+      },
+      "total": 57.7,
+      "notes": "Candidato sorpresa: orientato recovery/HRV come alternativa Whoop senza abbonamento. Apple Health sync confermata. Prodotto fresco 2025, DC Rainmaker positivo. Posizione bicipite migliora accuratezza."
+    },
+    {
+      "name": "Fitbit Charge 6",
+      "scores": {
+        "spec": 8.5,
+        "technical_critic": 5,
+        "price": 7,
+        "reviews": 8,
+        "lifecycle": 2,
+        "brand": 4,
+        "sustainability": 8
+      },
+      "total": 60.4,
+      "notes": "Miglior set sensoristico (ECG, EDA, HRV, VO2max, GPS). Prezzo crollato a 84.90. MA: firmware EOL Q3 2026, brand in dismissione, HealthKit non nativo. Dead end."
+    },
+    {
+      "name": "Xiaomi Smart Band 9 Pro",
+      "scores": {
+        "spec": 5,
+        "technical_critic": 4,
+        "price": 9,
+        "reviews": 7,
+        "lifecycle": 5,
+        "brand": 4,
+        "sustainability": 5
+      },
+      "total": 55.4,
+      "notes": "Miglior rapporto qualita/prezzo assoluto (41-48 EUR). GPS integrato, display top. MA: Mi Fitness NON sincronizza con Apple Health (bloccante iPhone), HRV assente."
+    },
+    {
+      "name": "Huawei Band 9",
+      "scores": {
+        "spec": 3.5,
+        "technical_critic": 3,
+        "price": 9.5,
+        "reviews": 5,
+        "lifecycle": 3,
+        "brand": 3.5,
+        "sustainability": 7
+      },
+      "total": 46.3,
+      "notes": "Prezzo imbattibile (29-35 EUR), leggerissimo. MA: no Apple Health sync, HRV non esposto, produttore sconsiglia doccia, ecosistema chiuso."
+    },
+    {
+      "name": "Samsung Galaxy Fit 3",
+      "scores": {
+        "spec": 4,
+        "technical_critic": 3.5,
+        "price": 9,
+        "reviews": 0,
+        "lifecycle": 5,
+        "brand": 6,
+        "sustainability": 7
+      },
+      "total": 0,
+      "notes": "ELIMINATO — incompatibile con iPhone. Confermato ufficialmente da Samsung."
+    }
+  ]
+}

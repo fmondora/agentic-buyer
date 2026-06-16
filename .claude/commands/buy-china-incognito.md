@@ -2,9 +2,9 @@
 allowed-tools: WebSearch, WebFetch, Agent, Read, Glob, Bash, AskUserQuestion
 ---
 
-# /buy-incognito — Acquisto Intelligente in Modalita Incognito
+# /buy_china_incognito — Acquisto Cinese in Modalita Incognito
 
-Sei l'orchestratore del sistema Buyer in **modalita incognito**. La pipeline e **identica** a `/buy` (stessi step, stessi agenti, stesso flusso) ma **senza lasciare traccia su disco**.
+Sei l'orchestratore del sistema Buyer in **modalita China + incognito**. La pipeline e **identica** a `/buy_china` ma **senza lasciare traccia su disco**.
 
 ## Regole incognito (NON NEGOZIABILI)
 
@@ -20,51 +20,47 @@ IMPORTANTE: Nota che `allowed-tools` sopra NON include Write e Edit. Questo coma
 
 ## Flusso
 
-**Identico a `/buy`** in ogni step. L'unica differenza e che nulla viene scritto su disco.
+**Identico a `/buy_china`** in ogni step. L'unica differenza e che nulla viene scritto su disco.
 
 ### Step 1: Parsing
-Come `/buy`. Analizza: `$ARGUMENTS`
+Come `/buy_china`. Analizza: `$ARGUMENTS`
 
 ### Step 2: Discovery
-Come `/buy`, in foreground.
+Come `/buy_china`, in foreground.
 
-### Step 3: Scout (foreground)
-Come `/buy`, lancia lo Scout in foreground. Aggiungi al prompt:
+### Step 3: ScoutChina (foreground)
+Come `/buy_china`. Aggiungi al prompt:
 > **MODALITA INCOGNITO**: NON aggiornare i learnings. NON scrivere su nessun file. Solo ricerca e output testuale + JSON strutturato.
 
 ### Step 4: Lancia i 9 evaluator (parallelo)
-Come `/buy`, 9 agenti in parallelo e background (incluso StrategicBuyer). Nel prompt di ogni agente aggiungi:
+Come `/buy_china`, 9 agenti in parallelo e background. Nel prompt di ogni agente aggiungi:
 > **MODALITA INCOGNITO**: NON aggiornare i learnings. NON scrivere su nessun file. Solo ricerca e output testuale + JSON strutturato.
 
-Gli agenti producono comunque il blocco `json:structured-output` — i dati restano in memoria di conversazione, non su disco.
-
 ### Step 5: Aggiorna l'utente
-Come `/buy`.
+Come `/buy_china`.
 
 ### Step 6: Sintetizza (senza salvare)
-Come `/buy` Step 6, ma:
+Come `/buy_china` Step 6, ma:
 - **NON creare** la directory `tracker/results/`
-- **NON salvare** spec.json, agents/*.json, products.json, scores.json
+- **NON salvare** nessun file
 - Calcola i punteggi in memoria e usali per il report
-- Il report viene presentato SOLO in conversazione, mai salvato su disco
+- Il report viene presentato SOLO in conversazione
 
 ### Step 7: Genera il report (senza salvare)
-Come `/buy` Step 7, ma il report markdown viene mostrato in conversazione, non salvato in `reports/`.
+Come `/buy_china` Step 7, ma il report viene mostrato in conversazione, non salvato.
 
 ### Step 8: Presenta il verdetto
-Come `/buy` Step 8, ma invece di link a file scrivi:
+Come `/buy_china` Step 8, ma invece di link a file scrivi:
 > Modalita incognito: nessun file salvato. Usa `/clear` per eliminare ogni traccia dalla conversazione.
 
 ## Conferma iniziale
 
 Prima di partire, mostra all'utente:
 ```
-Modalita incognito attiva:
+Modalita China + incognito attiva:
+- Ricerca su piattaforme cinesi (AliExpress, Temu, Banggood, 1688, Alibaba)
 - Nessun report salvato su disco
 - Nessun risultato strutturato salvato
 - Nessun learnings aggiornato
-- Nessuna traccia in memoria
 - Il risultato esiste solo in questa conversazione
 ```
-
-Poi procedi con la ricerca.

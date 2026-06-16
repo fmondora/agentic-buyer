@@ -35,6 +35,109 @@ Per TV 55 pollici:
 
 ## Note per categoria
 
+### Fitness tracker / Smart band (aggiornato giugno 2026)
+
+**Modelli esistenti nel catalogo 2026:**
+- Amazfit Band 9: NON ESISTE. La serie Amazfit Band si ferma alla Band 7 (lanciata 2022). Non cercare questo modello.
+- Amazfit Helio Strap (2025): tracker senza display, €99.91 amazon.it (ASIN B0F8HJCB47). Stesso prezzo su amazon.de/fr/es (€99.90). Sito ufficiale esaurito. idealo.it da €98.99 (17 offerte).
+- Fitbit Charge 6 (2023): ASIN amazon.it è B0CHN3W617 (NON B0CZGP1H8K che dà 404). Prezzo €84.90 amazon.it. idealo.it da €84.90. MediaWorld €129.29 (prezzo pieno).
+- Fitbit Air (2026): ASIN B0GS7D8BN9. Prezzo €99.99 su tutti Amazon EU (it/de/fr/es). idealo.it da €99.99 (storico: min €99.99, max €144.98). idealo.de/at €99.00.
+- Garmin Vivosmart 5 (2022, ancora in produzione): successore (Vivosmart 6) NON ancora disponibile a giugno 2026.
+- Garmin Vivosmart 6: leak da CES 2026, lancio atteso maggio-giugno 2026 ma non ancora ufficiale a giugno 2026. Prezzo stimato $150-180 USD (~€140-170). NON cercare perché non venduto.
+- Xiaomi Smart Band 9 (2024) e Smart Band 9 Pro (2024) — successore: Smart Band 10 Pro (2026)
+- Samsung Galaxy Fit 3 (2024, ancora in produzione)
+- Huawei Band 9 (2024) e Band 8 (2023, modello precedente scontato)
+- WHOOP: dal 2025 WHOOP 5.0 ha sostituito il 4.0. Abbonamento obbligatorio, device non funziona senza.
+
+**WHOOP struttura prezzi 2025-2026 (aggiornato giugno 2026):**
+- Piano One: €199/anno — include WHOOP 5.0, sensori base (sonno, sforzo, recupero, VO2max, HRV), AI coaching
+- Piano Peak: €264/anno — aggiunge Healthspan (età fisiologica), stress, approfondimenti salute
+- Piano Life: €399/anno — include WHOOP MG (medical grade), ECG, rilevamento aritmie, pressione
+- Tutti i piani: abbonamento annuale obbligatorio. Mensile non disponibile (solo dopo 12 mesi iniziali).
+- Test in Italia (da maggio 2026): device separato €69 + abbonamento €199/anno = €268 primo anno
+- Costo pluriennale: anno 1 = €199 (device incluso standard), anno 2+ = €199/anno (stesso piano)
+- ASIN amazon.it B0DY2VVZWZ = piano One 12 mesi, €199, stesso prezzo su DE/FR/ES
+
+**Sensori avanzati (HRV, VO2max) — chi ce li ha davvero:**
+- HRV vero: Fitbit Charge 6 (ECG + HRV), Garmin Vivosmart 5 (Body Battery basata su HRV), WHOOP 5.0 (HRV continuo 24/7), Amazfit Helio Strap (HRV continuo)
+- VO2max: Fitbit Charge 6 (stima via GPS), Garmin Vivosmart 5 (con camminata 15 min), WHOOP 5.0, Amazfit Helio Strap
+- SpO2: tutti i modelli sopra + Xiaomi Smart Band 9 Pro, Samsung Galaxy Fit 3, Huawei Band 9
+- Fitbit Air: HRV SI (continuo), VO2max SI, SpO2 SI — successore Charge 6 senza display
+- Amazfit Helio Strap: HRV SI, VO2max SI, SpO2 SI — senza display, no subscription
+- Xiaomi Smart Band 9 (base): NO HRV, NO VO2max — solo SpO2 e HR di base
+- Samsung Galaxy Fit 3: NO HRV, NO VO2max, ha SpO2 e monitoraggio sonno
+- Huawei Band 9/8: NO HRV, NO VO2max, SpO2 presente, TruSleep avanzato
+
+**Fascia prezzi live (giugno 2026, Amazon.it via scraper):**
+- Amazfit Band 7: €20.99 amazon.it (modello 2022, quasi fine vita, MA senza HRV/VO2max veri)
+- Amazfit Band 7 amazon.de: €6.99 (ANOMALO — venditore marketplace, stock residuo, non affidabile)
+- Amazfit Helio Strap: €99.91 amazon.it / €99.90 amazon.de/fr/es / ~€98.99 idealo.it
+- Samsung Galaxy Fit 3: €41.90 amazon.it / €41.99 MediaWorld
+- Huawei Band 9: €35.38 amazon.it / €29.80 amazon.de (BEST EU price)
+- Huawei Band 8 (precedente): ~€29.90 idealo / €59 amazon.it (versione ES — attenzione)
+- Xiaomi Smart Band 9: ~€29.99 idealo / €45.18 amazon.it (Glacier Silver)
+- Xiaomi Smart Band 9 Pro: €48.49 amazon.it / €41.23 amazon.es (BEST EU price)
+- Fitbit Charge 6: €84.90 amazon.it (ASIN B0CHN3W617) / €85.00 amazon.de / idealo.it da €84.90 / MediaWorld €129.29
+- Fitbit Air: €99.99 amazon.it (ASIN B0GS7D8BN9) / €99.99 amazon.de/fr/es / idealo.it €99.99 / idealo.de €99.00
+- Garmin Vivosmart 5: €132.49 amazon.it / €122.57 amazon.de (risparmio ~€10 su DE) / idealo.it da €130.68
+- WHOOP 5.0 abbonamento One: €199/anno amazon.it (device incluso nel piano standard; in IT test vendita separata: device €69 + €199/anno)
+- Fitbit Charge 5 (precedente): €98.49 amazon.it MA solo usato seconda mano — fuori produzione
+
+**ASIN corretti fitness tracker (verificati giugno 2026):**
+- Amazfit Helio Strap: B0F8HJCB47 (funziona su IT/DE/FR/ES)
+- Fitbit Air: B0GS7D8BN9 (funziona su IT/DE/FR/ES)
+- WHOOP 5.0 One Annual: B0DY2VVZWZ (funziona su IT/DE/FR/ES)
+- Fitbit Charge 6 (amazon.it): B0CHN3W617 — ATTENZIONE: B0CZGP1H8K dà 404, non usarlo
+- Fitbit Charge 6 idealo.it ID: 203291761
+
+**Fonte WHOOP:** abbonamento su amazon.it (ASIN B0DY2VVZWZ) = €199/anno piano One. Il device è incluso nell'abbonamento nel piano standard. In Italia test di vendita separata (device €69 + abb. €199). Verificare sul sito WHOOP per struttura attuale.
+
+**Amazfit Band 7 (€6.99 amazon.de)**: prezzo sospetto, sicuramente venditore third-party con stock residuo. Non riportare come prezzo affidabile. Usare €20.99 amazon.it come riferimento.
+
+**Smart band cinesi 2026 (Huawei Band 11 Pro, Xiaomi Band 10 Pro, Honor Band 9) — note operative (aggiornato giugno 2026 — 6.18 sale):**
+- Huawei Band 11 Pro (2026): ASIN B0GGHRJR23, €59.90 amazon.it (confermato scraper), €54.90 amazon.de (BEST EU), €45.37 amazon.es (MIN EU — confermato scraper 6/2026), idealo.it €59.90 (min storico €56.43), idealo.de/at €54.90. Listino ufficiale €74.90. AliExpress stima CN ~€38 IOSS incluso (non verificabile direttamente). Risparmio reale AliExpress CN vs amazon.es: ~€7 — NON vale il rischio/attesa.
+- Xiaomi Smart Band 10 Pro (2026): ASIN B0GQ3FYM27 (Nero, €79.99 amazon.it), amazon.es €66.10 (BEST EU — confermato scraper), amazon.de/fr €75.99. idealo.it €75.41 (min storico €75.41). Listino €79.90 (alluminio) / €99.90 (NFC ceramica). AliExpress stima CN ~€52. Risparmio CN vs amazon.es: ~€14 — marginale per prodotto appena uscito.
+- Honor Band 9 (2024): ASIN B0CX8774TW, amazon.de €26.00 (BEST EU — confermato scraper 6/2026), amazon.it €40.41, amazon.es €39.99, amazon.fr €59. idealo.it snapshot €29.25 (marketplace) ma scraper mostra €105 (anomalo). AliExpress stima CN ~€17. Risparmio vs amazon.de: ~€9 — amazon.de già convenientissimo, AliExpress NON conveniente.
+- Huawei Band 9 (2024): ASIN B0CYCDKR2S = colori diversi per paese (Blue IT, Lemon Yellow DE). amazon.de €39.90 (confermato scraper), amazon.it €69.00 (versione Blue — prezzo alto), amazon.fr/es €69. idealo.it scraper €44.90 (min storico €24.88). AliExpress stima CN ~€20. Risparmio vs amazon.de: ~€20 — ma amazon.de già a €39.90 è ragionevole.
+- AliExpress per band cinesi: SISTEMATICAMENTE blocca WebFetch con JS/CAPTCHA. Usare WebSearch per stime, ma prezzi AliExpress non verificabili direttamente. Per prodotti Huawei/Xiaomi/Honor, il prezzo EU (amazon.es/de/idealo) è spesso comparabile o inferiore rispetto ad AliExpress + rischi (garanzia, reso, tempi).
+- JCVital Pro V8 ECG: $199 USD (~€172 a tasso 1.16). Spedizione globale gratuita (sito Singapore). Acquisto diretto da jcvital.com: IVA 22% alla dogana italiana (~€38) + handling corriere €12 = costo reale ~€221. No subscription. Sito WebFetch funziona su /products/jcvital-v8-ecg-smart-band. NON disponibile su Amazon EU / idealo EU. Prodotto di nicchia senza equivalente EU.
+- Hume Band 2.0: $249 USD sito (~€215). Coupon MYREVIEWABOUT: -20% → $199.2 (~€172). Spedizione gratuita worldwide. USA → Italia: IVA 22% alla dogana + handling €12 = costo totale €221 (con coupon) o €274 (senza). Codici alternativi da siti affidabili: WRBL20 (-20%), blackcooltz25 (-25%), LHEALTH20 (-20%). Sito hume.health: ECONNREFUSED su WebFetch — inutilizzabile. myreviewabout.com e wareable.com hanno dettagli prezzo (wareable.com dà 403).
+- AliExpress 6.18 Mid-Year Sale (15-20 giugno 2026): coupon attivi fino al 30/6 — USTK8S (-€8 su min €49), USTK18S (-€18 su min €99). I coupon summerr con codici ITSS sono scaduti il 10/6.
+- Tasso cambio EUR/USD giugno 2026: 1 EUR = 1.16 USD (quindi $100 = ~€86).
+
+### Tavole e pannelli in larice 200x80cm 18mm (aggiornato giugno 2026)
+
+**Realta del mercato**: la dimensione 200x80cm con spessore 18mm NON esiste in larice massello nel mercato mass-market italiano. Leroy Merlin e Tecnomat vendono quella misura in ABETE lamellare, non larice. Il larice viene venduto in tavole piu strette (90-150mm larghezza) o in formati su misura da falegnami.
+
+**Prodotti larice realmente acquistabili online:**
+- Leroy Merlin: listone larice grezzo 200x15cm sp.20mm (cod.35254765): ~€49.48/pz — link: https://www.leroymerlin.it/prodotti/falegnameria/legno-da-costruzione-battiscopa-e-listelli/perline-e-listoni/listone-larice-grezzo-naturale-1-scelta-l-200-x-h-15-cm-sp-20-mm-35254765.html
+- Leroy Merlin: listone larice clip esterno 200x12cm sp.21mm (cod.35187530): ~€10.90/pz o €45/m² — link: https://www.leroymerlin.it/prodotti/listone-con-fissaggio-a-clip-in-legno-larice-naturale-l-200-x-l-12-cm-x-sp-21-mm-35187530.html
+- Pellet Legnami Brenta: tavola larice siberiano 20x90x2000mm AB: €7.30/pz — in stock — link: https://pellet-legnami.it/products/tavole-per-recinzione-20x90x2000-ab-larice-siberiano
+- Pellet Legnami Brenta: tavola larice siberiano 28x140x2000mm BC: €11.18/pz — in stock — link: https://pellet-legnami.it/products/doghe-da-esterno-28x140x2000mm-bc-larice-siberiano
+- Pellet Legnami Brenta: perlina larice siberiano 26x145x4000mm B: €20.50/pz — link: https://pellet-legnami.it/products/perline-legno-26x145x4000mm-b-larice-siberiano
+- Putzer: tavola larice piallata 24x190x2000mm: €19.00/pz — link: https://putzer.com/it/Tavole-In-Larice-Piallate-Sui-4-Lati-Dim-24-X-190-X-2000-Mm
+- Putzer: pannello 3 strati larice 19mm B/C (formato 5000x2050mm): €98.00 (foglio intero) — link: https://putzer.com/it/Pannello-3-Strati-In-Larice-19-Mm-B/C
+
+**Alternativa abete lamellare 200x80x18mm (se accettata):**
+- Leroy Merlin: tavola lamellare abete 200x80 sp.18mm (Cardigliano Legnami): €72.64/pz — link: https://www.leroymerlin.it/prodotti/falegnameria/tavole-pannelli-in-legno-e-cavalletti/tavole-in-legno/legno-lamellare/tavola-legno-lamellare-abete-200-x-80-cm-sp-18-mm-36332821.html
+- Leroy Merlin: tavola lamellare abete 200x80 sp.18mm (1a scelta): ~€39.90-40.49/pz
+
+**Fonti che funzionano bene per questa categoria:**
+- pellet-legnami.it: WebFetch funziona perfettamente, prezzi esatti, stock indicato
+- putzer.com: snippet WebSearch mostrano prezzi, WebFetch restituisce solo JS
+- leroymerlin.it: snippet WebSearch mostrano prezzi, WebFetch restituisce 403
+
+**Fonti problematiche per questa categoria:**
+- tecnomat.it: WebFetch 403, snippet non mostrano prezzi esatti
+- manomano.it: 403 sistematico
+- leroymerlin.it: 403 sistematico su WebFetch — usare solo snippet WebSearch
+- wood4you.it: sito in manutenzione a giugno 2026
+- bricolegnostore.it: prodotti larice solo in larghezze strette (100-150mm), nessun 80cm
+
+**Note operative:**
+- Per rivestimento parete 80cm: usare piu tavole da 200x14-19cm affiancate (5-6 tavole per coprire 80cm di larghezza), non una tavola unica da 80cm
+- Il pannello 3 strati larice (ilmiopezzo.com, putzer, derve.it) puo essere tagliato su misura 200x80 a ~€83.63/m2, quindi ~€53.5 per 0.64m2
+
 ### Ombrelloni da deck/giardino palo laterale 3.5m (aggiornato giugno 2026)
 
 **Realtà del mercato**: il requisito "3.5m+ palo laterale, rotante 360°, inclinabile, base zavorrabile" divide il mercato in tre fasce nette:

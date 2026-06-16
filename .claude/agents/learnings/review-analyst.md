@@ -45,6 +45,46 @@
 
 ## Note per categoria
 
+### Legno/tavole per rivestimento parete (aggiornato giugno 2026)
+
+#### Venditori italiani online — punteggi Trustpilot/TrustedShops
+- **legnonline.it**: 5/5 su Trustpilot, ~2.944 recensioni — leader assoluto, imballaggio eccellente, tagli precisi. Primo classificato categoria "fornitore di legname" su TP
+- **regnodellegno.com**: 4.63/5 su TrustedShops, 859 recensioni — imballaggio su pallet robusto, corriere BRT problematico
+- **bricolegnostore.it**: 4/5 su Trustpilot, ~660-792 recensioni — qualità ok, imballaggio citato come buono, isolati casi listelli rotti per nodi
+- **apropositodilegno.it**: 4.6/5 su Trustpilot, 71 recensioni — alta variabilità esperienze (75% cinque stelle ma 16% una stella), ritardi consegna segnalati
+- **regnodellegno.it (TrustedShops)**: distinto da .com, solo 4 pagine recensioni — non confondere i due domini
+- **legnopregio.com**: ~82 recensioni Trustpilot, feedback positivi su imballaggio e servizio clienti
+- **tagliolegno.it**: 4.4/5 Trustpilot, solo 12 recensioni — troppo poche per essere affidabile
+
+#### Criticità strutturali categoria legno spedito online
+- **Lunghezza 200cm**: limite critico per i corrieri standard. Sopra i 150cm si richiede in genere spedizione su pallet/bancale (2-3 gg lavorativi invece di 1-2)
+- **Imbarco**: problema quasi universale su legno grezzo non stagionato. Spessore 18mm particolarmente sensibile
+- **Umidità**: legno in stock a umidità ~18% (dichiarata da venditori come Gartenwelt). A 18mm, un delta umidità del 5% causa variazioni dimensionali visibili
+- **Nodi**: la categoria "larice" ha tipicamente nodi. Specificare sempre la classe qualitativa: "A/B senza nodi", "B/C con nodi", "rustico"
+- **Resi su legname**: nessun venditore italiano accetta resi per "nodi naturali" o "variazioni di colore" — sono caratteristiche del legno, non difetti. I resi vengono accettati solo per danni da trasporto (con foto) o errore di misura
+
+#### Offerta prodotti — formato rivestimento parete 80x200cm
+- **Formato 80x200x18mm NON esiste come prodotto standard** su nessuna delle piattaforme analizzate
+- Le piattaforme vendono: larghezze 100-190mm, lunghezze 140-400cm, spessori 18-52mm
+- Per avvicinarsi al target: cercano tavole ~100-120mm x 200cm x 20-27mm (poi eventuale taglio su misura)
+- Nordholz.it: pannelli 1970x196x19mm a 74€/pezzo — piu vicini alla specifica ma larghezza 196mm (non 80mm)
+- Gartenwelt Riegelsberger (Amazon.it): arriva fino a 190cm, non 200cm. Larghezze 95-190mm
+
+#### Fonti problematiche per questa categoria
+- **Trustpilot WebFetch**: sempre 403 Forbidden — usare solo snippet da WebSearch
+- **Amazon.it WebFetch**: CAPTCHA — usare WebSearch con "amazon.it [prodotto] recensioni"
+- **ManoMano WebFetch**: 403 Forbidden — usare WebSearch per trovare prodotti
+- **Reddit IT**: nessun thread trovato su acquisto legno online Italia — comunita troppo piccola per questo nicho
+- **TrustedShops WebFetch**: accessibile e utile (regnodellegno.com trovato con dati dettagliati)
+
+#### Pattern di ricerca efficaci per legno online
+- `"[venditore].it" recensioni trustpilot imballaggio spedizione qualità legno` — recupera snippet con voto e temi
+- `trustpilot "[venditore]" legno` — snippet Trustpilot accessibili via WebSearch
+- `trustedshops.it/valutazione-del-negozio/[slug-venditore]` — WebFetch funziona, dati strutturati con recensioni testuali
+- Per trovare venditori: `larice 200cm rivestimento parete acquisto online shop italy` — restituisce negozi specializzati
+
+
+
 ### Ombrelloni da esterno (aggiornato giugno 2026)
 - Brand professionali (Scolaro, FIM, Caravita, Umbrosa) hanno quasi zero recensioni consumer online — sono venduti B2B
 - Le recensioni utili sono su Amazon per i modelli consumer/mid-range (Doppler, tectake, IDMarket)
@@ -112,6 +152,80 @@
 - **Hdblog.it** — 429 rate limit a volte; ritentare. Buone recensioni italiane
 
 
+
+### Fitness tracker / Smart band con sensori avanzati (aggiornato giugno 2026)
+
+#### Scoperta critica: compatibilita iOS
+- **Samsung Galaxy Fit 3**: NON compatibile con iPhone. Richiede Android. Fonte: Apple Community, Samsung US Community. Eliminare immediatamente per utenti iOS.
+- **Huawei Band 9**: compatibile iOS via app Huawei Health (iOS 13+), ma NON si sincronizza con Apple Health nativo. Dati rimangono segregati in Huawei Health. Limitazione significativa per utenti che usano HealthKit come hub centrale.
+- **Fitbit Charge 6**: compatibile iOS e Apple Health. Google Wallet e Maps funzionano su entrambi gli ecosistemi.
+- **Garmin Vivosmart 5**: Apple Health supportato via Garmin Connect. Sincronizzazione one-way (da Garmin verso Apple Health). Da Garmin Connect v4.71 condivide anche le fasi del sonno (non solo durata).
+- **Xiaomi Smart Band 9 Pro**: app Mi Fitness compatibile iOS. Sync Apple Health NON confermato da recensioni. Non citato nei test.
+
+#### Accuratezza HR durante HIIT/CrossFit
+- **Limite generale**: sensori ottici al polso degradano in modo significativo durante HIIT/CrossFit rispetto a fascia toracica. Errori tipici: 10-30 BPM durante variazioni rapide. Tendenza a lag di 10-30 secondi rispetto al valore reale.
+- **Movimenti bruschi** (bar muscle-up, double under, KB swing): la band si muove e perde contatto cutaneo. Raccomandazione: portare 2 dita sopra il polso per superfice piu piatta.
+- **Fitbit Charge 6**: algoritmo ML (stesso di Pixel Watch), miglioramento 60% vs Charge 5. Errore <2 BPM a riposo, ma degrada durante sprint/HIIT. Problemi segnalati di "light leakage" dovuti alla forma oblunga.
+- **Garmin Vivosmart 5**: DC Rainmaker: "praticamente perfetto" su intervalli HIIT indoor. Leggero lag post-sforzo su sprint. Performance HR superiore al Fitbit Charge 5 durante esercizio (da test comparativo 2022).
+- **Xiaomi Smart Band 9 Pro**: -15% errore dichiarato dal produttore. Limitazioni reali su HIIT confermata da TechRadar.
+- **Amazfit Band 9**: dati insufficienti. Dalla serie Band 7 (precedente): lag HR fino a 30 secondi su HIIT, accuratezza 93% vs Polar su steady-state.
+
+#### HRV — disponibilita per modello
+- **Fitbit Charge 6**: HRV tramite app, usato per Stress Management Score. Accesso gratuito (no premium). Non broadcasting HRV verso terzi.
+- **Garmin Vivosmart 5**: DC Rainmaker 2022: HRV NON supportato al lancio. Non enumera dati HRV verso terze parti (ES Elite HRV non funziona).
+- **Xiaomi Smart Band 9 Pro**: HRV non citato esplicitamente nelle recensioni principali. Probabilmente solo basic.
+- **Huawei Band 9**: HRV non citato nelle recensioni italiane. TruSleep 4.0 usa HR+SpO2+RR ma non espone HRV come metrica separata.
+- **Samsung Galaxy Fit 3**: non rilevante (iOS incompatibile).
+
+#### Monitoraggio sonno
+- **Fitbit Charge 6**: tra i migliori per sleep tracking consumer (DC Rainmaker: "solo Oura Ring puo competere"). Ritardo elaborazione cloud per Sleep Score. SpO2 solo notturno.
+- **Garmin Vivosmart 5**: riporta durata corretta, Body Battery post-sonno inizialmente bugged (fix firmware). Sleep stages da Connect v4.71.
+- **Huawei Band 9**: TruSleep 4.0, monitoraggio HR+SpO2+RR notturno. Leggero per uso notturno (14g senza cinturino).
+- **Xiaomi Smart Band 9 Pro**: fasi (light, deep, REM), rilevazione sonnellini diurni. 24.5g, pratico per uso notturno.
+
+#### Prezzi indicativi giugno 2026 — Italia
+- Fitbit Charge 6: ~111-173€ (idealo ~111€, Amazon ~127€, listino 160€)
+- Garmin Vivosmart 5: ~120-150€ (listino 149€, in calo; modello 2022)
+- Xiaomi Smart Band 9 Pro: ~50-80€ (idealo ~50€)
+- Samsung Galaxy Fit 3: ~40-55€ (ma iOS incompatibile — irrilevante)
+- Huawei Band 9: ~35-45€
+- Amazfit Band 9: ~35-55€ (poca disponibilita in EU, piu venduta come Band 7)
+
+#### Amazfit Band 9 — disponibilita e copertura media
+- Quasi assente sulle fonti EU/IT. DC Rainmaker NON ha una recensione dedicata. Wareable, TechRadar, Tom's HW: nessuna recensione trovata.
+- Possibile causa: il Band 9 e piu presente nel mercato asiatico; il successore Band 7 e il piu recensito in EU.
+- Consiglio per ricerche future: cercare "Amazfit Band 9" + "zepp app" + "review" su fonti asiatiche (GSMArena, Gadgetsandwearables.com).
+
+#### Fonti piu utili per questa categoria
+- **DC Rainmaker** (dcrainmaker.com): il riferimento assoluto per test accuratezza HR. Accessibile via WebFetch. Recensione Vivosmart 5 2022 molto dettagliata con confronti HR vs Polar.
+- **Altroconsumo**: ha schede per Fitbit Charge 6 (76/100), Samsung Galaxy Fit 3, Xiaomi Band 9 Pro, Huawei Band 9. Tutte accessibili via WebFetch con pattern diretto. Voti chiari.
+- **TechRadar, Wareable, Gadgetsandwearables.com**: buon accesso via WebFetch per Xiaomi Band 9 Pro.
+- **Notebookcheck**: accessibile, test HR comparativi vs Polar H10 (deviazione 1% per Fitbit Charge 6 a riposo).
+- **Samsung Community / Apple Community**: fonti per confermare compatibilita iOS (Galaxy Fit 3 non funziona su iPhone).
+- **Garmin Forums**: dati su HealthKit sync ufficiale e sue limitazioni.
+
+#### Pattern di ricerca efficaci per questa categoria
+- `"[modello] review CrossFit HIIT heart rate accuracy"` — restituisce test specifici per sport intenso
+- `"[modello] Apple Health iOS HealthKit compatibility"` — essenziale per utenti iPhone
+- `"[modello] altroconsumo"` + URL diretto — voto strutturato con pro/contro
+- `"[modello] DC Rainmaker review"` — il test piu affidabile per atleti
+- Per Samsung Galaxy Fit 3: cercare subito "[model] iOS compatible" prima di analizzare il resto — e Android-only
+
+#### Fitness tracker cinesi di nicchia / startup — scoperte giugno 2026
+
+- **JCVital Pro V8 ECG**: ZERO recensioni indipendenti trovate. Tutte le fonti sono il sito del produttore (jcvital.com) o il factory (jointcorp.com, Alibaba OEM). Nessun risultato su Reddit, YouTube, TechRadar, Wareable. **Red flag critico: brand senza track record consumer**. Certificazioni dichiarate: CE, FCC, RoHS, ISO13485. Non FDA-cleared come dispositivo medico. La stessa factory (Shenzhen Youhong/J-Style) produce OEM per altri brand.
+- **Hume Band 2.0**: Trustpilot humeband.com = 1.4/5 "Bad". Reddit: 33% positivo su 21 recensioni. Problemi strutturali: Bluetooth disconnects costanti, app che non trova il band, nessun warning batteria scarica, supporto clienti lento/assente (no telefono). Wareable e healnourishgrow.com hanno recensioni, ma Wareable restituisce 403 su WebFetch — usare snippet WebSearch.
+- **Huawei Band 11 Pro**: recensione tecnica YouTube (ID: MZeKr4FftRM) mostra HR accuracy molto bassa durante running (cadence lock, letture fino a 180bpm impossibili) e cycling outdoor (R=0.67). Accettabile solo per weightlifting (R=0.93). TechAdvisor: 4/5, TrustedReviews: 4/5 ma senza test HR. Setup iOS complicato (pairing difficile), no Apple Health nativo.
+- **Honor Band 9**: HR resting ok, real-time exercise +5-10bpm sopra reale. Apple Health sync: Honor Health app NON e nella lista Apple compatible — step count non si sincronizza con Health/Fitness iOS. Problema segnalato anche su Honor Band 10. TechAdvisor: 3.5/5. Motivo principale per cui NON e raccomandato per utenti iOS.
+- **Xiaomi Smart Band 10 Pro** (lancio globale maggio-giugno 2026): primo Xiaomi Band con Apple Health sync nativo confermato. HR sensor 4-LED 2-PD, claim 98.2%. Accuratezza reale: steady-state solida (3.4bpm MAE vs Polar H10), HIIT/sprint degrada (8.9bpm post-sprint). TechAdvisor: 4/5, TrustedReviews: 4/5. Globalmente disponibile da giugno-agosto 2026.
+- **Huawei Band 9**: dati iOS gia nei learnings precedenti (no Apple Health sync nativo).
+
+#### Fonti aggiuntive per tracker cinesi di nicchia
+- **youtubesummary.com/summary/[videoID]**: utile per riassunti di video YouTube tecnici con test HR. Accessibile via WebFetch. Trovato tramite WebSearch con ID video YouTube.
+- **redditrecs.com/fitness-tracker/model/[slug]**: aggrega recensioni Reddit per modello. Accessibile via WebFetch, contenuto spesso parziale ma sufficiente per sentiment/problemi.
+- **trustpilot.com snippet** (non WebFetch diretto — spesso 403): usare WebSearch `trustpilot "[brand]" review` per snippet con rating.
+- **jointcorp.com / alibaba.com**: segnale di allarme — se il prodotto e listato come OEM/ODM su questi siti, non ha track record consumer indipendente.
+- **gizmochina.com**: fonte affidabile per news lancio prodotti Xiaomi con dettagli iOS support. Accessibile via WebSearch snippet.
 
 ### TV 55 pollici fascia 300-600 euro (aggiornato giugno 2026)
 

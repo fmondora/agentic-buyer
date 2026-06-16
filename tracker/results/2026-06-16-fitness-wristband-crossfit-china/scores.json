@@ -1,0 +1,94 @@
+{
+  "weights": {
+    "price": 0.15,
+    "reviews": 0.18,
+    "specs": 0.20,
+    "technical_critic": 0.15,
+    "sustainability": 0.05,
+    "lifecycle": 0.10,
+    "brand": 0.03,
+    "timing": 0.04,
+    "hackability": 0.10
+  },
+  "note": "Scores aggiornati con dati reali da tutti e 9 gli agenti (16 giugno 2026). Prezzi EU da amazon.es/de (PriceHunter). VO2max confermato su Band 11 Pro (SpecComparer). Hume hackability rivista al ribasso (CommunityHacker: BT disconnect, zero GitHub).",
+  "products": [
+    {
+      "name": "Xiaomi Smart Band 10 Pro",
+      "best_price_eu": 66.10,
+      "best_source": "amazon.es",
+      "scores": {
+        "price": 8, "reviews": 6.5, "specs": 6.5, "technical_critic": 6.5,
+        "sustainability": 4, "lifecycle": 6, "brand": 6, "timing": 7, "hackability": 7.5
+      },
+      "weighted_sum": 6.66,
+      "total": 66.6,
+      "budget_note": "Entro budget (€66 vs €200)",
+      "budget_penalty": 0
+    },
+    {
+      "name": "Huawei Band 11 Pro",
+      "best_price_eu": 45.37,
+      "best_source": "amazon.es",
+      "scores": {
+        "price": 9, "reviews": 5, "specs": 7.2, "technical_critic": 5.5,
+        "sustainability": 4.5, "lifecycle": 5, "brand": 6, "timing": 8, "hackability": 5.5
+      },
+      "weighted_sum": 6.29,
+      "total": 62.9,
+      "budget_note": "Entro budget (€45 vs €200)",
+      "budget_penalty": 0
+    },
+    {
+      "name": "Huawei Band 9",
+      "best_price_eu": 39.90,
+      "best_source": "amazon.de",
+      "scores": {
+        "price": 7, "reviews": 5.5, "specs": 6.8, "technical_critic": 4,
+        "sustainability": 4, "lifecycle": 4, "brand": 6, "timing": 9, "hackability": 6
+      },
+      "weighted_sum": 5.74,
+      "total": 57.4,
+      "budget_note": "Entro budget (€40 vs €200)",
+      "budget_penalty": 0
+    },
+    {
+      "name": "Honor Band 9",
+      "best_price_eu": 26.00,
+      "best_source": "amazon.de",
+      "scores": {
+        "price": 7, "reviews": 4, "specs": 4.5, "technical_critic": 3.5,
+        "sustainability": 3, "lifecycle": 4.5, "brand": 5, "timing": 8, "hackability": 4
+      },
+      "weighted_sum": 4.67,
+      "total": 46.7,
+      "budget_note": "Entro budget (€26 vs €200)",
+      "budget_penalty": 0
+    },
+    {
+      "name": "Hume Band 2.0",
+      "best_price_eu": 221.50,
+      "best_source": "hume.health (coupon MYREVIEWABOUT -20%)",
+      "scores": {
+        "price": 4, "reviews": 3, "specs": 7.8, "technical_critic": 6,
+        "sustainability": 1, "lifecycle": 2, "brand": 3, "timing": 7, "hackability": 2
+      },
+      "weighted_sum": 4.42,
+      "total": 43.7,
+      "budget_note": "Supera budget di €21 EUR (+10.5%)",
+      "budget_penalty": -0.5
+    },
+    {
+      "name": "JCVital Pro V8 ECG",
+      "best_price_eu": 221.29,
+      "best_source": "jcvital.com (unico)",
+      "scores": {
+        "price": 3, "reviews": 2, "specs": 2, "technical_critic": 2,
+        "sustainability": 2, "lifecycle": 2, "brand": 1, "timing": 5, "hackability": 1
+      },
+      "weighted_sum": 2.14,
+      "total": 20.9,
+      "budget_note": "Supera budget di €21 EUR (+10.5%)",
+      "budget_penalty": -0.5
+    }
+  ]
+}

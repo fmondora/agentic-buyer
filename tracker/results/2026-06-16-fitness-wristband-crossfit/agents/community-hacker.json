@@ -1,0 +1,187 @@
+{
+  "agent": "community-hacker",
+  "products": [
+    {
+      "name": "Amazfit Helio Strap",
+      "brand": "Zepp Health",
+      "model": "Helio Strap",
+      "score": 4,
+      "github_projects": [
+        {"name": "Gadgetbridge", "url": "https://codeberg.org/Freeyourgadget/Gadgetbridge", "language": "Java", "note": "Supporto Helio Strap da v0.90.0"},
+        {"name": "Amazfit-RE", "url": "https://github.com/wiecosystem/Amazfit-RE", "language": "Docs", "note": "Reverse engineering notes"},
+        {"name": "amazfit_pyclient", "url": "https://github.com/MyrikLD/amazfit_pyclient", "language": "Python", "note": "BLE client generico"}
+      ],
+      "integrations": {
+        "home_assistant": false,
+        "grafana_influxdb": false,
+        "ifttt": false,
+        "apple_shortcuts": false,
+        "health_connect": true,
+        "apple_health": true,
+        "webhook": false
+      },
+      "data_portability": {
+        "export_formats": ["Apple Health (indiretto)", "Health Connect (indiretto)"],
+        "granularity": "aggregato",
+        "history": "tutto in Zepp app, non esportabile direttamente",
+        "lock_in": "alto",
+        "gdpr_export": "non documentato"
+      },
+      "community_activity": "low",
+      "risks": [
+        "Nessuna API cloud pubblica",
+        "Gadgetbridge richiede token Huami che puo cambiare",
+        "Zepp OS aggiornamenti possono rompere compatibilita",
+        "Community molto piccola"
+      ],
+      "verdict": "Il piu chiuso del gruppo. Gadgetbridge offre un'ancora di salvezza BLE ma il setup e fragile. Nessun export nativo, nessuna API, nessuna integrazione diretta."
+    },
+    {
+      "name": "Google Fitbit Air",
+      "brand": "Google",
+      "model": "Fitbit Air",
+      "score": 5,
+      "github_projects": [
+        {"name": "google-health-mcp", "url": "https://github.com/davidmosiah/google-health-mcp", "language": "TypeScript", "note": "MCP server local-first Google Health API v4"},
+        {"name": "fitbit-cli", "url": "https://github.com/veerendra2/fitbit-cli", "language": "Python", "note": "CLI con JSON output"},
+        {"name": "libfitbit", "url": "https://github.com/openyou/libfitbit", "language": "Python", "note": "Legacy open-source access"}
+      ],
+      "integrations": {
+        "home_assistant": false,
+        "grafana_influxdb": false,
+        "ifttt": true,
+        "apple_shortcuts": false,
+        "health_connect": true,
+        "apple_health": true,
+        "webhook": false
+      },
+      "data_portability": {
+        "export_formats": ["JSON (Google Takeout)", "CSV (Fitbit export)"],
+        "granularity": "aggregato in export, 1-sec via API con scope speciale",
+        "history": "tutto via Google Takeout",
+        "lock_in": "medio",
+        "gdpr_export": "si (Google Takeout)"
+      },
+      "community_activity": "low",
+      "risks": [
+        "Prodotto troppo nuovo (maggio 2026), zero tool specifici",
+        "Google Health API scope Restricted blocca dev individuali",
+        "Fitbit Web API shutdown settembre 2026",
+        "Google track record di chiusura API"
+      ],
+      "verdict": "Beneficia dell'ecosistema Google (Takeout, Health Connect, IFTTT) ma la transizione API in corso crea incertezza. Troppo nuovo per avere tool dedicati."
+    },
+    {
+      "name": "WHOOP 5.0",
+      "brand": "WHOOP",
+      "model": "5.0",
+      "score": 8,
+      "github_projects": [
+        {"name": "Noop", "url": "https://github.com/NoopApp/noop", "language": "Rust/Swift", "note": "Companion offline BLE, WHOOP 4+5, no subscription"},
+        {"name": "OpenWhoop", "url": "https://github.com/bWanShiTong/openwhoop", "language": "Rust", "note": "~275 stelle, CLI WHOOP 4.0"},
+        {"name": "Goose", "url": "https://github.com/b-nnett/goose", "language": "Swift/Rust", "note": "Local-first WHOOP 5.0, protocollo puffin documentato"},
+        {"name": "whoop-re", "url": "https://github.com/jacc/whoop-re", "language": "Docs", "note": "Reverse engineering production API"},
+        {"name": "whoop-data", "url": "https://pypi.org/project/whoop-data/", "language": "Python", "note": "PyPI library per API interna"},
+        {"name": "hassio-whoop", "url": "https://github.com/prankstr/hassio-whoop", "language": "Python", "note": "Home Assistant via HACS"}
+      ],
+      "integrations": {
+        "home_assistant": true,
+        "grafana_influxdb": true,
+        "ifttt": false,
+        "apple_shortcuts": false,
+        "health_connect": true,
+        "apple_health": true,
+        "webhook": true
+      },
+      "data_portability": {
+        "export_formats": ["JSON (API REST v2)", "SQLite (Noop BLE raw)"],
+        "granularity": "HR 26Hz, R-R intervals, SpO2, skin temp, respiratory rate, accelerometro",
+        "history": "tutto via API (con subscription) o Noop (locale)",
+        "lock_in": "basso con Noop, alto senza",
+        "gdpr_export": "si su richiesta"
+      },
+      "community_activity": "high",
+      "risks": [
+        "ToS vietano reverse engineering (area grigia legale)",
+        "WHOOP potrebbe aggiornare firmware per bloccare Noop",
+        "Subscription obbligatoria per app ufficiale",
+        "API ufficiale richiede developer account con review"
+      ],
+      "verdict": "Il paradosso perfetto: il modello subscription piu odiato ha generato la community RE piu attiva. Noop + API ufficiale + HR 26Hz raw = hackability imbattibile."
+    },
+    {
+      "name": "Fitbit Charge 6",
+      "brand": "Google",
+      "model": "Charge 6",
+      "score": 6,
+      "github_projects": [
+        {"name": "google-health-mcp", "url": "https://github.com/davidmosiah/google-health-mcp", "language": "TypeScript", "note": "MCP server Google Health API v4"},
+        {"name": "fitbit-cli", "url": "https://github.com/veerendra2/fitbit-cli", "language": "Python", "note": "CLI con JSON output"},
+        {"name": "fitbit (thiagomarzagao)", "url": "https://github.com/thiagomarzagao/fitbit", "language": "Python", "note": "Bulk export oltre limite 1 mese"},
+        {"name": "fitbit-health-data-retrieval", "url": "https://github.com/Samuel-Mbah/fitbit-health-data-retrieval-with-python", "language": "Python", "note": "Export CSV Pandas/Tableau"}
+      ],
+      "integrations": {
+        "home_assistant": true,
+        "grafana_influxdb": true,
+        "ifttt": true,
+        "apple_shortcuts": false,
+        "health_connect": true,
+        "apple_health": true,
+        "webhook": false
+      },
+      "data_portability": {
+        "export_formats": ["JSON (Google Takeout)", "CSV (Fitbit export)", "JSON (API)"],
+        "granularity": "1-sec intraday via API (scope speciale), aggregato in bulk export",
+        "history": "tutto via Google Takeout",
+        "lock_in": "medio",
+        "gdpr_export": "si (Google Takeout)"
+      },
+      "community_activity": "medium",
+      "risks": [
+        "Fitbit Web API shutdown settembre 2026",
+        "Google Health API Restricted scope",
+        "Nessun accesso BLE diretto documentato",
+        "Tutte le library Python legacy in scadenza"
+      ],
+      "verdict": "Ecosistema maturo con 10+ library Python, IFTTT e HA, ma tutto in scadenza settembre 2026. La transizione Google Health API penalizza gli sviluppatori individuali."
+    },
+    {
+      "name": "Garmin Vivosmart 6",
+      "brand": "Garmin",
+      "model": "Vivosmart 6",
+      "score": 7,
+      "github_projects": [
+        {"name": "python-garminconnect", "url": "https://github.com/cyberjunky/python-garminconnect", "language": "Python", "note": "2000+ stelle, 127+ metodi API"},
+        {"name": "garmin-givemydata", "url": "https://github.com/nrvim/garmin-givemydata", "language": "Python", "note": "Export SQLite + MCP server AI"},
+        {"name": "garmin-connect-export", "url": "https://github.com/pe-st/garmin-connect-export", "language": "Python", "note": "Bulk download FIT/GPX/CSV"},
+        {"name": "awesome-garmin", "url": "https://github.com/bombsimon/awesome-garmin", "language": "Docs", "note": "Lista curata tool Garmin"},
+        {"name": "home-assistant-garmin_connect", "url": "https://github.com/cyberjunky/home-assistant-garmin_connect", "language": "Python", "note": "HA integration via HACS"},
+        {"name": "Connect IQ SDK", "url": "https://developer.garmin.com/connect-iq/", "language": "Monkey C", "note": "SDK ufficiale per app native"}
+      ],
+      "integrations": {
+        "home_assistant": true,
+        "grafana_influxdb": true,
+        "ifttt": false,
+        "apple_shortcuts": false,
+        "health_connect": true,
+        "apple_health": true,
+        "webhook": false
+      },
+      "data_portability": {
+        "export_formats": ["FIT (nativo)", "GPX", "TCX", "CSV"],
+        "granularity": "al secondo durante attivita (FIT), variabile a riposo",
+        "history": "tutto, senza limiti",
+        "lock_in": "basso (FIT formato aperto)",
+        "gdpr_export": "si (garmin.com/account/datamanagement, ZIP completo 24-48h)"
+      },
+      "community_activity": "high",
+      "risks": [
+        "Nessuna API pubblica ufficiale per dev individuali",
+        "SSO bot detection aggressiva (marzo 2026)",
+        "Vivosmart 6 non ancora rilasciato",
+        "Supporto Connect IQ su band potrebbe essere limitato"
+      ],
+      "verdict": "Gold standard per data portability: FIT granulare al secondo, GDPR export completo, formato aperto. python-garminconnect (2000+ stelle) e la library piu matura. Tutto basato su reverse engineering fragile."
+    }
+  ]
+}

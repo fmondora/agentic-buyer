@@ -141,6 +141,9 @@ In base alle risposte, modifica i pesi di default:
 | Sostenibilita | 10% |
 | Ciclo vita | 10% |
 | Brand | 20% |
+| Hackability | 0% |
+
+**Hackability (CommunityHacker)**: peso 10% di default. Aumenta (15-20%) quando l'utente menziona: API, hacking, vibecoding, dati, developer, open source, Home Assistant, automazioni. Riduci (0-5%) se l'utente non e tecnico.
 
 ### Modifiche per risposte TV
 
@@ -168,13 +171,22 @@ Dopo aver raccolto tutte le risposte, produci ESATTAMENTE questo formato:
 ## Discovery — Spec Arricchita
 
 **Prodotto**: [categoria + caratteristiche]
-**Budget**: [cifra]€
+**Budget**: [cifra]€ (vincolo morbido — NON eliminatorio)
 **Uso principale**: [risposta]
 **Audio**: [risposta]
 **Stanza**: [risposta] (solo per TV)
 **Priorita**: [ordine]
 **Brand**: [risposta]
 **Tecnologia**: [risposta] (solo se pertinente)
+
+### Filtri hard (eliminatori per lo Scout)
+- [filtro 1, es: "iOS_compatible" per utenti iPhone]
+- [filtro 2, es: "available_EU"]
+- [filtro 3, es: "category_fitness_band"]
+
+### Filtri soft (NON eliminatori — pesatura finale)
+- budget_[cifra]_EUR
+- [altri vincoli morbidi, es: "battery_min_7_days"]
 
 ### Pesi personalizzati
 | Dimensione | Peso |
@@ -186,13 +198,14 @@ Dopo aver raccolto tutte le risposte, produci ESATTAMENTE questo formato:
 | Sostenibilita | XX% |
 | Ciclo vita | XX% |
 | Brand | XX% |
+| Hackability | XX% |
 
 ### Istruzioni per gli agenti
 - [istruzione specifica 1 basata sulle risposte]
 - [istruzione specifica 2]
 - [istruzione specifica 3]
 
-### Modelli da cercare
+### Modelli da cercare (suggerimenti per lo Scout)
 - [suggerimenti specifici basati su categoria + budget + preferenze]
 ```
 

@@ -1,0 +1,84 @@
+{
+  "agent": "price-hunter",
+  "products": [
+    {
+      "name": "Huawei Band 11 Pro",
+      "brand": "Huawei",
+      "model": "Band 11 Pro",
+      "score": 8,
+      "best_price_eur": 59.90,
+      "best_source": "amazon.it / idealo.it / MediaWorld",
+      "best_url": "https://www.amazon.it/dp/B0GGHRJR23",
+      "aliexpress_estimate": "42-48",
+      "savings_cn_vs_eu": "12-18 EUR (non giustificato dal rischio)",
+      "budget_status": "ampiamente entro budget",
+      "notes": "Prezzo EU gia competitivo. AliExpress vende versione CN con interfaccia cinese."
+    },
+    {
+      "name": "Xiaomi Smart Band 10 Pro",
+      "brand": "Xiaomi",
+      "model": "Band 10 Pro",
+      "score": 7,
+      "best_price_eur": 75.41,
+      "best_source": "idealo.it",
+      "best_url": "https://www.idealo.it/confronta-prezzi/210676428/xiaomi-smart-band-10-pro.html",
+      "aliexpress_estimate": "50-55 (versione CN, non Global)",
+      "savings_cn_vs_eu": "20 EUR (versione ridotta senza NFC)",
+      "budget_status": "entro budget",
+      "notes": "Offerta Amazon -20% scaduta. mi.com IT: €79.90 (alluminio) / €99.90 (NFC)."
+    },
+    {
+      "name": "JCVital Pro V8 ECG",
+      "brand": "JCVital",
+      "model": "Pro V8 ECG",
+      "score": 4,
+      "best_price_eur": 218,
+      "best_source": "jcvital.com (unico)",
+      "best_url": "https://jcvital.com/products/jcvital-v8-ecg-smart-band",
+      "aliexpress_estimate": null,
+      "savings_cn_vs_eu": "N/A (non venduto in EU)",
+      "budget_status": "SUPERA budget (+18 EUR dopo IVA/dazi)",
+      "notes": "$199 + IVA 22% + handling = €218-230 reali. Non su Amazon/comparatori EU."
+    },
+    {
+      "name": "Hume Band 2.0",
+      "brand": "Hume Health",
+      "model": "Band 2.0",
+      "score": 5,
+      "best_price_eur": 218,
+      "best_source": "humehealth.com con coupon MYREVIEWABOUT",
+      "best_url": "https://humehealth.com/pages/hume-bandv2",
+      "aliexpress_estimate": null,
+      "savings_cn_vs_eu": "N/A (non venduto in EU)",
+      "budget_status": "SUPERA budget (+18-30 EUR dopo IVA/dazi)",
+      "notes": "$249 listino, $199 con coupon -20%. Dopo IVA 22% + handling = €218-230."
+    },
+    {
+      "name": "Huawei Band 9",
+      "brand": "Huawei",
+      "model": "Band 9",
+      "score": 6,
+      "best_price_eur": 27.71,
+      "best_source": "idealo.it",
+      "best_url": "https://www.idealo.it/confronta-prezzi/204191405/huawei-band-9.html",
+      "aliexpress_estimate": "18-25",
+      "savings_cn_vs_eu": "9-15 EUR (non giustificato per prodotto da €27)",
+      "budget_status": "ampiamente entro budget",
+      "notes": "Amazon IT B0CX8774TW €40.41. Idealo minimo €27.71."
+    },
+    {
+      "name": "Honor Band 9",
+      "brand": "Honor",
+      "model": "Band 9",
+      "score": 6,
+      "best_price_eur": 29.25,
+      "best_source": "idealo.it",
+      "best_url": "https://www.idealo.it/confronta-prezzi/204952501/honor-band-9.html",
+      "aliexpress_estimate": "15-22",
+      "savings_cn_vs_eu": "7-14 EUR",
+      "budget_status": "ampiamente entro budget",
+      "notes": "Amazon IT €40.41. Idealo minimo €29.25."
+    }
+  ],
+  "key_finding": "Per tutti i prodotti con distribuzione EU, acquistare su amazon.it/idealo.it e la scelta razionale. Risparmio AliExpress marginale (€7-18) a fronte di garanzia assente, 15-30gg attesa, versione CN."
+}

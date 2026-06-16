@@ -108,6 +108,15 @@
 
 ## Pattern di ricerca efficaci
 
+### Per legno / pannelli di rivestimento
+- `"larice siberiano pannelli rivestimento parete FSC PEFC certificato vendita Italia [anno]"` — restituisce info generali su certificazioni ma non prezzi live; meglio fetch diretto sui siti fornitori
+- `"[brand] legnami larice certificazioni FSC PEFC"` + fetch su `/certificazioni` — più affidabile di WebSearch per dati certificazione specifici
+- `"legno russo sanzioni EU [anno] larice deforestazione"` — ottimo per trovare indagini Earthsight, articoli Internazionale, valori.it
+- `"larice alpino Trentino Alto Adige tavole rivestimento km0 fornitori"` — fornitori trovati: Pircher (Villabassa BZ), Scanzoni Legnami (Trentino)
+- `"EUDR regolamento deforestazione Russia larice siberiano 2025"` — buon punto di partenza per trovare implementazione e timeline; Earthsight fondamentale
+- `"larice termotrattato modifica termica impatto ambientale VOC"` — infobuild.it risponde bene su questo; processo senza biocidi chimici verificato
+- `"larice siberiano CO2 trasporto LCA confronto alpino"` — NON produce LCA comparativi diretti, solo info generali; stima trasporto va fatta manualmente
+
 ### Per ombrelloni / outdoor furniture
 - `"[brand] parasol sustainability recycled aluminum PFAS certification [anno]"` — risultati scarsi per brand di nicchia; meglio fetching diretto sito brand
 - `"[brand] Sonnenschirme Nachhaltigkeit OEKO-TEX Recycling Zertifikat"` — efficace per brand tedeschi/austriaci (Doppler)
@@ -145,6 +154,124 @@
 - Per Samsung certificazioni modello specifico: cercare su news.samsung.com/sg o /ca (meno timeout del /global)
 
 ## Note per categoria
+
+### Fitness tracker / smart band fascia fino a 200€ (giugno 2026)
+
+#### Brand analizzati (aggiornamento — shortlist cinesi giugno 2026)
+- **Google/Fitbit** — Fitbit Air (2026): stringa 35% riciclata, packaging 100% plastic-free, report ambientale prodotto specifico (maggio 2026); Google SBTi validato, net-zero 2030 (ma emissioni totali in crescita +22% S3 per AI)
+- **Garmin** — Scope 1: 9.865 tCO2e, Scope 2: 45.326 tCO2e, Scope 3: 960.295 tCO2e (2024, baseline); NO net-zero target ancora formalizzato (2024 come baseline); WEEE take-back EU obbligatorio; ISO 14001; packaging riciclato in crescita; forte su longevità prodotto
+- **Amazfit/Zepp Health** — zero dati emissioni pubblici; packaging eco per modelli speciali (T-Rex Ultra/T-Rex 2 Ocean Blue); partnership Coral Guardian, One Tree Planted; NO report ESG aziendale trovato; NO WEEE/take-back specifico trovato
+- **Xiaomi** — net-zero S1+S2 entro 2040; S1: 31.296 tCO2e, S2: 178.419 tCO2e (2024); S3: ~9,9 Mt CO2e (2023); Mi Band 8 carbon-neutral product; 80%+ packaging riciclabile; e-waste 38.000 ton obiettivo 2022-2026; CDP rating: non trovato pubblicamente
+- **Samsung** — dati consolidati da sezione TV: CDP A, MSCI AA, net-zero 2050 (S1+S2 entro 2030); Galaxy Watch Ultra: plastica riciclata da barili acqua, rare earth riciclati, rame riciclato, packaging 100% carta riciclata; Galaxy Fit3: policy aziendale si applica ma no certificazione specifica modello trovata
+- **Huawei** — CDP A-List 5° anno consecutivo; net-zero entro 2040 (tutti gli scope); S1: ~39.000 tCO2e, S2: ~1.43 Mt CO2e (2024); WEEE take-back globale attivo (accetta qualsiasi brand); bio-based plastics da olio di ricino (-62,6% CO2 vs plastica fossile); no S3 dichiarato pubblicamente per consumer division
+
+#### Fonti affidabili per questa categoria
+- **sustainability.google/reports/** — report specifici per prodotto (Fitbit Air maggio 2026); molto dettagliati
+- **store.google.com/magazine/sustainability** — policy materiali riciclati Google hardware
+- **blog.google/outreach-initiatives/sustainability** — annunci packaging plastic-free
+- **garmin.com/sustainability/environment/** — pagina ambiente Garmin: ISO 14001, riciclo, WEEE
+- **garmin.com/sustainability/reports-policies/** — report ufficiali e SASB 2024
+- **garmin8.garmin.com/sustainability/...** — PDF Corporate Impact Report 2024 e Swiss NFM Report 2024
+- **zepp.com/sustainability** — pagina sostenibilità Zepp/Amazfit: contenuto minimo (partnership, packaging T-Rex speciali); nessun dato emissioni
+- **huawei.com/en/sustainability** — pagina corporate; CDP A-List confermato
+- **consumer.huawei.com/en/support/recycling/** — programma e-waste Huawei globale
+- **techedt.com** — copertura Xiaomi ESG report 2025
+- **esgnews.com** — comunicati ESG Google recycled materials guide
+
+#### Note specifiche wearable vs elettronica consumer
+- I fitness tracker sono dispositivi piccoli (20-50g) con impatto produzione intrinsecamente basso vs TV/smartphone — l'impatto relativo della policy aziendale pesa di più dell'eco-design del singolo modello
+- La longevità è critica: un tracker che dura 5 anni invece di 3 dimezza l'impatto per anno d'uso
+- La cinturino/band è componente chiave: materiale, riciclabilità, replaciabilità
+- I programmi WEEE obbligatori EU (tutti i brand devono rispettarli in UE) non differenziano — differenzia chi ha programmi VOLONTARI aggiuntivi
+- Fitbit Air (2026) è il modello più documentato con report LCA specifico
+
+#### Greenwashing alert specifici wearables
+- **Amazfit/Zepp**: "sustainability" sul sito è quasi interamente corporate narrative senza dati; la partnership Coral Guardian su un solo modello speciale non è politica aziendale strutturale
+- **Xiaomi**: net-zero 2040 esclude Scope 3 (~98% delle emissioni totali) — il commitment più critico manca
+- **Huawei**: CDP A-List è reale, ma i dati S3 consumer non sono pubblici separatamente; le sanzioni USA limitano trasparenza supply chain; Good Shopping Guide bottom rating per supply chain; controversie forced labor Uyghur nelle forniture
+- **Garmin**: no net-zero target formalizzato ancora (2024 = baseline) — onesto ma inazione
+- **Honor**: ESG comunicato come asset IPO (CNBC 2023) — rischio di ESG costruito per valutazione finanziaria, non per sostanza; nessun dato emissioni assoluti pubblicati
+- **JCVital**: ISO 14001 su processo produttivo NON equivale a sostenibilità prodotto; CE "auto-dichiarata" per OEM cinesi è norma non eccezione; nessuna certificazione terza indipendente trovata
+- **Hume Health**: assenza totale di qualsiasi claim sostenibilità = nessun greenwashing, ma anche zero trasparenza ambientale
+
+#### Ranking sostenibilità fitness tracker fino a 200€ (giugno 2026)
+1. **Google/Fitbit** — report LCA prodotto specifico, packaging 100% plastic-free, SBTi, netto più avanzato su eco-design prodotto; rischio: emissioni totali Google in crescita per AI
+2. **Samsung** — CDP A, MSCI AA, Galaxy Watch Ultra materiali riciclati multipli documentati; policy aziendale forte; no certificazione specifica Fit3
+3. **Huawei** — CDP A-List 5° anno, net-zero 2040 tutti scope, WEEE globale attivo, bio-based plastics; rischio: S3 consumer non dichiarato; controversie supply chain (Uyghur, forced labor allegations)
+4. **Garmin** — ISO 14001, dati emissioni trasparenti (buona baseline), WEEE EU, durabilità prodotto eccellente; manca net-zero target formalizzato
+5. **Xiaomi** — net-zero S1+S2 dichiarato, packaging >80% riciclabile, Mi Band 8 carbon-neutral; ma S3 escluso dal commitment
+6. **Honor** — ESG report dal 2022, carbon neutral ops 2045; nessun CDP, nessun Scope 1/2/3 pubblicati, supply chain non auditata; ESG guidato da preparazione IPO
+7. **Amazfit/Zepp** — zero dati emissioni, zero WEEE specifico, zero certificazioni terze; solo partnership marketing con Coral Guardian
+8. **JCVital (Youhong/Jointcorp)** — OEM factory Shenzhen; CE/RoHS auto-dichiarate; ISO 14001 processo; zero ESG pubblico; supply chain opaca; spedizioni probabilmente aeree
+9. **Hume Health** — startup USA 2023; produzione verosimilmente ODM cinese non dichiarato; zero certificazioni, zero ESG, zero trasparenza; il peggior profilo della shortlist
+
+#### JCVital (Jointcorp / Shenzhen Youhong Technology Co., Ltd.) — nota specifica OEM factory
+- Azienda cinese ODM/OEM con sede a Shenzhen, fondata 2004
+- Certificazioni di processo: ISO 13485, ISO 9001, ISO 14001 (segnalato su Alibaba/sito)
+- Certificazioni prodotto: CE e RoHS dichiarate su listini Alibaba (V6/V8); nessun audit CE notificato indipendente trovato — auto-dichiarazione probabile
+- Nessun ESG report pubblico, nessun CDP rating, nessun SBTi, nessun net-zero target
+- Supply chain: totalmente opaca — tipico OEM Shenzhen, nessun dato su fornitori componenti
+- JCVital Pro V8: venduto direttamente su jcvital.com a $199 — nessuna distribuzione fisica EU, spedizione da Cina
+- Nessuna garanzia logistica marittima — alta probabilità spedizione aerea per ordini singoli consumer
+- Good Electronics/SACOM: nessun report specifico su Youhong/JCVital trovato
+- Greenwashing risk: ALTO — ISO 14001 su processo produttivo non equivale a trasparenza ambientale prodotto; CE non verificato da body notificato
+
+#### Hume Health — nota specifica startup US
+- Startup americana (Wilmington, Delaware), fondata 2023
+- Produzione: non dichiarata; alta probabilità produzione in Cina (ODM tipico per startup wearables USA)
+- Zero ESG report, zero CDP, zero SBTi, zero certificazioni ambientali trovate
+- Sito humehealth.com: nessuna pagina sustainability trovata
+- Modello DTC (Direct-to-Consumer) — spedizioni internazionali probabilmente aeree per ordini singoli
+- Prezzo $249 = fascia premium ma senza nessun dato trasparenza ambientale
+- Nessuna certificazione CE verificabile trovata per mercato EU — venduto principalmente USA
+- Greenwashing risk: N/A (non ci sono claim) — ma trasparenza praticamente assente
+
+#### Honor — nota brand indipendente da Huawei (dal 2020)
+- Honor separata da Huawei nel novembre 2020; acquisita da consorzio guidato da governo Shenzhen
+- Prepara IPO — ESG dichiarato "embedded in DNA" per migliorare rating IPO (CNBC ottobre 2023)
+- Carbon neutral operations target: 2045; value chain: 2050
+- 128 smartphone/tablet con certificazione CQC ambientale (~876 ton GHG ridotte — dato 2023 ESG report)
+- Honor Band 9: nessuna certificazione eco prodotto-specifica trovata; CE dichiarata (DoC pubblicata su honor.com/global/legal)
+- CE Honor: DoC pubblicata, ma Honor è brand cinese che auto-certifica — verifica body notificato non trovata
+- ESG report pubblicato dal 2022; meno maturo di Huawei (no CDP A-List, nessun dati Scope 1/2/3 trovati pubblicati separatamente per Honor Device)
+- Supply chain: condivide molti supplier con ex-ecosistema Huawei; nessun report audit fornitori specifico Honor trovato
+
+#### WHOOP — nota specifica modello subscription
+- WHOOP è azienda PRIVATA — nessun ESG report pubblico trovato (giugno 2026)
+- Modello subscription con sostituzione device periodica è intrinsecamente problematico: genera cicli di dismissione hardware più frequenti vs competitor
+- Accessori WHOOP 4.0 non compatibili con 5.0 — critica specifica all'upgrade 5.0 (medio 2025)
+- WHOOP dichiara: dispositivi restituiti vengono "refurbished or responsibly recycled" + upcycling program; nessuna verifica indipendente
+- Nessun CDP rating, nessun SBTi, nessun ISO 14001 trovato
+- Packaging: nessun dato specifico trovato (packaging box di terzi disponibile su accio.com, non dati ufficiali)
+- Fonti: circuly.io case study (business model), Medium analisi upgrade 5.0
+
+#### Fitbit Charge 6 vs Fitbit Air — differenze sostenibilità
+- **Fitbit Charge 6** (ottobre 2023): report LCA specifico su sustainability.google (PDF scaricabile); dispositivi 2023 includono materiali riciclati ma % specifica non trovata via WebFetch (PDF non estratto); packaging 100% plastic-free (policy Google 2024 su tutti Pixel/Nest/Fitbit)
+- **Fitbit Air** (maggio 2026): report LCA specifico aggiornato; 35% del prodotto per peso da materiali riciclati; band in materiali riciclati; report più recente e dettagliato del Charge 6
+- Entrambi condividono: Google SBTi, net-zero 2030, CDP A (Alphabet), programma riciclo attivo
+
+#### Garmin Vivosmart 6 — dati specifici
+- Vivosmart 6 lanciato inizio 2026 (GPS integrato vs Vivosmart 5); dati sostenibilità specifici per modello non pubblicati separatamente
+- Policy aziendale Garmin si applica: packaging >80% materiali riciclati, foam eliminato da tutti i nuovi wearables, WEEE EU obbligatorio
+- Garmin: Scope 1: 9.865 tCO2e, Scope 2: 45.326 tCO2e, Scope 3: 960.295 tCO2e (2024, baseline) — dati SASB 2024
+- ISO 14001 certificato su operations, SASB report pubblicato
+- NO net-zero target formalizzato (2024 = anno baseline, target non ancora annunciato)
+- DitchCarbon.com/organizations/garmin — dati aggregati Scope disponibili
+
+#### Amazfit Helio Strap — packaging note
+- Packaging box: 100% riciclabile, inchiostri minerali-free, alluminio anodizzato per bronzatura (dichiarato da Amazfit India FAQ)
+- Nessun dato sul prodotto stesso (materiali strap, % riciclato, carbon footprint)
+- Zepp Health investor relations su zepp.com/investor-relations — nessun ESG report trovato pubblicamente
+- Zepp Health quotata NYSE (ZH) — report annuale 20-F depositato SEC ma senza sezione ESG strutturata
+
+#### Fonti nuove per questa categoria (wearables shortlist giugno 2026)
+- **sustainability.google/reports/fitbit-charge-6-product-enviromental-report/** — landing page PDF (non WebFetch-able direttamente, dati via WebSearch)
+- **sustainability.google/reports/google-fitbit-air-product-environmental-report/** — landing page PDF (stessa limitazione)
+- **garmin.com/en-US/sustainability/environment/products-packaging/** — dati packaging Garmin (>80% riciclato, no foam wearables); accessibile via WebFetch
+- **circuly.io/blog/case-study-whoop-business-strategy-device-as-a-service-success** — best source disponibile per WHOOP sustainability/business model
+- **whoop.com** — nessuna pagina sustainability trovata pubblicamente
+- **in.amazfit.com/pages/faq/** — JS-heavy, WebFetch non estrae contenuto FAQ; dati via WebSearch
+- **zepp.com/investor-relations** — pagina investor relations Zepp, nessun ESG report linkato
 
 ### TV 55 pollici fascia fino a 1000€ — OLED (2025-2026)
 
@@ -274,3 +401,49 @@
 - **Samsung DS Division** (semiconductors): controversia concreta su nuovo complesso Yongin (10GW consumo, 3GW da LNG) — non impatta direttamente TV DX Division ma segnala disallineamento interno
 - **Sony** è il più credibile in assoluto (CDP A-List, SBTi approvato, MSCI AAA 6 anni consecutivi, SORPLAS verificabile) ma i QLED non sono nel portfolio Sony — Sony fa solo LCD entry e OLED premium
 - **TP Vision/Philips**: EcoVadis Platinum, CDP B/A-, SBTi — credibile; meno visibilità su prodotto specifico QLED
+
+### Larice — pannelli rivestimento parete (giugno 2026)
+
+#### Specie e provenienza
+- **Larice alpino** (*Larix decidua*): Alpi italiane, Austria, Svizzera. Km0 per mercato italiano. Anelli più larghi (crescita più rapida). PEFC diffusissimo per piccole proprietà alpine.
+- **Larice siberiano** (*Larix sibirica*): Russia/Mongolia. Crescita lentissima = anelli strettissimi, nodi piccoli, tavole molto stabili. Qualità legno superiore per esterne ma rischio provenienza CRITICO post-2022.
+
+#### Rischio legno russo — CRITICO
+- Sanzioni EU 2022 vietano importazione legno russo/bielorusso. Legno russo entra tramite Cina, Kazakistan, Georgia, Turchia con certificati falsificati.
+- Italia: 950+ spedizioni illegali (~100M€) dalla Cina da luglio 2022 (fonte Earthsight, gennaio 2025).
+- World Forest ID: 24/52 campioni FSC/PEFC con dichiarazione raccolta errata (46% di certificazioni non attendibili).
+- EUDR rinviato a dicembre 2026. Russia classificata "high risk" (9% minimo di controlli su operatori).
+- **Consiglio pratico**: acquistare larice siberiano solo da rivenditori con catena di custodia CoC verificabile (numero certificato FSC/PEFC controllabile su database ufficiale); Zennaro Legnami (Ecolarix, FSC CoC-004807) è esempio di fornitore tracciato.
+
+#### Sostenibilità larice come specie
+- Larice alpino: gestione forestale sostenibile certificata decenni. 1 m³ legno ≈ 1 ton CO2 immagazzinata. Rinnovabile con rotazione controllata.
+- Larice siberiano (foreste): incendi devastanti in Siberia orientale documentati (NCBI 2024); foreste siberiane gestite sono tra le più grandi riserve di CO2 al mondo ma vulnerabili al climate change.
+- Come specie, il larice è sostenibile se proveniente da foreste gestite; il rischio è nella supply chain, non nella specie in sé.
+
+#### Trasporto: larice alpino vs siberiano — impatto stimato
+- Larice alpino (es. Pircher, Alto Adige): distanza Villabassa → Milano ~250 km (trasporto su gomma)
+- Larice siberiano: da foreste Siberia occidentale a porto San Pietroburgo ~3.000 km (ferrovia) + traghetto/camion Scandinavia → Italia ~3.000 km; totale stimato ~6.000-7.000 km
+- CO2 trasporto: camion ~90 g CO2/ton/km; 1 m³ larice ~600 kg. Per 1 m³: alpino ~13 kg CO2 trasporto vs siberiano ~320-380 kg CO2 trasporto. Delta ~300-360 kg CO2 per m³.
+- Per 15-20 m² di rivestimento (spessore 20mm ≈ 0,3-0,4 m³): trasporto alpino ~5 kg CO2 vs siberiano ~100-150 kg CO2. Rilevante ma non decisivo vs CO2 immagazzinata nel legno (~300-400 kg CO2 per 0,3 m³).
+
+#### Trattamenti: ranking impatto ambientale (dal migliore)
+1. **Grezzo** — zero additivi; ideale per pareti interne rustiche dove non c'è esposizione a umidità intensa
+2. **Piallato** — solo lavorazione meccanica, zero chimica
+3. **Termotrattato** — processo fisico a 165-240°C senza biocidi; migliora resistenza, utile per esterni
+4. **Olio naturale/acqua con EU Ecolabel** — protezione organica a basso impatto
+5. **Impregnante chimico con biocidi** — NON necessario per larice a pareti interne; impatto alto su suolo/acqua; da evitare
+
+#### Principali fornitori con certificazione verificata
+- **Pircher Oberland** (Villabassa BZ): larice alpino Alto Adige, PEFC + FSC. Produzione interna dal 1928.
+- **Zennaro Legnami** (Eurolarix + Ecolarix): larice europeo e siberiano. FSC CoC-004807 + PEFC IT ZENNARO 2023. ISO 14001, 9001. URL: zennarolegnami.com
+- **Vigolungo**: PEFC dal 2009, FSC su richiesta. Legname generico, non specializzato larice.
+- **Trumer Holz** (Austria): larice alpino spaccato, prezzi 69-126€/elemento. Nessuna certificazione dichiarata.
+- **Mazzucato Legnami**: tavole larice (12-58€/pz), no certificazioni dichiarate.
+
+#### Prezzi di riferimento (giugno 2026)
+- Tavola larice 25x150x4000mm grezzo: ~15€/pz (Mazzucato)
+- Tavola larice 30x150x4000mm grezzo: ~18€/pz (Mazzucato)
+- Larice spaccato parete 23x196x2000mm: ~105€/pz (Trumer Holz)
+- Pannello 3 strati larice 19mm: ~98€/pz (Putzer)
+- Budget 60€/pannello: realistico per tavole grezze/pialate; pannelli lavorati possono superare budget
+

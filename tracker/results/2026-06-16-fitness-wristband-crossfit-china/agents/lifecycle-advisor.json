@@ -1,0 +1,77 @@
+{
+  "agent": "lifecycle-advisor",
+  "products": [
+    {
+      "name": "Xiaomi Smart Band 10 Pro",
+      "brand": "Xiaomi",
+      "model": "Band 10 Pro",
+      "score": 6,
+      "repairability": "cinturini intercambiabili (abbondanti su AliExpress), batteria non sostituibile",
+      "longevity": "HyperOS 3 attivo, ecosistema ricambi ricco, no limiti acqua",
+      "warranty": "garanzia EU se acquistato da rivenditore EU",
+      "end_of_life": "RAEE standard",
+      "risks": ["batteria sigillata", "app Mi Fitness potrebbe cambiare policy"],
+      "verdict": "Miglior ciclo vita della shortlist. Ecosistema ricambi maturo, aggiornamenti attivi."
+    },
+    {
+      "name": "Huawei Band 11 Pro",
+      "brand": "Huawei",
+      "model": "Band 11 Pro",
+      "score": 5,
+      "repairability": "cinturini intercambiabili, batteria non sostituibile, riparazione Huawei IT disponibile",
+      "longevity": "build premium, 24 mesi supporto previsto, limiti acqua calda dichiarati",
+      "warranty": "garanzia EU 2 anni se acquistato EU, assistenza Huawei IT strutturata",
+      "end_of_life": "RAEE",
+      "risks": ["limiti acqua calda/doccia (degrada sigilli nel tempo)", "supporto software 24 mesi"],
+      "verdict": "Assistenza IT strutturata. Penalizzato da limiti acqua calda per CrossFitter che si doccia col device."
+    },
+    {
+      "name": "Honor Band 9",
+      "brand": "Honor",
+      "model": "Band 9",
+      "score": 4.5,
+      "repairability": "cinturini intercambiabili, batteria non sostituibile",
+      "longevity": "no limiti acqua dichiarati, garanzia EU",
+      "warranty": "garanzia EU se acquistato EU",
+      "end_of_life": "RAEE",
+      "risks": ["politica aggiornamenti wearable opaca"],
+      "verdict": "Accettabile per il prezzo. No limiti acqua e un plus."
+    },
+    {
+      "name": "Huawei Band 9",
+      "brand": "Huawei",
+      "model": "Band 9",
+      "score": 4,
+      "repairability": "cinturini intercambiabili, batteria non sostituibile",
+      "longevity": "supporto gia in scadenza (prodotto 2024), limiti acqua calda",
+      "warranty": "garanzia EU se acquistato EU",
+      "end_of_life": "RAEE",
+      "risks": ["supporto software in scadenza", "limiti acqua calda", "valore usato nullo"],
+      "verdict": "Supporto gia in scadenza. A €35 il rischio e accettabile ma non aspettarsi aggiornamenti futuri."
+    },
+    {
+      "name": "Hume Band 2.0",
+      "brand": "Hume Health",
+      "model": "Band 2.0",
+      "score": 2.5,
+      "repairability": "non riparabile, startup senza infrastruttura",
+      "longevity": "cloud-dipendente, garanzia lifetime dichiarata ma senza track record",
+      "warranty": "lifetime warranty dichiarata — verificare condizioni (startup USA)",
+      "end_of_life": "sconosciuto",
+      "risks": ["startup rischio chiusura", "cloud-dipendente", "garanzia EU non applicabile", "Trustpilot 1.4/5"],
+      "verdict": "Startup cloud-dipendente. Garanzia lifetime senza track record non vale nulla se chiudono."
+    },
+    {
+      "name": "JCVital Pro V8 ECG",
+      "brand": "JCVital",
+      "model": "Pro V8 ECG",
+      "score": 2,
+      "repairability": "non riparabile, zero infrastruttura",
+      "longevity": "OEM cinese senza storia, app proprietaria unico accesso",
+      "warranty": "garanzia EU NON applicabile (venditore non-EU)",
+      "end_of_life": "sconosciuto",
+      "risks": ["brand sconosciuto", "zero assistenza", "app potrebbe sparire", "garanzia inesistente"],
+      "verdict": "Rischio massimo. OEM cinese senza distribuzione EU, zero assistenza, garanzia non applicabile."
+    }
+  ]
+}

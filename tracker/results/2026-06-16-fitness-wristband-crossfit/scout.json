@@ -1,0 +1,77 @@
+{
+  "agent": "scout",
+  "shortlist": [
+    {
+      "name": "Amazfit Helio Strap",
+      "brand": "Amazfit (Zepp Health)",
+      "model": "Helio Strap",
+      "price_eur": 99.91,
+      "asin": "B0F8HJCB47",
+      "idealo_id": "",
+      "url": "https://www.amazon.it/dp/B0F8HJCB47",
+      "specs_summary": "Screenless wristband 20g, HRV 24/7, HR continuo, SpO2, skin temp, VO2max, 5ATM, 10gg batteria, 50+ sport, HYROX mode, Zepp app iOS + Apple Health sync, no abbonamento",
+      "notes": "Miglior rapporto qualita/prezzo. HRV notturno allineato a WHOOP. App Zepp in beta. Auto workout detection inaffidabile."
+    },
+    {
+      "name": "Google Fitbit Air",
+      "brand": "Google / Fitbit",
+      "model": "Fitbit Air",
+      "price_eur": 99.99,
+      "asin": "B0GS7D8BN9",
+      "idealo_id": "210296055",
+      "url": "https://www.amazon.it/dp/B0GS7D8BN9",
+      "specs_summary": "Pebble screenless 12g, HRV overnight 3h, HR continuo, SpO2, skin temp, AFib FDA, VO2max, 5ATM, 7gg batteria, AI coaching",
+      "notes": "Ultraleggero. HRV solo overnight. NO Apple Health write nativo. Sampling rate PPG inferiore."
+    },
+    {
+      "name": "WHOOP 5.0 (One Annual)",
+      "brand": "WHOOP",
+      "model": "5.0 One Annual",
+      "price_eur": 199.00,
+      "asin": "B0DY2VVZWZ",
+      "idealo_id": "",
+      "url": "https://www.amazon.it/dp/B0DY2VVZWZ",
+      "specs_summary": "Screenless wristband 26.5g, HRV 24/7 best-in-class, HR 26Hz, SpO2, skin temp, respiratory rate, VO2max, IP68 10m, 14+gg batteria, strain/recovery coaching",
+      "notes": "ABBONAMENTO OBBLIGATORIO €199/anno. Leader HRV/recovery per CrossFit. Bicep mounting disponibile. API REST ufficiale."
+    },
+    {
+      "name": "Fitbit Charge 6",
+      "brand": "Google / Fitbit",
+      "model": "Charge 6",
+      "price_eur": 84.90,
+      "asin": "B0CHN3W617",
+      "idealo_id": "203291761",
+      "url": "https://www.amazon.it/dp/B0CHN3W617",
+      "specs_summary": "Band AMOLED 1.04 pollici 30g, HR ML, ECG, EDA stress, HRV overnight, SpO2, VO2max GPS, 5ATM, 7gg batteria, Google Maps/Wallet, 40+ sport",
+      "notes": "Prezzo piu basso. Ha schermo e GPS. ECG unico nella fascia. NO Apple Health nativo. Fine ciclo vita."
+    },
+    {
+      "name": "Garmin Vivosmart 6 (atteso)",
+      "brand": "Garmin",
+      "model": "Vivosmart 6",
+      "price_eur": 179.00,
+      "asin": "",
+      "idealo_id": "",
+      "url": "https://www.garmin.com/it-IT/",
+      "specs_summary": "Band AMOLED (leak), HRV Status atteso, HR continuo, SpO2, VO2max, GPS integrato, Body Battery, Sleep Coach, 5ATM atteso, 7+gg batteria attesa, 30+ sport, Garmin Connect API aperta",
+      "notes": "NON ANCORA DISPONIBILE. Spec da leak. Se confermato HRV Status, migliore per export dati (Garmin API aperta)."
+    }
+  ],
+  "eliminated": [
+    {"name": "Samsung Galaxy Fit 3", "reason": "NON compatibile iOS"},
+    {"name": "Xiaomi Smart Band 9 Pro", "reason": "NO HRV esposto, NO VO2max"},
+    {"name": "Xiaomi Smart Band 9", "reason": "NO HRV, NO VO2max"},
+    {"name": "Xiaomi Smart Band 8 Pro", "reason": "NO HRV, NO VO2max"},
+    {"name": "Huawei Band 9", "reason": "NO HRV esposto, NO Apple Health sync"},
+    {"name": "Huawei Band 8", "reason": "NO HRV, NO Apple Health sync"},
+    {"name": "Amazfit Band 7", "reason": "NO HRV, NO VO2max, EOL"},
+    {"name": "Garmin Lily 2 Active", "reason": "NO HRV status, NO VO2max"},
+    {"name": "Polar Verity Sense", "reason": "20h batteria, sensore non tracker 24/7"},
+    {"name": "Coros HR Monitor", "reason": "38h batteria, sensore non tracker 24/7"},
+    {"name": "Hume Band", "reason": "IP68 non 5ATM, batteria borderline"},
+    {"name": "Garmin Vivosmart 5", "reason": "HRV NON esposto come metrica utente"},
+    {"name": "Apple Watch SE 2", "reason": "Batteria 18h, sotto 5 giorni"},
+    {"name": "Amazfit Helio Ring", "reason": "Formato anello, non wristband"},
+    {"name": "Oura Ring 4", "reason": "Formato anello, non wristband"}
+  ]
+}

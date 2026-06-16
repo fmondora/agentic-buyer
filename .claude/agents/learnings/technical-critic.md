@@ -44,6 +44,200 @@
 
 ## Note per categoria
 
+### Fitness tracker / smart band — sensori HRV, VO2max, SpO2, HR (aggiornamento giugno 2026)
+
+**Modelli valutati:** Fitbit Charge 6, Garmin Vivosmart 5, Amazfit Band 7 / Helio Band, Xiaomi Smart Band 9 Pro, Samsung Galaxy Fit 3, Huawei Band 9
+
+**Fonti utili per questa categoria:**
+- **DC Rainmaker (dcrainmaker.com)** — gold standard per recensioni tecniche fitness tracker. WebFetch funziona bene sulle sue review. Fitbit Charge 6: https://www.dcrainmaker.com/2023/10/fitbit-charge-depth-review.html. Amazfit Helio Band: https://www.dcrainmaker.com/2025/06/amazfit-helio-band-in-depth-review-99-no-sub-fee-but-worth-it.html. Garmin Vivosmart 5: https://www.dcrainmaker.com/2022/04/garmin-vivosmart-review.html
+- **NotebookCheck.net** — test con misurazioni Polar H10 vs device. Amazfit Band 7 testato con dati BPM specifici (fino a 39 BPM di errore in warm-up/cool-down). WebFetch funziona bene.
+- **Wareable.com** — buone recensioni qualitative. WebFetch blocca con 403.
+- **TechRadar.com** — recensioni consumer con pro/contro, niente misurazioni dettagliate per band economiche.
+- **The Quantified Scientist** — YouTube principalmente, il sito quantified.reviews non ha dati HR per band economiche, si concentra su Oura/Garmin/Apple Watch fascia alta.
+- **HRVZone.com (hrvzone.com)** — ranking validazione HRV devices 2026. Non copre brand economici (solo Polar, Apple, Oura, Whoop). WebFetch funziona.
+- **PubMed/PMC** — studi validazione PPG. Dati chiave disponibili via WebSearch snippet (link diretti funzionano ma contenuto ricco solo su full text).
+- **ResearchGate** — PDF studi disponibili via snippet.
+
+**Fonti problematiche per questa categoria:**
+- **Wareable.com** — WebFetch restituisce 403
+- **Gadgetsandwearables.com** — WebFetch restituisce solo metadata/JS, nessun contenuto
+- **The Quantified Scientist (quantified.reviews)** — non copre Amazfit Band 7/8, Xiaomi, Samsung, Huawei — solo fascia premium
+- **HRVZone.com / kygo.app** — non coprono brand economici (sotto €100)
+- Samsung Galaxy Fit 3 — **nessuna review con misurazioni oggettive** trovata. TechRadar solo qualitativo.
+- Huawei Band 9 — **nessuna review con misurazioni oggettive** trovata. Solo marketing Huawei TruSeen 5.5.
+
+**Dato critico: Amazfit Band 9 non esiste.** Amazfit lineup band: Band 5, Band 7, (Band 8 atteso ma non ancora mainstream), Helio Band ($99, 2025). Se utente chiede Amazfit Band 9, valutare Band 7 + Helio Band.
+
+**Consensus scientifico sensori ottici polso — dati chiave:**
+- PPG wrist optical HR accuracy durante riposo/stato stazionario: MAPE 3-6% (accettabile)
+- PPG wrist optical HR accuracy durante HIIT/movimenti bruschi: MAPE può salire a 15-40%, lag 10-30 sec
+- Attività peggiori per optical wrist HR: weightlifting, CrossFit, rowing, sport con movimenti braccia veloci (MAPE fino a 13-40%)
+- HRV (RMSSD) da wrist PPG: correlazione con ECG r=0.62-0.79 (moderata), MAPE ~17.5% vs 2.16% fascia toracica Polar H10
+- VO2max da wrist: tutti i valori sono stime algoritmiche — Garmin (FirstBeat algo): MAPE ~5-7% in studi validazione; Fitbit: ICC 0.87 ma overestima sistematica nei test
+
+**CrossFit e weightlifting — problemi specifici:**
+- Movimenti bruschi polso = motion artifact = falsi positivi/negativi HR
+- Compound lift (clean and jerk, snatch): i movimenti delle braccia sono incompatibili con PPG accurato
+- Nessun brand nella fascia €50-200 ha validazione indipendente specifica per CrossFit o weightlifting
+- L'accuratezza dichiarata dai brand (+15% Xiaomi, +60% Fitbit) si riferisce genericamente a "vigorous activity" non CrossFit specifico
+- Fascia toracica (Polar H10, Garmin HRM-Pro) rimane l'unica soluzione validata per CrossFit HR reale
+
+**SpO2 nelle band economiche:**
+- Spot-check: disponibile su tutti i modelli. Accuratezza ragionevole se fermi.
+- Continuo: Garmin (4h sleep window), Xiaomi Band 9 Pro (si, impatto batteria -50%), Huawei Band 9 (si), Samsung Galaxy Fit 3 (no/spot), Amazfit Band 7 (si, 24h), Fitbit Charge 6 (si, sleep only)
+- Movimento degrada SpO2 da wrist optical: anche lieve movimento cause falsi valori bassi
+
+**Pattern ricerca efficaci per questa categoria:**
+- `"[modello]" site:dcrainmaker.com` — per trovare review DCR specifiche
+- `"[modello]" heart rate accuracy "chest strap" OR "polar h10" HIIT OR CrossFit review measurements`
+- `"[brand] band" heart rate accuracy study PubMed OR ResearchGate validation 2023 2024`
+- `"quantified scientist" "[modello]" heart rate test` — per trovare video YouTube specifici
+- `fitness tracker HRV accuracy wrist optical RMSSD validation 2024 2025` — per studi comparativi
+- Per Amazfit: cercare "Amazfit Band 7" e "Amazfit Helio Band" (non esiste Band 9)
+- `"[modello]" accuracy "limits of agreement" bias bpm` — per trovare tabelle comparative con misurazioni precise
+- `the5krunner.com "[modello]" accuracy HR HRV` — ottima fonte con tabelle bias/LoA vs riferimento ECG
+- `"Fitbit Air" site:dcrainmaker.com` — DCR ha review approfondita Fitbit Air vs WHOOP (maggio 2026)
+
+**Dati comparativi reali misurati (intervalli HR vs Fourth Frontier ZONE ECG):**
+| Device | Posizione | Bias | Limits of Agreement | Note |
+|---|---|---|---|---|
+| Polar SENSE | biceps | +1.4 bpm | ±6.8 to 9.7 bpm | riferimento gold |
+| WHOOP MG | biceps | +1.1 bpm | ±6.2 to 8.3 bpm | eccellente su bicep |
+| Fitbit AIR | polso | +0.5 bpm | ±6.5 to 7.5 bpm | decente su polso, ritardo 10min |
+| Amazfit Helio Strap | polso | -0.3 bpm | ±28.5 to 28.0 bpm | limiti di accordo AMPI |
+Fonte: the5krunner.com, test interval running, non CrossFit
+
+**WHOOP bicep vs wrist — dato critico:**
+- WHOOP 5.0 su bicep: 0.98 correlazione su 19 workout, bias 0.3 bpm LoA ±2.2/+2.8 bpm — rivaleggia fascia toracica
+- WHOOP 5.0 su polso: degrado significativo in CrossFit/HIIT — 6 workout su 19 con "marked differences"
+- Amazfit Helio: eccellente su bicep, alright su polso; zone training out by 10bpm su polso
+- Fitbit Air: thin band = light leakage, non scrive su Apple Health, HR Bluetooth proprietario (no ANT+)
+- Fitbit Charge 6: 60% più accurato di Charge 5 (dichiarato Google), ma in HIIT 10-25 bpm error reale
+- HRV su polso vs bicep: sensor location è il fattore #1, non il brand/algoritmo
+
+**Data export fitness tracker — stato 2026:**
+- WHOOP: CSV export ufficiale da app/web. API OAuth 2.0 con HRV RMSSD float. Il più aperto.
+- Fitbit Charge 6: CSV export disponibile (includendo HRV). API Google Fit. Accesso storico senza premium.
+- Amazfit/Helio: sync verso Apple Health ma con bug (blank workouts riportati). Zepp app. Export limitato.
+- Fitbit Air: NO Apple Health write, Bluetooth HR proprietario (no ANT+), focus su AI insights non raw data.
+- Garmin: standard aperto, export FIT/GPX/CSV, Garmin Connect API, compatibile con terze parti.
+
+**VO2max wearables — affidabilità 2026:**
+- Garmin (FirstBeat): MAPE ~5-7% in studi validazione — il più affidabile nella fascia consumer
+- WHOOP 5.0: metodo "insolito e complesso" — plausibile ma non confrontabile con Garmin (no distance/power nativo)
+- Fitbit Charge 6/Air: ICC 0.87 ma overestima sistematica nota
+- Amazfit Helio: reviewer DCR scettico — "need documentation of methodology to believe it"
+- **Nessun wristband sotto 200€ ha VO2max validato per CrossFit specificamente**
+
+**Garmin Vivosmart 6 — stato giugno 2026:**
+- Non ancora rilasciato ufficialmente (annunciato/leaked CES 2026, ritardi multipli)
+- Feature attese: GPS integrato (prima volta nella serie), HRV Status, 30+ sport modes, Elevate V4 sensor
+- Prezzo atteso: ~$150-180 / €179
+- Elevate V4 (non V5): stesso sensore ottico del predecessore — accuratezza nota ma non rinnovata
+- Nessuna conferma ufficiale VO2max (non presente nel Vivosmart 5), HRV Status confermato
+- Data lancio: speculazione maggio/giugno 2026 — ancora non disponibile a fine giugno 2026
+- NON valutabile con dati reali — solo proiezioni dal Vivosmart 5 + feature annunciate
+
+**Amazfit Helio Strap — note specifiche:**
+- Prodotto 2025, $99/€100, screenless come WHOOP
+- Biocharge (recovery metric): sempre decrementale durante il giorno — diverso da WHOOP Recovery che aumenta. Nasconde la scienza HRV.
+- App Zepp ancora in beta a luglio 2025 — auto workout detection con falsi positivi
+- VO2max: reviewer DCR non ci crede senza documentazione metodologica
+- Helio Strap 2 annunciato per fine 2026 — attuale è gen 1
+- Posizionamento: WHOOP challenger a prezzo fisso (no sub) ma algoritmi meno maturi
+
+**Hume Band 2.0 — dati chiave (giugno 2026):**
+- Prodotto USA, $249 full / $199 promozionale, screenless 8.6g, IP68
+- Sensore: 5 LED + 4 fotodiodi — hardware decente su carta
+- HR in steady cardio: ±2-3 bpm vs chest strap (accettabile)
+- HR resting: 5-8 bpm ALTO vs Garmin e Oura Ring — dato critico, non trascurabile
+- HR in weightlifting: DISASTROSO — squat a 165 bpm, banda mostra 110 bpm durante il set, poi sale a 160 bpm dopo 20 secondi dal rack. Lag tipico 20-30 sec in compound lift.
+- CrossFit: incompatibile per HR real-time. Muscoli del polso che stringono il bilanciere bloccano il sensore ottico.
+- HRV: trend coerente con Oura e WHOOP ma valori assoluti diversi. Utile solo come trend, non come dato assoluto.
+- Raw data: export disponibile, Apple Health sync. No API OAuth documentata per sviluppatori.
+- Menzione DCR: data inaccurata/mancante, batteria esaurita prima di quanto dichiarato, restituito dopo 30gg.
+- Robb Sutton review: lo confronta a WHOOP come WHOOP challenger economico ma algoritmi meno maturi.
+- Verdetto pratico CrossFit: sensor location (polso vs bicep) è il problema principale — stesso di WHOOP su polso.
+
+**Huawei Band 9 (TruSeen 5.5) e Band 11 Pro — dati reali:**
+- TruSeen 5.5: sensore multichannnel, "meglio del predecessore in piscina" (+10% dichiarato). Nessun test oggettivo con Polar H10 trovato per Band 9/11 specificatamente.
+- Dati indiretti da studi comparativi Huawei: "gap <10 bpm vs Polar H10 sotto sforzo", "ratio output coerente con Polar H10". Stima: MAPE ~5-8% in attività moderate.
+- Problemi dichiarati da Huawei stessa: saltare la corda, push-up, sollevamento pesi, sport con racchetta = piegamento polso comprime vasi, degrada il sensore.
+- HRV 24/7 (Band 9): segnalata ma nessuna validazione indipendente RMSSD trovata.
+- iOS: Huawei Health su iOS permette export CSV parziale (step, HR, SpO2, sleep) ma HRV RMSSD raw non accessibile tramite API standard. Ecosystem chiuso.
+- Band 11 Pro: aggiunge GPS integrato (novità rispetto Band 9), stessa generazione sensore TruSeen 5.5+. Review TechAdvisor: dati GPS plausibili ma nessuna misurazione quantitativa.
+- Huawei Health iOS: chiuso rispetto a Garmin. No HealthKit nativo bidirezionale completo. Developer access limitato.
+
+**Honor Band 9 — dati reali:**
+- TruSeen 5.5 (stesso Huawei, brand separato post-2020 spun off).
+- HR resting: in linea con altri tracker.
+- HR in esercizio: 5-10 bpm ALTA nei test TechAdvisor — "noticeably high" e "no real discernible differences" dal predecessore Band 7.
+- Nessun GPS integrato (usa GPS dello smartphone). Tracking senza telefono = nessuna accuratezza distanza.
+- HRV: parziale/non documentata in modo indipendente. Stress tracking non affidabile per colpa del sensore HR.
+- Fitness Age / VO2max: calcolati su HR inaccurata → valori inaffidabili.
+- Verdetto pratico CrossFit: la peggiore della shortlist per accuratezza HR in esercizio. Solo per tracking salute passivo a riposo.
+
+**Xiaomi Smart Band 10 Pro — dati reali:**
+- Sensore: 4 LED + 2 PD (dual-light PPD), claim 98.2% accuracy HR. Xiaomi afferma "15+ sports modes accuracy +60% vs competitors" (claim non verificabile).
+- HR in corsa stazionaria: solido. Confronto Garmin Forerunner: 139 bpm Band vs 138 bpm Garmin (max: 150 vs 149 bpm) — ottimo per corsa moderata.
+- HR in alta intensità: TechAdvisor "when you up the intensity, accuracy is a little more sketchy". Nessun dato bpm specifico per HIIT.
+- HRV: overnight sleep HRV. Metodo: durante fasi del sonno identificate dall'algoritmo. Non 24/7. Nessuna validazione RMSSD indipendente trovata.
+- GPS: multi-GNSS (non dual-band). Distanza e ritmo "matched up pretty well" vs running watch con GPS simile. Non adatto a training serio con pinpoint accuracy.
+- iOS: sync con Apple Health. No dato specifico su HRV raw export.
+- Batteria dichiarata 21 giorni — stima ottimistica. Con GPS attivo: molto meno.
+- Verdetto pratico CrossFit: decente per cardio, sketchy in alta intensità, HRV solo overnight.
+
+**JCVital Pro V8 ECG — dati reali:**
+- Produttore: J-Style / Jointcorp (Shenzhen Youhong Technology), fabbrica OEM/ODM cinese. Vende anche private label ad altri brand.
+- ZERO review indipendenti trovate. Tutte le "recensioni" online rimandano al sito JCVital stesso (jcvital.com, jointcorp.com).
+- Marketing aggressivo: si autodefinisce "medical-grade biosensors", "clinical validation" — termini non supportati da studi terzi.
+- ECG: single-lead come Apple Watch ECG. Claim AFib sensitivity 82-99% (dati da studi generici su single-lead ECG consumer, non validazione specifica V8).
+- VO2max, HRV: stime algoritmiche come tutti gli altri. Nessuna metodologia documentata.
+- Prezzo $199: elevato per un ODM cinese senza track record indipendente.
+- Red flags: sito che è anche fabbrica ODM che vende private label, blog interno che si auto-cita come "tested and compared", no presenza su DCRainmaker/Wareable/TechAdvisor.
+- Verdetto: massimo rischio da acquisto. Prodotto sconosciuto a tutte le fonti autorevoli.
+
+**Pattern ricerca efficaci aggiunti:**
+- `"[modello] heart rate accuracy weighted lifting squat bpm review"` — trova dati specifici CrossFit
+- `"Hume Band" site:robbsutton.com OR site:wareable.com` — fonti più critiche che siti consumer generici
+- `"[brand] band" raw data export API developer iOS HealthKit` — per verificare apertura ecosistema
+- `site:jointcorp.com [brand]` — per smascherare prodotti ODM cinesi (se compare = white label factory)
+
+
+
+### Legname larice massello per rivestimento parete interno (aggiornamento giugno 2026)
+
+**Fonti utili per questa categoria:**
+- **promolegno.com (risponde.promolegno.com)** — forum tecnico italiano con risposte di esperti su coefficienti ritiro larice, problemi durabilità, differenze varietà. Utile per dati tecnici precisi. Alcune URL 404 (domande rimosse).
+- **woodlab.info** — analisi tecnica larice siberiano, dati deformazione dopo esposizione, WebFetch funziona bene
+- **xlab.design/blog** — consigli pratici su movimento del legno interno, stagionatura, WebFetch funziona
+- **zennarolegnami.com** — fornitore italiano, schede varietà larice, WebFetch restituisce solo sommario vago
+- **attiliocossiosrl.wordpress.com** — articolo pratico su larice, caratteristiche generali, WebFetch funziona
+- **makersatwork.it/difetti-del-legno** — difetti del legno cipollatura, imbarcamento, nodi, WebFetch funziona
+
+**Fonti problematiche per questa categoria:**
+- **Google Groups (groups.google.com)** — JS-heavy, WebFetch restituisce solo codice frontend, inutilizzabile
+- **promolegno.com alcune URL** — alcune pagine restitiscono 404 (domande eliminate/spostate)
+- Non esistono fonti equivalenti a RTings per legname — nessun test indipendente standardizzato
+
+**Dati tecnici legno larice — valori chiave:**
+- Densità larice: 550-650 kg/m³ (media 600 kg/m³)
+- Spessore 18mm: peso ~10-11 kg/m² (tavola piena, senza intercapedine)
+- Coefficiente ritiro radiale: ~1/1000 per 1% variazione umidità (conifera)
+- Umidità equilibrio interno riscaldato (20°C, 50% UR): 9-11%
+- Umidità equilibrio interno secco (20°C, 40% UR): 7-8%
+- Legno fornito tipicamente a 12% ±2% → ritiro atteso in interno secco: 2-4%
+- Su tavola larga 80mm: ritiro atteso 1,6-3,2mm in larghezza (significativo — va gestito con giunti)
+- Larice siberiano: anelli crescita più stretti, più stabile, meno deformazione
+- Larice alpino/europeo: più "nervoso", anelli più larghi, maggior rischio imbarcamento
+- Resina: si indurisce nel tempo, non è un problema cronico in interno non esposto a calore diretto
+
+**Pattern ricerca efficaci per legname:**
+- `"larice" "rivestimento parete" "interno" "imbarcamento" OR "svergolamento" problemi` — trova forum e FAQ tecniche
+- `"stagionatura larice" "umidità equilibrio" "interno" percentuale ritiro` — trova dati tecnici
+- `"larice siberiano alpino" differenze durabilità venatura rivestimento` — confronto varietà
+- `risponde.promolegno.com [argomento]` — FAQ tecniche italiane con esperti del settore
+
 ### Ombrelloni da esterno palo laterale/cantilever 3.5m+ (aggiornamento giugno 2026)
 
 **Brand valutati:** Scolaro (IT), Caravita (DE), Suns/SUNS (NL), Fim (IT), Umbrosa (BE), Doppler (AT)
